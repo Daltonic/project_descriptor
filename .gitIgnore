@@ -1,0 +1,9 @@
+.venv
+.vscode
+project_descriptor.json
+.idea
+*.pyc
+__pycache__
+*.pyo
+*.pyd
+.Python
