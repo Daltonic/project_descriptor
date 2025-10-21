@@ -1,88 +1,1355 @@
 {
   "project_info": {
-    "project_name": "project_descriptor",
-    "root_path": "/Users/darlingtongospel/Sites/project_descriptor",
+    "project_name": "ai_trader_bot_preview",
+    "root_path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview",
     "structure": [
       {
-        "name": "main.py",
+        "name": ".DS_Store",
         "type": "file",
-        "path": "main.py",
-        "size": 27334,
-        "extension": ".py"
+        "path": ".DS_Store",
+        "size": 6148,
+        "extension": ""
       },
       {
-        "name": "project_analysis.json",
-        "type": "file",
-        "path": "project_analysis.json",
-        "size": 99284,
-        "extension": ".json"
+        "name": ".github",
+        "type": "directory",
+        "path": ".github",
+        "items": [
+          {
+            "name": "workflows",
+            "type": "directory",
+            "path": ".github/workflows",
+            "items": [
+              {
+                "name": "main.yml",
+                "type": "file",
+                "path": ".github/workflows/main.yml",
+                "size": 4663,
+                "extension": ".yml"
+              }
+            ]
+          }
+        ]
       },
       {
-        "name": "requirements.txt",
+        "name": "README.md",
         "type": "file",
-        "path": "requirements.txt",
-        "size": 171,
-        "extension": ".txt"
+        "path": "README.md",
+        "size": 24865,
+        "extension": ".md"
+      },
+      {
+        "name": "backend",
+        "type": "directory",
+        "path": "backend",
+        "items": [
+          {
+            "name": ".gitpod.yml",
+            "type": "file",
+            "path": "backend/.gitpod.yml",
+            "size": 474,
+            "extension": ".yml"
+          },
+          {
+            "name": "Dockerfile",
+            "type": "file",
+            "path": "backend/Dockerfile",
+            "size": 613,
+            "extension": ""
+          },
+          {
+            "name": "app",
+            "type": "directory",
+            "path": "backend/app",
+            "items": [
+              {
+                "name": "__init__.py",
+                "type": "file",
+                "path": "backend/app/__init__.py",
+                "size": 0,
+                "extension": ".py"
+              },
+              {
+                "name": "coin",
+                "type": "directory",
+                "path": "backend/app/coin",
+                "items": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "backend/app/coin/__init__.py",
+                    "size": 0,
+                    "extension": ".py"
+                  },
+                  {
+                    "name": "coin.py",
+                    "type": "file",
+                    "path": "backend/app/coin/coin.py",
+                    "size": 5000,
+                    "extension": ".py"
+                  },
+                  {
+                    "name": "models.py",
+                    "type": "file",
+                    "path": "backend/app/coin/models.py",
+                    "size": 265,
+                    "extension": ".py"
+                  }
+                ]
+              },
+              {
+                "name": "main.py",
+                "type": "file",
+                "path": "backend/app/main.py",
+                "size": 685,
+                "extension": ".py"
+              },
+              {
+                "name": "services",
+                "type": "directory",
+                "path": "backend/app/services",
+                "items": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file",
+                    "path": "backend/app/services/__init__.py",
+                    "size": 0,
+                    "extension": ".py"
+                  },
+                  {
+                    "name": "disclaimer.md",
+                    "type": "file",
+                    "path": "backend/app/services/disclaimer.md",
+                    "size": 1036,
+                    "extension": ".md"
+                  },
+                  {
+                    "name": "file_handler.py",
+                    "type": "file",
+                    "path": "backend/app/services/file_handler.py",
+                    "size": 3236,
+                    "extension": ".py"
+                  },
+                  {
+                    "name": "file_manager.py",
+                    "type": "file",
+                    "path": "backend/app/services/file_manager.py",
+                    "size": 3086,
+                    "extension": ".py"
+                  },
+                  {
+                    "name": "messaging.py",
+                    "type": "file",
+                    "path": "backend/app/services/messaging.py",
+                    "size": 863,
+                    "extension": ".py"
+                  },
+                  {
+                    "name": "mongodb_service.py",
+                    "type": "file",
+                    "path": "backend/app/services/mongodb_service.py",
+                    "size": 16167,
+                    "extension": ".py"
+                  }
+                ]
+              },
+              {
+                "name": "trader_bot",
+                "type": "directory",
+                "path": "backend/app/trader_bot",
+                "items": [
+                  {
+                    "name": "disclaimer.md",
+                    "type": "file",
+                    "path": "backend/app/trader_bot/disclaimer.md",
+                    "size": 1036,
+                    "extension": ".md"
+                  }
+                ]
+              },
+              {
+                "name": "users",
+                "type": "directory",
+                "path": "backend/app/users",
+                "items": [
+                  {
+                    "name": "models.py",
+                    "type": "file",
+                    "path": "backend/app/users/models.py",
+                    "size": 1188,
+                    "extension": ".py"
+                  },
+                  {
+                    "name": "user.py",
+                    "type": "file",
+                    "path": "backend/app/users/user.py",
+                    "size": 16982,
+                    "extension": ".py"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "manual_trigger.py",
+            "type": "file",
+            "path": "backend/manual_trigger.py",
+            "size": 1698,
+            "extension": ".py"
+          },
+          {
+            "name": "note.txt",
+            "type": "file",
+            "path": "backend/note.txt",
+            "size": 199,
+            "extension": ".txt"
+          },
+          {
+            "name": "requirements.txt",
+            "type": "file",
+            "path": "backend/requirements.txt",
+            "size": 474,
+            "extension": ".txt"
+          },
+          {
+            "name": "run.py",
+            "type": "file",
+            "path": "backend/run.py",
+            "size": 3073,
+            "extension": ".py"
+          },
+          {
+            "name": "run_dev.py",
+            "type": "file",
+            "path": "backend/run_dev.py",
+            "size": 2378,
+            "extension": ".py"
+          }
+        ]
+      },
+      {
+        "name": "docker-compose.yml",
+        "type": "file",
+        "path": "docker-compose.yml",
+        "size": 800,
+        "extension": ".yml"
+      },
+      {
+        "name": "frontend",
+        "type": "directory",
+        "path": "frontend",
+        "items": [
+          {
+            "name": "Dockerfile",
+            "type": "file",
+            "path": "frontend/Dockerfile",
+            "size": 567,
+            "extension": ""
+          },
+          {
+            "name": "README.md",
+            "type": "file",
+            "path": "frontend/README.md",
+            "size": 1450,
+            "extension": ".md"
+          },
+          {
+            "name": "app",
+            "type": "directory",
+            "path": "frontend/app",
+            "items": [
+              {
+                "name": "about",
+                "type": "directory",
+                "path": "frontend/app/about",
+                "items": [
+                  {
+                    "name": "page.tsx",
+                    "type": "file",
+                    "path": "frontend/app/about/page.tsx",
+                    "size": 17340,
+                    "extension": ".tsx"
+                  }
+                ]
+              },
+              {
+                "name": "api",
+                "type": "directory",
+                "path": "frontend/app/api",
+                "items": [
+                  {
+                    "name": "auth",
+                    "type": "directory",
+                    "path": "frontend/app/api/auth",
+                    "items": [
+                      {
+                        "name": "login",
+                        "type": "directory",
+                        "path": "frontend/app/api/auth/login",
+                        "items": [
+                          {
+                            "name": "route.ts",
+                            "type": "file",
+                            "path": "frontend/app/api/auth/login/route.ts",
+                            "size": 890,
+                            "extension": ".ts"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "dashboard",
+                "type": "directory",
+                "path": "frontend/app/dashboard",
+                "items": [
+                  {
+                    "name": "page.tsx",
+                    "type": "file",
+                    "path": "frontend/app/dashboard/page.tsx",
+                    "size": 6741,
+                    "extension": ".tsx"
+                  }
+                ]
+              },
+              {
+                "name": "favicon.ico",
+                "type": "file",
+                "path": "frontend/app/favicon.ico",
+                "size": 25931,
+                "extension": ".ico"
+              },
+              {
+                "name": "features",
+                "type": "directory",
+                "path": "frontend/app/features",
+                "items": [
+                  {
+                    "name": "page.tsx",
+                    "type": "file",
+                    "path": "frontend/app/features/page.tsx",
+                    "size": 12287,
+                    "extension": ".tsx"
+                  }
+                ]
+              },
+              {
+                "name": "globals.css",
+                "type": "file",
+                "path": "frontend/app/globals.css",
+                "size": 285,
+                "extension": ".css"
+              },
+              {
+                "name": "layout.tsx",
+                "type": "file",
+                "path": "frontend/app/layout.tsx",
+                "size": 1389,
+                "extension": ".tsx"
+              },
+              {
+                "name": "page.tsx",
+                "type": "file",
+                "path": "frontend/app/page.tsx",
+                "size": 30006,
+                "extension": ".tsx"
+              },
+              {
+                "name": "roadmap",
+                "type": "directory",
+                "path": "frontend/app/roadmap",
+                "items": [
+                  {
+                    "name": "page.tsx",
+                    "type": "file",
+                    "path": "frontend/app/roadmap/page.tsx",
+                    "size": 13291,
+                    "extension": ".tsx"
+                  }
+                ]
+              },
+              {
+                "name": "whitepaper",
+                "type": "directory",
+                "path": "frontend/app/whitepaper",
+                "items": [
+                  {
+                    "name": "page.tsx",
+                    "type": "file",
+                    "path": "frontend/app/whitepaper/page.tsx",
+                    "size": 41354,
+                    "extension": ".tsx"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "components",
+            "type": "directory",
+            "path": "frontend/components",
+            "items": [
+              {
+                "name": "ActionButtons.tsx",
+                "type": "file",
+                "path": "frontend/components/ActionButtons.tsx",
+                "size": 2869,
+                "extension": ".tsx"
+              },
+              {
+                "name": "CoinDetailsCard.tsx",
+                "type": "file",
+                "path": "frontend/components/CoinDetailsCard.tsx",
+                "size": 5034,
+                "extension": ".tsx"
+              },
+              {
+                "name": "CoinSelector.tsx",
+                "type": "file",
+                "path": "frontend/components/CoinSelector.tsx",
+                "size": 6236,
+                "extension": ".tsx"
+              },
+              {
+                "name": "DepositeModal.tsx",
+                "type": "file",
+                "path": "frontend/components/DepositeModal.tsx",
+                "size": 8283,
+                "extension": ".tsx"
+              },
+              {
+                "name": "Footer.tsx",
+                "type": "file",
+                "path": "frontend/components/Footer.tsx",
+                "size": 13458,
+                "extension": ".tsx"
+              },
+              {
+                "name": "GoogleSignInButton.tsx",
+                "type": "file",
+                "path": "frontend/components/GoogleSignInButton.tsx",
+                "size": 5842,
+                "extension": ".tsx"
+              },
+              {
+                "name": "Header.tsx",
+                "type": "file",
+                "path": "frontend/components/Header.tsx",
+                "size": 19116,
+                "extension": ".tsx"
+              },
+              {
+                "name": "InvestmentCard.tsx",
+                "type": "file",
+                "path": "frontend/components/InvestmentCard.tsx",
+                "size": 12396,
+                "extension": ".tsx"
+              },
+              {
+                "name": "Navbar.tsx",
+                "type": "file",
+                "path": "frontend/components/Navbar.tsx",
+                "size": 15290,
+                "extension": ".tsx"
+              },
+              {
+                "name": "ProfileModal.tsx",
+                "type": "file",
+                "path": "frontend/components/ProfileModal.tsx",
+                "size": 9369,
+                "extension": ".tsx"
+              },
+              {
+                "name": "ProfitTrendChart.tsx",
+                "type": "file",
+                "path": "frontend/components/ProfitTrendChart.tsx",
+                "size": 13357,
+                "extension": ".tsx"
+              },
+              {
+                "name": "RecentTradeReport.tsx",
+                "type": "file",
+                "path": "frontend/components/RecentTradeReport.tsx",
+                "size": 11510,
+                "extension": ".tsx"
+              },
+              {
+                "name": "WithdrawModal.tsx",
+                "type": "file",
+                "path": "frontend/components/WithdrawModal.tsx",
+                "size": 9183,
+                "extension": ".tsx"
+              }
+            ]
+          },
+          {
+            "name": "contexts",
+            "type": "directory",
+            "path": "frontend/contexts",
+            "items": [
+              {
+                "name": "AuthContext.tsx",
+                "type": "file",
+                "path": "frontend/contexts/AuthContext.tsx",
+                "size": 2600,
+                "extension": ".tsx"
+              },
+              {
+                "name": "GlobalContext.tsx",
+                "type": "file",
+                "path": "frontend/contexts/GlobalContext.tsx",
+                "size": 1765,
+                "extension": ".tsx"
+              }
+            ]
+          },
+          {
+            "name": "eslint.config.mjs",
+            "type": "file",
+            "path": "frontend/eslint.config.mjs",
+            "size": 393,
+            "extension": ".mjs"
+          },
+          {
+            "name": "hooks",
+            "type": "directory",
+            "path": "frontend/hooks",
+            "items": [
+              {
+                "name": "userAuth.ts",
+                "type": "file",
+                "path": "frontend/hooks/userAuth.ts",
+                "size": 313,
+                "extension": ".ts"
+              }
+            ]
+          },
+          {
+            "name": "middleware.ts",
+            "type": "file",
+            "path": "frontend/middleware.ts",
+            "size": 1424,
+            "extension": ".ts"
+          },
+          {
+            "name": "next.config.ts",
+            "type": "file",
+            "path": "frontend/next.config.ts",
+            "size": 217,
+            "extension": ".ts"
+          },
+          {
+            "name": "package.json",
+            "type": "file",
+            "path": "frontend/package.json",
+            "size": 760,
+            "extension": ".json"
+          },
+          {
+            "name": "postcss.config.mjs",
+            "type": "file",
+            "path": "frontend/postcss.config.mjs",
+            "size": 81,
+            "extension": ".mjs"
+          },
+          {
+            "name": "tailwind.config.js",
+            "type": "file",
+            "path": "frontend/tailwind.config.js",
+            "size": 539,
+            "extension": ".js"
+          },
+          {
+            "name": "tsconfig.json",
+            "type": "file",
+            "path": "frontend/tsconfig.json",
+            "size": 598,
+            "extension": ".json"
+          },
+          {
+            "name": "utils",
+            "type": "directory",
+            "path": "frontend/utils",
+            "items": [
+              {
+                "name": "api.ts",
+                "type": "file",
+                "path": "frontend/utils/api.ts",
+                "size": 5267,
+                "extension": ".ts"
+              },
+              {
+                "name": "interfaces.ts",
+                "type": "file",
+                "path": "frontend/utils/interfaces.ts",
+                "size": 1898,
+                "extension": ".ts"
+              }
+            ]
+          }
+        ]
       }
     ],
     "files": [
       {
-        "name": "main.py",
-        "path": "/Users/darlingtongospel/Sites/project_descriptor/main.py",
-        "size": 27334,
-        "extension": ".py",
-        "is_code": true,
-        "content_preview": "import os\nimport re\nimport json\nfrom pathlib import Path\nfrom typing import List, Dict, Set\nfrom langchain_core.prompts import ChatPromptTemplate\nfrom langchain_ollama import ChatOllama\nfrom langchain_core.output_parsers import StrOutputParser\n\n\nclass ProjectAnalyzer:\n    def __init__(\n        self,\n        base_url=\"http://localhost:11434\",\n        model=\"phi4-mini:3.8b\",\n        temperature=0.3,\n        timeout=60,\n    ):\n        self.chat_model = ChatOllama(\n            base_url=base_url, mod...",
-        "line_count": 711,
-        "relative_path": "main.py"
+        "name": ".DS_Store",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/.DS_Store",
+        "size": 6148,
+        "extension": "",
+        "is_code": false,
+        "content_preview": null,
+        "relative_path": ".DS_Store"
       },
       {
-        "name": "project_analysis.json",
-        "path": "/Users/darlingtongospel/Sites/project_descriptor/project_analysis.json",
-        "size": 99284,
-        "extension": ".json",
+        "name": "main.yml",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/.github/workflows/main.yml",
+        "size": 4663,
+        "extension": ".yml",
         "is_code": true,
+        "content_preview": "name: Deploy AI Scraper to Ubuntu VPS\n\non:\n  push:\n    branches:\n      - main\n\njobs:\n  prepare_directories:\n    runs-on: ubuntu-latest\n    steps:\n      - name: Create or clean target directory\n        uses: appleboy/ssh-action@v0.1.3\n        with:\n          host: ${{ secrets.SSH_HOST }}\n          username: ${{ secrets.SSH_USERNAME }}\n          key: ${{ secrets.SSH_PRIVATE_KEY }}\n          script: |\n            if [ ! -d \"/dockerized/containers/bot_trader\" ]; then\n              mkdir -p /dockeriz...",
+        "line_count": 137,
+        "relative_path": ".github/workflows/main.yml"
+      },
+      {
+        "name": "README.md",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/README.md",
+        "size": 24865,
+        "extension": ".md",
+        "is_code": true,
+        "content_preview": "# Ai Trader Bot\n\nIntroducing **ai_trader_bot**, an innovative AI-powered cryptocurrency trading platform built with JavaScript, CSS, Python, TypeScript! This powerful tool leverages advanced algorithms to analyze market trends in real-time.\n\nI created ai_trader_bot specifically for traders looking to maximize their profits by leveraging cutting-edge technology and sophisticated data analysis. With a robust backend powered by FastAPI (Python) combined seamlessly with frontend technologies like Re...",
+        "line_count": 390,
+        "relative_path": "README.md"
+      },
+      {
+        "name": ".gitpod.yml",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/backend/.gitpod.yml",
+        "size": 474,
+        "extension": ".yml",
+        "is_code": true,
+        "content_preview": "# This configuration file was automatically generated by Gitpod.\n# Please adjust to your needs (see https://www.gitpod.io/docs/introduction/learn-gitpod/gitpod-yaml)\n# and commit this file to your remote git repository to share the goodness with others.\n\n# Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart\n\ntasks:\n  - init: pip install -r requirements.txt\n    command: playwright install-deps && python run_dev.py\n\n\n",
+        "line_count": 11,
+        "relative_path": "backend/.gitpod.yml"
+      },
+      {
+        "name": "Dockerfile",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/backend/Dockerfile",
+        "size": 613,
+        "extension": "",
+        "is_code": false,
         "content_preview": null,
-        "relative_path": "project_analysis.json"
+        "relative_path": "backend/Dockerfile"
+      },
+      {
+        "name": "__init__.py",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/backend/app/__init__.py",
+        "size": 0,
+        "extension": ".py",
+        "is_code": true,
+        "content_preview": "",
+        "line_count": 0,
+        "relative_path": "backend/app/__init__.py"
+      },
+      {
+        "name": "__init__.py",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/backend/app/coin/__init__.py",
+        "size": 0,
+        "extension": ".py",
+        "is_code": true,
+        "content_preview": "",
+        "line_count": 0,
+        "relative_path": "backend/app/coin/__init__.py"
+      },
+      {
+        "name": "coin.py",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/backend/app/coin/coin.py",
+        "size": 5000,
+        "extension": ".py",
+        "is_code": true,
+        "content_preview": "from fastapi import APIRouter, Query\nfrom app.services.coin_extractor import TopCoinsExtractor\nfrom app.services.capital_manager import CapitalManager\nfrom app.services.coin_scheduler import CoinScheduler\nfrom app.trader_bot.coin_trader import CoinTrader\nimport logging\n\ncoin_router = APIRouter()\n\n\n@coin_router.get(\"/top_coins\")\nasync def list_top_coin(\n    limit: int = Query(default=10, ge=1, description=\"Number of top coins to return\")\n):\n    try:\n        # Initialize the TopCoinsExtractor\n    ...",
+        "line_count": 143,
+        "relative_path": "backend/app/coin/coin.py"
+      },
+      {
+        "name": "models.py",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/backend/app/coin/models.py",
+        "size": 265,
+        "extension": ".py",
+        "is_code": true,
+        "content_preview": "from pydantic import BaseModel, Field\n\n\nclass CrawlRequest(BaseModel):\n    title: str = Field(..., description=\"Site Title\", example=\"Ollama Models Released\")\n    url: str = Field(\n        ..., description=\"URL to scrape\", example=\"https://ollama.com/search\"\n    )\n",
+        "line_count": 8,
+        "relative_path": "backend/app/coin/models.py"
+      },
+      {
+        "name": "main.py",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/backend/app/main.py",
+        "size": 685,
+        "extension": ".py",
+        "is_code": true,
+        "content_preview": "from fastapi import FastAPI\nfrom app.users.user import auth_router\nfrom app.coin.coin import coin_router\nfrom fastapi.middleware.cors import CORSMiddleware\n\napp = FastAPI()\n\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=[\"*\"],  # Update this to your frontend URL\n    allow_credentials=True,\n    allow_methods=[\n        \"GET\",\n        \"POST\",\n        \"PUT\",\n        \"DELETE\",\n        \"OPTIONS\",\n    ],  # Explicitly allow OPTIONS\n    allow_headers=[\"Authorization\", \"Content-Type\"],  # All...",
+        "line_count": 25,
+        "relative_path": "backend/app/main.py"
+      },
+      {
+        "name": "__init__.py",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/backend/app/services/__init__.py",
+        "size": 0,
+        "extension": ".py",
+        "is_code": true,
+        "content_preview": "",
+        "line_count": 0,
+        "relative_path": "backend/app/services/__init__.py"
+      },
+      {
+        "name": "disclaimer.md",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/backend/app/services/disclaimer.md",
+        "size": 1036,
+        "extension": ".md",
+        "is_code": true,
+        "content_preview": "# Proprietary Code - Not Included\n\nThis directory contains proprietary trading algorithms and machine learning models that are core to QuantumPool's competitive advantage.\n\n## What's Excluded\n\nThis folder would typically contain:\n- AI-powered trading decision engine\n- Machine learning model training and prediction\n- News sentiment analysis algorithms\n- Risk management and position sizing logic\n- Automated execution strategies\n\n## Why It's Excluded\n\nTo protect intellectual property while seeking ...",
+        "line_count": 33,
+        "relative_path": "backend/app/services/disclaimer.md"
+      },
+      {
+        "name": "file_handler.py",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/backend/app/services/file_handler.py",
+        "size": 3236,
+        "extension": ".py",
+        "is_code": true,
+        "content_preview": "import os\nimport sys\nimport psutil\nimport time\nimport logging\nfrom watchdog.events import FileSystemEventHandler\nfrom config import config\n\nlogging.basicConfig(level=logging.INFO)\nlogger = logging.getLogger(\"server\")\n\n\nclass FileChangeHandler(FileSystemEventHandler):\n    \"\"\"Handles changes in specified folders with optional patterns\"\"\"\n\n    def __init__(\n        self,\n        observer,\n        fastapi_process,\n        folder_to_watch,\n        patterns=None,\n    ):\n        self.observer = observe...",
+        "line_count": 96,
+        "relative_path": "backend/app/services/file_handler.py"
+      },
+      {
+        "name": "file_manager.py",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/backend/app/services/file_manager.py",
+        "size": 3086,
+        "extension": ".py",
+        "is_code": true,
+        "content_preview": "import re\nfrom pathlib import Path\nfrom collections import defaultdict\nfrom datetime import datetime\nimport os\nimport logging\n\nclass DataCleaner:\n    def __init__(self, data_dir: str = \"data\"):\n        \"\"\"\n        Initialize the DataCleaner with the directory to clean.\n\n        Args:\n            data_dir (str): The root directory to scan for timestamped files. Defaults to 'data'.\n        \"\"\"\n        self.data_dir = Path(data_dir)\n        # Regex pattern to match timestamps in the format '_YYYYMM...",
+        "line_count": 65,
+        "relative_path": "backend/app/services/file_manager.py"
+      },
+      {
+        "name": "messaging.py",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/backend/app/services/messaging.py",
+        "size": 863,
+        "extension": ".py",
+        "is_code": true,
+        "content_preview": "import requests\nfrom config import config\n\n\ndef send_telegram_message(message: str) -> bool:\n    \"\"\"\n    Sends a message to a Telegram chat using the Telegram Bot API.\n\n    Args:\n        message (str): The message to be sent.\n\n    Returns:\n        bool: True if the message was sent successfully, False otherwise.\n    \"\"\"\n    # Assign defaults from config if not passed explicitly\n    bot_token = config.telegram_bot_token\n    chat_id = config.telegram_chat_id\n\n    url = f\"https://api.telegram.org/b...",
+        "line_count": 32,
+        "relative_path": "backend/app/services/messaging.py"
+      },
+      {
+        "name": "mongodb_service.py",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/backend/app/services/mongodb_service.py",
+        "size": 16167,
+        "extension": ".py",
+        "is_code": true,
+        "content_preview": "from typing import Optional, Dict, List\nfrom datetime import datetime\nfrom pymongo import MongoClient\nfrom bson import ObjectId\nimport logging\nfrom config import config\nfrom urllib.parse import quote_plus\nfrom app.users.models import SocialProvider, UserRole\n\n\nclass MongoUserService:\n    def __init__(self):\n        \"\"\"Initialize MongoDB connection and set up collections.\"\"\"\n        try:\n            # Get base URI and credentials from config\n            base_uri = config.mongodb_uri\n            u...",
+        "line_count": 417,
+        "relative_path": "backend/app/services/mongodb_service.py"
+      },
+      {
+        "name": "disclaimer.md",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/backend/app/trader_bot/disclaimer.md",
+        "size": 1036,
+        "extension": ".md",
+        "is_code": true,
+        "content_preview": "# Proprietary Code - Not Included\n\nThis directory contains proprietary trading algorithms and machine learning models that are core to QuantumPool's competitive advantage.\n\n## What's Excluded\n\nThis folder would typically contain:\n- AI-powered trading decision engine\n- Machine learning model training and prediction\n- News sentiment analysis algorithms\n- Risk management and position sizing logic\n- Automated execution strategies\n\n## Why It's Excluded\n\nTo protect intellectual property while seeking ...",
+        "line_count": 33,
+        "relative_path": "backend/app/trader_bot/disclaimer.md"
+      },
+      {
+        "name": "models.py",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/backend/app/users/models.py",
+        "size": 1188,
+        "extension": ".py",
+        "is_code": true,
+        "content_preview": "from enum import Enum\nfrom pydantic import BaseModel, Field\nfrom typing import Optional\nfrom datetime import datetime\n\n\n# Pydantic models for request/response\nclass GoogleTokenRequest(BaseModel):\n    token: str\n\n\nclass Token(BaseModel):\n    access_token: str\n    token_type: str\n    expires_in: int\n\n\nclass UserResponse(BaseModel):\n    id: str = Field(..., alias=\"_id\")  # Convert MongoDB `_id` to id\n    name: str\n    email: str\n    profile_picture: Optional[str] = None\n    role: Optional[str] = No...",
+        "line_count": 54,
+        "relative_path": "backend/app/users/models.py"
+      },
+      {
+        "name": "user.py",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/backend/app/users/user.py",
+        "size": 16982,
+        "extension": ".py",
+        "is_code": true,
+        "content_preview": "from fastapi import APIRouter, Depends, HTTPException, Query, status\nfrom fastapi.security import OAuth2AuthorizationCodeBearer\nfrom typing import Optional, Dict\nfrom google.oauth2 import id_token\nfrom google.auth.transport import requests\nfrom datetime import datetime, timedelta\nfrom jose import jwt, JWTError\nfrom config import config\nfrom typing import List\n\nfrom app.services.capital_manager import CapitalManager\nfrom app.services.mongodb_service import MongoUserService, UserRole, SocialProvid...",
+        "line_count": 478,
+        "relative_path": "backend/app/users/user.py"
+      },
+      {
+        "name": "manual_trigger.py",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/backend/manual_trigger.py",
+        "size": 1698,
+        "extension": ".py",
+        "is_code": true,
+        "content_preview": "from datetime import datetime, timezone\nimport time\nfrom app.services.coin_scheduler import CoinScheduler\n\n# Set trading configuration with trading enabled by default\ntrading_config = {\"enabled\": True, \"initial_capital\": 1000.0, \"override\": False}\n\n# Initialize and start the CoinScheduler\nscheduler = CoinScheduler(trading_config=trading_config)\nscheduler.start()\n\n# Trigger the top_coins chain\nstart_time1 = datetime.now(timezone.utc)\nscheduler.trigger_top_coins_now()\nprint(\"Triggered top_coins. W...",
+        "line_count": 48,
+        "relative_path": "backend/manual_trigger.py"
+      },
+      {
+        "name": "note.txt",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/backend/note.txt",
+        "size": 199,
+        "extension": ".txt",
+        "is_code": true,
+        "content_preview": "You may need this command for installing playwright:\n\nsudo apt-get install libatk1.0-0 libatk-bridge2.0-0 libcups2 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libxkbcommon0 libatspi2.0-0",
+        "line_count": 3,
+        "relative_path": "backend/note.txt"
       },
       {
         "name": "requirements.txt",
-        "path": "/Users/darlingtongospel/Sites/project_descriptor/requirements.txt",
-        "size": 171,
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/backend/requirements.txt",
+        "size": 474,
         "extension": ".txt",
         "is_code": true,
-        "content_preview": "python-dotenv==1.0.1\nlangchain==0.3.22\nlangchain-core==0.3.50\nlangchain_community==0.3.20\nlangchain_openai==0.3.12\nlangchain-ollama==0.3.0\nlangchain_text_splitters==0.3.7\n",
-        "line_count": 7,
-        "relative_path": "requirements.txt"
+        "content_preview": "requests==2.32.3\npython-dotenv==1.0.1\nplaywright==1.50.0\npraw==7.8.1\npandas==2.2.3\nscikit_learn==1.6.1\nta==0.11.0\nlangchain==0.3.22\nlangchain-core==0.3.50\nlangchain_community==0.3.20\nlangchain_openai==0.3.12\nlangchain-ollama==0.3.0\nlangchain_text_splitters==0.3.7\napscheduler==3.11.0\npython-binance==1.0.28\nfastapi== 0.115.6\nfastapi_cors==0.0.6\nuvicorn==0.34.0\nwatchdog==6.0.0\ngoogle-auth==2.38.0\npydantic==2.10.6\npython-jose==3.3.0\npymongo==4.10.1\nnltk==3.9.1\npsutil==7.0.0",
+        "line_count": 25,
+        "relative_path": "backend/requirements.txt"
+      },
+      {
+        "name": "run.py",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/backend/run.py",
+        "size": 3073,
+        "extension": ".py",
+        "is_code": true,
+        "content_preview": "import asyncio\nimport uvicorn\nimport logging\nimport multiprocessing\nimport os\nimport sys\nimport time\nfrom watchdog.observers import Observer\nfrom app.services.coin_scheduler import CoinScheduler\nfrom app.services.file_handler import FileChangeHandler\nfrom config import config\n\n# Configure logging\nlogging.basicConfig(level=logging.INFO)\nlogging.getLogger(\"httpx\").setLevel(logging.WARNING)\nlogger = logging.getLogger(\"server\")\n\n\nclass FastAPIServer:\n    def __init__(self):\n        self.config = uvi...",
+        "line_count": 109,
+        "relative_path": "backend/run.py"
+      },
+      {
+        "name": "run_dev.py",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/backend/run_dev.py",
+        "size": 2378,
+        "extension": ".py",
+        "is_code": true,
+        "content_preview": "import asyncio\nimport uvicorn\nimport logging\nimport multiprocessing\nimport os\nimport sys\nfrom watchdog.observers import Observer\nfrom config import config\nfrom app.services.file_handler import FileChangeHandler\n\n# Configure logging\nlogging.basicConfig(level=logging.INFO)\nlogging.getLogger(\"httpx\").setLevel(logging.WARNING)\nlogger = logging.getLogger(\"server\")\n\n\nclass FastAPIServer:\n    def __init__(self):\n        self.config = uvicorn.Config(\n            \"app.main:app\",\n            host=\"0.0.0.0...",
+        "line_count": 89,
+        "relative_path": "backend/run_dev.py"
+      },
+      {
+        "name": "docker-compose.yml",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/docker-compose.yml",
+        "size": 800,
+        "extension": ".yml",
+        "is_code": true,
+        "content_preview": "version: '3.7'\n\nnetworks:\n  public_network:\n  global_db_network:\n    external: true # Declares global_db_network as an existing network\n\nvolumes:\n  backend_data:\n\nservices:\n  frontend:\n    build:\n      context: ./frontend\n      dockerfile: Dockerfile\n    container_name: frontend_service\n    restart: unless-stopped\n    ports:\n      - '3003:3000'\n    networks:\n      - public_network\n    env_file:\n      - .env\n    depends_on:\n      - backend\n\n  backend:\n    build:\n      context: ./backend\n      doc...",
+        "line_count": 41,
+        "relative_path": "docker-compose.yml"
+      },
+      {
+        "name": "Dockerfile",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/Dockerfile",
+        "size": 567,
+        "extension": "",
+        "is_code": false,
+        "content_preview": null,
+        "relative_path": "frontend/Dockerfile"
+      },
+      {
+        "name": "README.md",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/README.md",
+        "size": 1450,
+        "extension": ".md",
+        "is_code": true,
+        "content_preview": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).\n\n## Getting Started\n\nFirst, run the development server:\n\n```bash\nnpm run dev\n# or\nyarn dev\n# or\npnpm dev\n# or\nbun dev\n```\n\nOpen [http://localhost:3000](http://localhost:3000) with your browser to see the result.\n\nYou can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.\n\nThis project uses [`next/font`](...",
+        "line_count": 36,
+        "relative_path": "frontend/README.md"
+      },
+      {
+        "name": "page.tsx",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/app/about/page.tsx",
+        "size": 17340,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "// app/about/page.tsx\n\"use client\";\n\nimport React from 'react';\nimport Link from 'next/link';\nimport { FaLinkedin, FaArrowRight, FaUsers, FaAward, FaBrain } from 'react-icons/fa';\nimport { motion } from 'framer-motion';\nimport Image from 'next/image';\n\n// Particle interface\ninterface Particle {\n    id: number;\n    x: number;\n    y: number;\n    size: number;\n    color: string;\n    duration: number;\n    delay: number;\n    direction: number;\n}\n\n// Line interface\ninterface Line {\n    x1: number;\n   ...",
+        "line_count": 320,
+        "relative_path": "frontend/app/about/page.tsx"
+      },
+      {
+        "name": "route.ts",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/app/api/auth/login/route.ts",
+        "size": 890,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "// app/api/auth/login/route.ts\nimport { NextResponse } from 'next/server'\n\nexport async function POST(request: Request) {\n  try {\n    const body = await request.json()\n    const { token } = body\n\n    // Call your backend API\n    const response = await fetch(\n      `${process.env.NEXT_PUBLIC_BACKEND_API_URL}/auth/login`,\n      {\n        method: 'POST',\n        headers: {\n          'Content-Type': 'application/json',\n        },\n        body: JSON.stringify({ token }),\n      }\n    )\n\n    const data...",
+        "line_count": 37,
+        "relative_path": "frontend/app/api/auth/login/route.ts"
+      },
+      {
+        "name": "page.tsx",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/app/dashboard/page.tsx",
+        "size": 6741,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "// app/dashboard/page.tsx\n'use client';\n\nimport { ActionButtons } from '@/components/ActionButtons';\nimport { CoinDetailsCard } from '@/components/CoinDetailsCard';\nimport { CoinSelector } from '@/components/CoinSelector';\nimport { DepositModal } from '@/components/DepositeModal';\nimport Header from '@/components/Header';\nimport { InvestmentCard } from '@/components/InvestmentCard';\nimport { ProfitTrendChart } from '@/components/ProfitTrendChart';\nimport { RecentTradeReportCard } from '@/compone...",
+        "line_count": 192,
+        "relative_path": "frontend/app/dashboard/page.tsx"
+      },
+      {
+        "name": "favicon.ico",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/app/favicon.ico",
+        "size": 25931,
+        "extension": ".ico",
+        "is_code": false,
+        "content_preview": null,
+        "relative_path": "frontend/app/favicon.ico"
+      },
+      {
+        "name": "page.tsx",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/app/features/page.tsx",
+        "size": 12287,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "// app/features/page.tsx\n\"use client\";\n\nimport React from 'react';\nimport { FaBrain, FaLock, FaBolt, FaChartBar, FaMobileAlt, FaUsers } from 'react-icons/fa';\nimport { motion } from 'framer-motion';\n\n// Particle interface\ninterface Particle {\n    id: number;\n    x: number;\n    y: number;\n    size: number;\n    color: string;\n    duration: number;\n    delay: number;\n    direction: number;\n}\n\n// Line interface\ninterface Line {\n    x1: number;\n    y1: number;\n    x2: number;\n    y2: number;\n    dura...",
+        "line_count": 264,
+        "relative_path": "frontend/app/features/page.tsx"
+      },
+      {
+        "name": "globals.css",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/app/globals.css",
+        "size": 285,
+        "extension": ".css",
+        "is_code": true,
+        "content_preview": "@import \"tailwindcss\";\n\n/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap'); */\n@tailwind utilities;\n\nbody {\n  margin: 0;\n  padding: 0;\n  background-color: #0F172A; /* crypto-dark */\n  color: #F1F5F9;\n  font-family: 'Poppins', sans-serif;\n}",
+        "line_count": 12,
+        "relative_path": "frontend/app/globals.css"
+      },
+      {
+        "name": "layout.tsx",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/app/layout.tsx",
+        "size": 1389,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "// app/layout.tsx\nimport \"./globals.css\";\nimport type { Metadata } from \"next\";\nimport { AuthProvider } from \"@/contexts/AuthContext\";\nimport { GlobalProvider } from \"@/contexts/GlobalContext\";\nimport { ToastContainer } from \"react-toastify\";\nimport Navbar from \"@/components/Navbar\";\nimport Footer from \"@/components/Footer\";\n\n\nexport const metadata: Metadata = {\n  title: \"QuantumPool Trader - AI-Powered Crypto Trading Platform\",\n  description: \"Revolutionize your crypto trading with QuantumPool ...",
+        "line_count": 48,
+        "relative_path": "frontend/app/layout.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/app/page.tsx",
+        "size": 30006,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "'use client';\n\nimport Link from 'next/link';\nimport React, { useEffect, useState } from 'react';\nimport { FaArrowRight, FaPlay, FaUsers, FaAward, FaBrain, FaChartLine, FaNetworkWired, FaLock, FaCog, FaDatabase, FaShieldAlt } from 'react-icons/fa';\nimport { motion } from 'framer-motion';\nimport { SiEthereum, SiBinance, SiSolana } from 'react-icons/si';\n\n// Particle interface\ninterface Particle {\n  id: number;\n  x: number;\n  y: number;\n  size: number;\n  color: string;\n  duration: number;\n  delay: ...",
+        "line_count": 672,
+        "relative_path": "frontend/app/page.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/app/roadmap/page.tsx",
+        "size": 13291,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "// app/roadmap/page.tsx\n\"use client\";\n\nimport React from 'react';\nimport { FaCheckCircle, FaGem, FaRocket, FaGlobe } from 'react-icons/fa';\nimport { motion } from 'framer-motion';\n\n// Particle interface\ninterface Particle {\n    id: number;\n    x: number;\n    y: number;\n    size: number;\n    color: string;\n    duration: number;\n    delay: number;\n    direction: number;\n}\n\n// Line interface\ninterface Line {\n    x1: number;\n    y1: number;\n    x2: number;\n    y2: number;\n    duration: number;\n}\n\n//...",
+        "line_count": 265,
+        "relative_path": "frontend/app/roadmap/page.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/app/whitepaper/page.tsx",
+        "size": 41354,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "// app/whitepaper/page.tsx\n\"use client\";\n\nimport React from 'react';\nimport Link from 'next/link';\nimport { FaArrowRight, FaCheckCircle } from 'react-icons/fa';\nimport { motion } from 'framer-motion';\nimport { SiEthereum, SiBinance, SiSolana } from 'react-icons/si';\n\n// Particle interface\ninterface Particle {\n    id: number;\n    x: number;\n    y: number;\n    size: number;\n    color: string;\n    duration: number;\n    delay: number;\n    direction: number;\n}\n\n// Line interface\ninterface Line {\n    ...",
+        "line_count": 509,
+        "relative_path": "frontend/app/whitepaper/page.tsx"
+      },
+      {
+        "name": "ActionButtons.tsx",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/components/ActionButtons.tsx",
+        "size": 2869,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "import React from 'react';\nimport { motion } from 'framer-motion';\nimport { MdAccountBalanceWallet, MdShowChart } from 'react-icons/md';\nimport { useGlobalContext } from '@/contexts/GlobalContext';\n\ninterface ActionButtonsProps {\n    isCoinSelected: boolean;\n    dropdownOpen?: boolean;\n}\n\nexport const ActionButtons: React.FC<ActionButtonsProps> = ({\n    isCoinSelected,\n    dropdownOpen = false,\n}) => {\n    const { setIsDepositOpen, setIsWithdrawOpen } = useGlobalContext();\n\n    const handleDepos...",
+        "line_count": 65,
+        "relative_path": "frontend/components/ActionButtons.tsx"
+      },
+      {
+        "name": "CoinDetailsCard.tsx",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/components/CoinDetailsCard.tsx",
+        "size": 5034,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "import React from 'react';\nimport { motion } from 'framer-motion';\nimport { FaCoins, FaArrowUp, FaArrowDown } from 'react-icons/fa';\nimport { MdCopyAll } from 'react-icons/md';\nimport { toast } from 'react-toastify';\nimport { Coin, ExecutionLog } from '@/utils/interfaces';\n\ninterface CoinDetailsCardProps {\n  coin: Coin | null;\n  executionLog?: ExecutionLog | null;\n}\n\nexport const CoinDetailsCard: React.FC<CoinDetailsCardProps> = ({ coin, executionLog }) => {\n  const copyAllDetails = () => {\n    ...",
+        "line_count": 127,
+        "relative_path": "frontend/components/CoinDetailsCard.tsx"
+      },
+      {
+        "name": "CoinSelector.tsx",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/components/CoinSelector.tsx",
+        "size": 6236,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "import React, { useState } from 'react';\nimport { motion, AnimatePresence } from 'framer-motion';\nimport { FaCoins, FaCheckCircle } from 'react-icons/fa';\nimport { MdKeyboardArrowDown } from 'react-icons/md';\nimport { Coin } from '@/utils/interfaces';\n\ninterface CoinSelectorProps {\n    coins: Coin[];\n    selectedCoin: Coin | null;\n    onCoinChange: (coin: Coin | null) => void;\n}\n\nexport const CoinSelector: React.FC<CoinSelectorProps> = ({ coins, selectedCoin, onCoinChange }) => {\n    const [isOp...",
+        "line_count": 116,
+        "relative_path": "frontend/components/CoinSelector.tsx"
+      },
+      {
+        "name": "DepositeModal.tsx",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/components/DepositeModal.tsx",
+        "size": 8283,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "import React, { useState } from 'react';\nimport { motion, AnimatePresence } from 'framer-motion';\nimport { MdAccountBalanceWallet, MdClose } from 'react-icons/md';\nimport { FaExclamationTriangle } from 'react-icons/fa';\nimport { toast } from 'react-toastify';\nimport { Coin } from '@/utils/interfaces';\n\ninterface DepositModalProps {\n    coin: Coin;\n    currentBalance: number;\n    onClose: () => void;\n    onDeposit: (amount: number) => void;\n}\n\nexport const DepositModal: React.FC<DepositModalProps...",
+        "line_count": 170,
+        "relative_path": "frontend/components/DepositeModal.tsx"
+      },
+      {
+        "name": "Footer.tsx",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/components/Footer.tsx",
+        "size": 13458,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "'use client';\n\nimport Link from 'next/link';\nimport React from 'react';\nimport { FaTwitter, FaDiscord, FaLinkedin, FaGithub, FaBrain } from 'react-icons/fa';\nimport { motion } from 'framer-motion';\n\nconst Footer: React.FC = () => {\n    const footerLinks = {\n        Platform: [\n            { label: 'Features', href: '/features' },\n            { label: 'Whitepaper', href: '/whitepaper' },\n            { label: 'Roadmap', href: '/roadmap' },\n            { label: 'Dashboard', href: '/dashboard' },\n  ...",
+        "line_count": 254,
+        "relative_path": "frontend/components/Footer.tsx"
+      },
+      {
+        "name": "GoogleSignInButton.tsx",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/components/GoogleSignInButton.tsx",
+        "size": 5842,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "'use client';\n\nimport { useAuth } from '@/hooks/userAuth';\nimport Cookies from 'js-cookie';\n// import { useRouter } from 'next/navigation';\nimport React, { useCallback, useEffect, useRef } from 'react';\n\ndeclare global {\n  interface Window {\n    google?: {\n      accounts: {\n        id: {\n          initialize: (config: {\n            client_id: string;\n            callback: (response: GoogleCredentialResponse) => void;\n          }) => void;\n          renderButton: (\n            element: HTMLElemen...",
+        "line_count": 198,
+        "relative_path": "frontend/components/GoogleSignInButton.tsx"
+      },
+      {
+        "name": "Header.tsx",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/components/Header.tsx",
+        "size": 19116,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "'use client';\n\nimport { useAuth } from '@/hooks/userAuth';\nimport React, { useState, useEffect } from 'react';\nimport ProfileModal from './ProfileModal';\nimport Link from 'next/link';\nimport { FaBrain, FaChartLine, FaWallet } from 'react-icons/fa';\nimport { MdAccountCircle, MdLogout } from 'react-icons/md';\nimport { IoClose, IoMenu } from 'react-icons/io5';\nimport { motion, AnimatePresence } from 'framer-motion';\n\nconst Header: React.FC = () => {\n    const [isScrolled, setIsScrolled] = useState(...",
+        "line_count": 334,
+        "relative_path": "frontend/components/Header.tsx"
+      },
+      {
+        "name": "InvestmentCard.tsx",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/components/InvestmentCard.tsx",
+        "size": 12396,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "import React from 'react';\nimport { motion } from 'framer-motion';\nimport { MdAccountBalanceWallet, MdCopyAll } from 'react-icons/md';\nimport { FaArrowUp, FaArrowDown } from 'react-icons/fa';\nimport { toast } from 'react-toastify';\nimport { InvestmentData } from '@/utils/interfaces';\n\ninterface InvestmentCardProps {\n    data: InvestmentData;\n}\n\nexport const InvestmentCard: React.FC<InvestmentCardProps> = ({ data }) => {\n    const { user_investment, coin_performance } = data;\n\n    const formatCur...",
+        "line_count": 224,
+        "relative_path": "frontend/components/InvestmentCard.tsx"
+      },
+      {
+        "name": "Navbar.tsx",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/components/Navbar.tsx",
+        "size": 15290,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "'use client';\n\nimport Link from 'next/link';\nimport { usePathname } from 'next/navigation';\nimport { useAuth } from '@/hooks/userAuth';\nimport React, { useState, useEffect } from 'react';\nimport GoogleSignInButton from './GoogleSignInButton';\nimport { FaBrain } from 'react-icons/fa';\nimport { MdAccountCircle } from 'react-icons/md';\nimport { IoClose, IoMenu } from 'react-icons/io5';\nimport { motion, AnimatePresence } from 'framer-motion';\n\nconst Navbar: React.FC = () => {\n    const pathname = us...",
+        "line_count": 290,
+        "relative_path": "frontend/components/Navbar.tsx"
+      },
+      {
+        "name": "ProfileModal.tsx",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/components/ProfileModal.tsx",
+        "size": 9369,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "'use client';\n\nimport { fetch_wallet_addresses, update_wallet_address } from '@/utils/api';\nimport React, { useState, useEffect } from 'react';\nimport { motion, AnimatePresence } from 'framer-motion';\nimport { MdAccountBalanceWallet, MdClose } from 'react-icons/md';\nimport { FaExclamationTriangle } from 'react-icons/fa';\nimport { toast } from 'react-toastify';\n\ninterface ProfileModalProps {\n    onClose: () => void;\n    onSubmitAddress: (address: string) => void;\n}\n\nconst ProfileModal: React.FC<P...",
+        "line_count": 202,
+        "relative_path": "frontend/components/ProfileModal.tsx"
+      },
+      {
+        "name": "ProfitTrendChart.tsx",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/components/ProfitTrendChart.tsx",
+        "size": 13357,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "import React from 'react';\nimport { motion } from 'framer-motion';\nimport { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';\nimport { MdCopyAll, MdTrendingUp, MdTrendingDown } from 'react-icons/md';\nimport { FaArrowUp, FaArrowDown, FaChartLine } from 'react-icons/fa';\nimport { toast } from 'react-toastify';\nimport { Coin, ExecutionLog, PortfolioData } from '@/utils/interfaces';\n\ninterface ProfitTrendChartProps {\n    data: PortfolioData[];\n    coin: Co...",
+        "line_count": 276,
+        "relative_path": "frontend/components/ProfitTrendChart.tsx"
+      },
+      {
+        "name": "RecentTradeReport.tsx",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/components/RecentTradeReport.tsx",
+        "size": 11510,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "import React from 'react';\nimport { motion } from 'framer-motion';\nimport { MdCopyAll, MdShowChart } from 'react-icons/md';\nimport { FaArrowUp, FaArrowDown } from 'react-icons/fa';\nimport { toast } from 'react-toastify';\nimport { ExecutionLog } from '@/utils/interfaces';\n\ninterface TradeReportCardProps {\n    report: string | null;\n    executionLog?: ExecutionLog | null;\n}\n\nexport const RecentTradeReportCard: React.FC<TradeReportCardProps> = ({ report, executionLog }) => {\n    if (!report) {\n    ...",
+        "line_count": 251,
+        "relative_path": "frontend/components/RecentTradeReport.tsx"
+      },
+      {
+        "name": "WithdrawModal.tsx",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/components/WithdrawModal.tsx",
+        "size": 9183,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "import React, { useState } from 'react';\nimport { motion, AnimatePresence } from 'framer-motion';\nimport { MdAccountBalanceWallet, MdClose } from 'react-icons/md';\nimport { FaExclamationTriangle } from 'react-icons/fa';\nimport { toast } from 'react-toastify';\nimport { Coin } from '@/utils/interfaces';\n\ninterface WithdrawModalProps {\n    coin: Coin;\n    currentBalance: number;\n    onClose: () => void;\n    onWithdraw: (amount: number) => void;\n}\n\nexport const WithdrawModal: React.FC<WithdrawModalP...",
+        "line_count": 190,
+        "relative_path": "frontend/components/WithdrawModal.tsx"
+      },
+      {
+        "name": "AuthContext.tsx",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/contexts/AuthContext.tsx",
+        "size": 2600,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "// contexts/AuthContext.tsx\n'use client'\n\nimport { createContext, ReactNode, useState, useEffect } from 'react'\nimport { useRouter } from 'next/navigation'\nimport Cookies from 'js-cookie'\n\ninterface User {\n    id: string\n    email: string\n    name: string\n    role: string\n    balances?: Record<string, number>\n}\n\ninterface AuthContextType {\n    user: User | null\n    loading: boolean\n    logout: () => void\n    checkAuth: () => Promise<void>\n}\n\nexport const AuthContext = createContext<AuthContextTy...",
+        "line_count": 99,
+        "relative_path": "frontend/contexts/AuthContext.tsx"
+      },
+      {
+        "name": "GlobalContext.tsx",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/contexts/GlobalContext.tsx",
+        "size": 1765,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "// GlobalContext.tsx\n'use client'\n\nimport { Coin } from '@/utils/interfaces';\nimport { createContext, useContext, useState, ReactNode } from 'react';\n\n// Define the shape of the global context with optional fields\ninterface GlobalContextType {\n    isDepositOpen?: boolean;\n    setIsDepositOpen?: (open: boolean) => void;\n    isWithdrawOpen?: boolean;\n    setIsWithdrawOpen?: (open: boolean) => void;\n    userBalance?: number;\n    setUserBalance?: (amount: number) => void;\n    currencies?: Coin[];\n  ...",
+        "line_count": 53,
+        "relative_path": "frontend/contexts/GlobalContext.tsx"
+      },
+      {
+        "name": "eslint.config.mjs",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/eslint.config.mjs",
+        "size": 393,
+        "extension": ".mjs",
+        "is_code": false,
+        "content_preview": null,
+        "relative_path": "frontend/eslint.config.mjs"
+      },
+      {
+        "name": "userAuth.ts",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/hooks/userAuth.ts",
+        "size": 313,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "// hooks/useAuth.ts\n'use client'\n\nimport { AuthContext } from '@/contexts/AuthContext'\nimport { useContext } from 'react'\n\nexport function useAuth() {\n  const context = useContext(AuthContext)\n  if (context === undefined) {\n    throw new Error('useAuth must be used within an AuthProvider')\n  }\n  return context\n}",
+        "line_count": 13,
+        "relative_path": "frontend/hooks/userAuth.ts"
+      },
+      {
+        "name": "middleware.ts",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/middleware.ts",
+        "size": 1424,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "import { NextResponse } from 'next/server'\nimport type { NextRequest } from 'next/server'\n\n// Define protected routes and their required roles\nconst PROTECTED_ROUTES = {\n  '/dashboard': ['user', 'admin'],\n} as const\n\nexport async function middleware(request: NextRequest) {\n  const pathname = request.nextUrl.pathname\n\n  // Get raw cookie value\n  const bot_user = request.cookies.get('bot_user')?.value || ''\n\n  // Check if the route needs role-based protection\n  const requiredRoles =\n    PROTECTED_...",
+        "line_count": 46,
+        "relative_path": "frontend/middleware.ts"
+      },
+      {
+        "name": "next.config.ts",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/next.config.ts",
+        "size": 217,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "import type { NextConfig } from \"next\";\n\nconst nextConfig: NextConfig = {\n  images: {\n    remotePatterns: [\n      {\n        protocol: \"https\",\n        hostname: \"*\",\n      },\n    ],\n  },\n};\n\nexport default nextConfig;",
+        "line_count": 14,
+        "relative_path": "frontend/next.config.ts"
+      },
+      {
+        "name": "package.json",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/package.json",
+        "size": 760,
+        "extension": ".json",
+        "is_code": true,
+        "content_preview": "{\n  \"name\": \"frontend\",\n  \"version\": \"0.1.0\",\n  \"private\": true,\n  \"scripts\": {\n    \"dev\": \"next dev --turbopack\",\n    \"build\": \"next build\",\n    \"start\": \"next start\",\n    \"lint\": \"next lint\"\n  },\n  \"dependencies\": {\n    \"framer-motion\": \"^12.23.24\",\n    \"js-cookie\": \"^3.0.5\",\n    \"next\": \"15.3.1\",\n    \"react\": \"^19.0.0\",\n    \"react-dom\": \"^19.0.0\",\n    \"react-icons\": \"^5.5.0\",\n    \"react-toastify\": \"^11.0.5\",\n    \"recharts\": \"^3.0.0\"\n  },\n  \"devDependencies\": {\n    \"@eslint/eslintrc\": \"^3\",\n  ...",
+        "line_count": 33,
+        "relative_path": "frontend/package.json"
+      },
+      {
+        "name": "postcss.config.mjs",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/postcss.config.mjs",
+        "size": 81,
+        "extension": ".mjs",
+        "is_code": false,
+        "content_preview": null,
+        "relative_path": "frontend/postcss.config.mjs"
+      },
+      {
+        "name": "tailwind.config.js",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/tailwind.config.js",
+        "size": 539,
+        "extension": ".js",
+        "is_code": true,
+        "content_preview": "/** @type {import('tailwindcss').Config} */\nconst config = {\n    content: ['./pages/**/*.{tsx,ts}', './components/**/*.{tsx,ts}'],\n    theme: {\n      extend: {\n        fontFamily: {\n          poppins: ['Poppins', 'sans-serif'],\n        },\n        colors: {\n          'crypto-dark': '#0F172A', // Dark background\n          'crypto-blue': '#3B82F6', // Neon blue\n          'crypto-green': '#10B981', // Neon green\n          'crypto-gray': '#1E293B', // Card background\n        },\n      },\n    },\n    pl...",
+        "line_count": 20,
+        "relative_path": "frontend/tailwind.config.js"
+      },
+      {
+        "name": "tsconfig.json",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/tsconfig.json",
+        "size": 598,
+        "extension": ".json",
+        "is_code": true,
+        "content_preview": "{\n  \"compilerOptions\": {\n    \"target\": \"ES2017\",\n    \"lib\": [\"dom\", \"dom.iterable\", \"esnext\"],\n    \"allowJs\": true,\n    \"skipLibCheck\": true,\n    \"strict\": true,\n    \"noEmit\": true,\n    \"esModuleInterop\": true,\n    \"module\": \"esnext\",\n    \"moduleResolution\": \"bundler\",\n    \"resolveJsonModule\": true,\n    \"isolatedModules\": true,\n    \"jsx\": \"preserve\",\n    \"incremental\": true,\n    \"plugins\": [\n      {\n        \"name\": \"next\"\n      }\n    ],\n    \"paths\": {\n      \"@/*\": [\"./*\"]\n    }\n  },\n  \"include\":...",
+        "line_count": 27,
+        "relative_path": "frontend/tsconfig.json"
+      },
+      {
+        "name": "api.ts",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/utils/api.ts",
+        "size": 5267,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "import Cookies from 'js-cookie'\n\nconst BASE_URL = `${process.env.NEXT_PUBLIC_BACKEND_API_URL!}`\nconst MAX_LIMIT = process.env.NEXT_PUBLIC_MAX_COINS || 3\n\nconst get_auth_token = () => {\n  const _user = Cookies.get('bot_user')!\n  const parsedUser = JSON.parse(_user) || {}\n  const token = parsedUser?.token?.access_token || ''\n  return token\n}\n\nexport const fetch_coins = async (limit: number = Number(MAX_LIMIT)) => {\n  try {\n    const response = await fetch(`${BASE_URL}/coin/top_coins?limit=${limit}...",
+        "line_count": 220,
+        "relative_path": "frontend/utils/api.ts"
+      },
+      {
+        "name": "interfaces.ts",
+        "path": "/Users/darlingtongospel/Sites/ai_trader_bot_preview/frontend/utils/interfaces.ts",
+        "size": 1898,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "export interface Coin {\n  rank: string\n  name: string\n  slug: string\n  symbol: string\n  market_cap: string\n  price: string\n  circulating_supply: string\n  volume_24h: string\n  percent_1h: string\n  percent_24h: string\n  percent_7d: string\n}\n\nexport interface ExecutionLog {\n  job_name: string\n  last_execution: string\n  next_execution: string\n}\n\n// Updated interfaces to match the new API response structure\n\nexport interface PortfolioBreakdown {\n  cash_portion: number\n  position_portion: number\n  tot...",
+        "line_count": 85,
+        "relative_path": "frontend/utils/interfaces.ts"
       }
     ],
-    "directories": [],
+    "directories": [
+      ".github",
+      ".github/workflows",
+      "backend",
+      "backend/app",
+      "backend/app/coin",
+      "backend/app/services",
+      "backend/app/trader_bot",
+      "backend/app/users",
+      "frontend",
+      "frontend/app",
+      "frontend/app/about",
+      "frontend/app/api",
+      "frontend/app/api/auth",
+      "frontend/app/api/auth/login",
+      "frontend/app/dashboard",
+      "frontend/app/features",
+      "frontend/app/roadmap",
+      "frontend/app/whitepaper",
+      "frontend/components",
+      "frontend/contexts",
+      "frontend/hooks",
+      "frontend/utils"
+    ],
     "statistics": {
-      "total_files": 3,
-      "total_directories": 0,
-      "code_files": 3,
-      "total_size": 126789,
+      "total_files": 62,
+      "total_directories": 22,
+      "code_files": 56,
+      "total_size": 394258,
       "file_types": {
-        ".py": 1,
-        ".json": 1,
-        ".txt": 1
+        ".yml": 3,
+        ".md": 4,
+        ".py": 15,
+        ".txt": 2,
+        ".tsx": 22,
+        ".ts": 6,
+        ".ico": 1,
+        ".css": 1,
+        ".mjs": 2,
+        ".json": 2,
+        ".js": 1
       },
       "languages": [
-        "Python"
+        "CSS",
+        "Python",
+        "TypeScript",
+        "JavaScript"
       ]
     }
   },
-  "natural_description": "Project Name: Project Descriptor\n\nI built this Python-based tool called **Project Descriptor** specifically designed for analyzing complex projects by breaking them down into manageable components using advanced language processing techniques.\n\nThis powerful application leverages a combination of natural language understanding (NLU) models, like ChatOllama from LangChain and other essential libraries to parse project files. It can process the main Python script (`main.py`), configuration details stored in `project_analysis.json`, as well as any dependencies listed within `requirements.txt`. The core functionality revolves around extracting key insights about a project's structure—identifying its components, understanding their relationships through regular expressions and path manipulations.\n\nThe heart of this tool is encapsulated by the **ProjectAnalyzer** class. This component initializes with necessary imports like os, re, json, Path from pathlib, as well as specialized libraries for handling language models (ChatOllama) and parsing outputs effectively using StrOutputParser within LangChain's framework (`main.py`).\n\nIn essence:\n- `requirements.txt`: Manages dependencies to ensure smooth execution.\n- `project_analysis.json`: Stores parsed project data in a structured format.\n\nOverall, **Project Descriptor** is an indispensable tool for developers looking to gain deep insights into their projects' architecture and streamline the development process.",
-  "llm_summary": "Based on your provided details and my analysis of this project, here is an exhaustive breakdown:\n\n1. **Project Type and Purpose:**\n   This project IS a Python-based software application designed for analyzing text documents or datasets to extract insights through natural language processing (NLP) techniques.\n\n2. **Technology Stack and Architecture:**\n   The technology stack comprises primarily the programming language Python along with several libraries focused on NLP, such as langchain-core, which suggests an architecture that leverages modular components like ChatOllama for conversational AI tasks.\n   \n3. **Main Components and Their Likely Purposes:**\n   - `main.py`: This is likely serving as a central hub of the application where imports are managed to bring in necessary functionalities from various libraries used within this project, indicating an organized approach towards modularity.\n\n4. **Code Quality Observations:**\n   The codebase IS structured with clarity and contains minimal files which suggests good maintainability practices; however, there is only one Python file (`main.py`), implying that the application might be relatively simple or possibly incomplete in its current state.\n   \n5. **Potential Areas for Improvement:** \n   - Given there's a single main script (potentially indicative of monolithic architecture) and minimal files overall, this project could benefit from splitting functionalities into separate modules to improve scalability.\n\n6. **Overall Assessment:**\n   This system IS an emerging NLP application with room for expansion in terms of modularity but currently demonstrates good coding practices through its organized file structure.\n   \n**Recommendations:** \n- Consider breaking down the monolithic `main.py` script by encapsulating different functionalities into separate modules or classes to enhance scalability and maintainability.\n\nThis comprehensive analysis provides a clear understanding that while this project IS well-organized with an emphasis on NLP, it could be improved for better modularity.",
+  "natural_description": "Introducing **ai_trader_bot**, an AI-powered cryptocurrency trading platform built with Python, JavaScript, TypeScript, CSS! This innovative tool leverages advanced algorithms to analyze market trends in real-time.\n\nI created ai_trader_bot specifically for traders looking t...\n\nThis is a comprehensive solution that combines cutting-edge technology and user-friendly design. With over 62 files including .yml, .md, .py, .txt, and .tsx formats, this project provides everything you need to get started with your trading journey.\n\nKey features of ai_trader_bot include real-time market analysis using machine learning models (found in the proprietary code), a user-friendly interface built with JavaScript/TypeScript/CSS for seamless interaction. Additionally, it includes robust backend services written entirely in Python that handle tasks such as data scraping and processing coin information efficiently through FastAPI.\n\nI designed this project to be highly customizable; you can easily modify configurations using .yml files like the one shown below:\n\n```yaml\nname: Deploy AI Scraper to Ubuntu VPS\n\non:\n  push:\n    branches:\n      - main\n\njobs:\n  prepare_directories:\n    runs-on: ubuntu-latest\n    steps:\n      - name: Create or clean target directory\n        uses: appleboy/ssh-action@v0.1.3\n        with:\n          host: ${{ secrets.SSH_HOST }}\n```\n\nThe project also includes a comprehensive README.md file that guides users on how to get started, and the backend configuration in .gitpod.yml ensures smooth development workflows.\n\nIn summary:\n\n- Real-time market analysis using AI.\n- User-friendly interface for seamless interaction (built with JavaScript/TypeScript/CSS).\n- Robust Python-based services handling data scraping & processing tasks efficiently through FastAPI.\n- Highly customizable configurations via YAML files and comprehensive documentation in README.md to get you started swiftly. \n\nFeel confident that ai_trader_bot is your go-to platform when it comes to leveraging AI for cryptocurrency trading!",
+  "llm_summary": "Based on your provided root path and file statistics for `ai_trader_bot_preview`, here is my comprehensive analysis of this project:\n\n1. **Project Type and Purpose**: This project IS a web application that functions as an AI-powered cryptocurrency trading bot platform.\n\n2. **Technology Stack and Architecture**:\n   - The technology stack includes CSS, Python (with FastAPI), TypeScript, JavaScript for frontend development; Docker is used to containerize the backend.\n   - Backend architecture appears to USE microservices pattern with separate services like coin extraction (`coin.py` in `app/coin`) and MongoDB service handling database operations. There's also a clear separation of concerns between different modules such as user authentication (found under `hooks/userAuth.tsx`), file management, messaging systems integration via Telegram API.\n   - The frontend architecture is built with React using TypeScript (`page.tsx`, `.tsx` files) and Tailwind CSS for styling.\n\n3. **Main Components**:\n   - Backend components like the coin scheduler service (found in `app/services/coin_scheduler.py`) likely handle trading logic, executing trades based on certain conditions or signals.\n   - The MongoDB integration suggests that there's a NoSQL database being used to store and manage data (`mongodb_service.py`).\n   - A disclaimer file is present for both backend services related to coins (found in `app/app/trader_bot/disclaimer.md`) which indicates proprietary code handling sensitive trading algorithms.\n\n4. **Code Quality Observations**:\n   - The presence of `.yml`, `.md`, and various other configuration files (`Dockerfile`, `tailwind.config.js`, etc.) suggests that the project is well-configured for development, deployment, and styling.\n   - There are multiple Python scripts indicating a modular approach to backend services (e.g., coin extraction in `coin.py`).\n   - The use of TypeScript on both frontend components (`components/ActionButtons.tsx`) implies type safety which can lead to fewer runtime errors.\n\n5. **Potential Areas for Improvement**:\n   - There is an absence of unit tests or any indication that testing frameworks are used, suggesting a potential area where test coverage could be improved.\n   - The project lacks explicit documentation on how the services interact with each other and what APIs they expose (aside from some comments in code files).\n   - Dependency management seems to rely heavily on `requirements.txt` for Python dependencies; adopting package managers like Poetry or Pipenv might streamline this process.\n\n6. **Overall Assessment**:\n   This project IS a sophisticated, multi-service web application designed as an AI-powered cryptocurrency trading platform with front-end built using React and TypeScript.\n   \nRecommendations would include implementing comprehensive testing to ensure reliability of the services provided by each microservice component; enhancing documentation for better developer onboarding and maintenance practices.\n\nGiven its complexity involving multiple programming languages (Python, JavaScript/TypeScript), this project IS well-suited for a team with diverse skill sets. However, it could benefit from adopting consistent coding standards across different language files to maintain readability and ease of collaboration among developers.",
   "descriptions": {
     "directories": {
-      "root": "The 'root' directory contains a Python script, JSON data for analysis purposes, and the necessary dependencies to run projects."
+      "root": "The 'root' directory contains configuration files for a Docker environment, including instructions on how to build the container image.",
+      ".github/workflows": "The '.github/workflows' directory contains GitHub Actions workflow files that automate CI/CD processes for a repository.",
+      "backend": "The 'backend' directory contains configuration files, scripts for manual triggering processes, a Docker environment setup script (Dockerfile), dependencies required by the application in requirements.txt, as well as Python source code to run both production ('run.py') and development ('run_dev.py') environments.",
+      "backend/app": "The 'backend/app' directory contains Python modules that comprise the core functionality for an application's backend processes.",
+      "backend/app/coin": "The 'backend/app/coin' directory contains Python modules for a cryptocurrency application, including initial setup code, the main coin class with functionalities related to coins, and data models representing database structures.",
+      "backend/app/services": "The 'backend/app/services' directory contains Python modules that provide various functionalities for a backend application, including handling files, messaging services, MongoDB interactions, etc.",
+      "backend/app/trader_bot": "The 'backend/app/trader_bot' directory contains the source code for a trading bot application, specifically designed to automate buying or selling decisions in financial markets based on predefined criteria.",
+      "backend/app/users": "The 'backend/app/users' directory contains Python files that define models, handle user-related business logic for a web application.",
+      "frontend": "The 'frontend' directory contains the source code, configuration files, dependencies for a web application front-end project.",
+      "frontend/app/about": "The 'frontend/app/about' directory contains React components for the about page in a web application.",
+      "frontend/app/api/auth/login": "The 'frontend/app/api/auth/login' directory contains the source code for handling user authentication in a web application.",
+      "frontend/app/dashboard": "The 'frontend/app/dashboard' directory contains React components for the dashboard page, including styling files.",
+      "frontend/app": "The 'frontend/app' directory contains the frontend application code, including stylesheets, icons, layout components, and page-specific logic.",
+      "frontend/app/features": "The 'frontend/app/features' directory contains React components that implement various features for the frontend application.",
+      "frontend/app/roadmap": "The 'frontend/app/roadmap' directory contains TypeScript files for a React application, specifically handling the UI components related to roadmaps.",
+      "frontend/app/whitepaper": "The 'frontend/app/whitepaper' directory contains the frontend application code for a white paper feature, specifically handling React components.",
+      "frontend/components": "The 'frontend/components' directory contains React components used for building the user interface in a web application.",
+      "frontend/contexts": "The 'frontend/contexts' directory contains React context files for managing authentication states (AuthContext) and global application settings or state variables (GlobalContext).",
+      "frontend/hooks": "The 'frontend/hooks' directory contains files that implement authentication-related functionalities for a frontend application.",
+      "frontend/utils": "The 'frontend/utils' directory contains utility functions, classes for API interactions, type definitions used across the frontend codebase.",
+      ".github": "",
+      "frontend/app/api": "",
+      "frontend/app/api/auth": ""
     },
     "files": {
-      "root/main.py": "Contains code that likely serves as an entry point or main function of some application",
-      "root/project_analysis.json": "Stores structured project-related information in JSON format suitable for further processing or examination",
-      "root/requirements.txt": "Lists all Python package requirements needed to run the projects contained within this directory"
+      "root/.DS_Store": "A hidden macOS system file that stores custom attributes of its windows and items in Finder. It is automatically generated by Mac OS X applications when saving an icon or filename change.",
+      "root/README.md": "Provides documentation for users on how to use the Docker environment, including setup instructions and usage guidelines.",
+      "root/docker-compose.yml": "Contains configuration files defining services that make up a docker application so they can be run together in an isolated network.",
+      ".github/workflows/main.yml": "Defines the main continuous integration/continuous deployment (CI/CD) workflows, specifying when and how they run.",
+      "backend/.gitpod.yml": "Provides GitHub Codespaces configuration settings for initializing an interactive dev container with a customized environment setup",
+      "backend/Dockerfile": "Contains instructions that Docker uses to build the application's image, specifying dependencies, commands, etc., necessary for running it in containers",
+      "backend/manual_trigger.py": "Handles manual triggering of processes or tasks within the application as defined by its logic and functionality",
+      "backend/note.txt": "Serves no specific functional purpose but may contain notes, comments, or documentation relevant to developers working on this project",
+      "backend/requirements.txt": "Lists all Python dependencies required for running 'run.py' in a virtual environment. Used with pip install -r requirements.txt to set up the necessary packages.",
+      "backend/run.py": "Contains code that implements and handles production-level operations of an application, ensuring it runs as intended under normal conditions",
+      "backend/run_dev.py": "Includes Python source code for running development-specific tasks or configurations within a virtual environment. It is tailored towards debugging and testing scenarios.",
+      "backend/app/__init__.py": "Defines a package containing all other files in its namespace, facilitating import statements within this module's context",
+      "backend/app/main.py": "Serves as the entry point to execute application logic and manage tasks such as starting services or handling requests",
+      "backend/app/coin/__init__.py": "Initializes an empty package or imports other necessary packages/modules within this module",
+      "backend/app/coin/coin.py": "Defines classes that represent different aspects of a cryptocurrency such as transactions, blocks, etc., providing methods for their creation, validation, and management",
+      "backend/app/coin/models.py": "Contains SQLAlchemy ORM models representing the database schema used by the application to store data related to coins",
+      "backend/app/services/__init__.py": "Defines the package __init__, which allows this folder to be imported as an individual module in other parts of the project",
+      "backend/app/services/disclaimer.md": "Contains markdown documentation that outlines legal disclaimers and terms for using or contributing to the application services provided by this directory",
+      "backend/app/services/file_handler.py": "Provides functions related to file handling, such as reading from disk, writing files, etc.",
+      "backend/app/services/file_manager.py": "Implements a system of managing different types of files within an application's context. This includes creating new entries for each type and maintaining the relationships between them",
+      "backend/app/services/messaging.py": "Handles sending messages through various channels (e.g., email, SMS) as part of communication features in the application services provided by this directory",
+      "backend/app/services/mongodb_service.py": "Provides a set of functions to interact with MongoDB databases. This includes operations like connecting to servers, querying data, and managing database entries",
+      "backend/app/trader_bot/disclaimer.md": "Contains legal disclaimer text that outlines limitations of liability and usage rights related to the trader bot software.",
+      "backend/app/users/models.py": "Contains the User model class which defines attributes such as username and password. Handles data structure definitions used by an ORM to interact with database tables related to users",
+      "backend/app/users/user.py": "Handles functions or classes that manage operations like creating, reading, updating, deleting (CRUD) user accounts in a web application",
+      "frontend/Dockerfile": "Contains instructions to build an image that can run this frontend as a containerized environment",
+      "frontend/README.md": "Provides documentation and setup guidelines for developers working with or contributing to the frontend project",
+      "frontend/eslint.config.mjs": "Configures ESLint rules, enforcing coding standards in JavaScript files within the front-end codebase",
+      "frontend/middleware.ts": "Handles middleware functions that process requests before they reach route handlers in a Node.js environment",
+      "frontend/next.config.ts": "Contains Next.js configuration settings for building and optimizing React applications",
+      "frontend/package.json": "Lists dependencies, scripts, version information of this frontend project managed by npm or yarn",
+      "frontend/postcss.config.mjs": "Configures PostCSS plugins to transform CSS with JavaScript during the build process in a front-end application",
+      "frontend/tailwind.config.js": "Defines Tailwind CSS configuration for styling components within React applications using utility-first classes",
+      "frontend/tsconfig.json": "Specifies TypeScript compiler options and project settings, ensuring consistent compilation of TS files into JS",
+      "frontend/app/about/page.tsx": "Contains TypeScript code that defines an About component, rendering information such as team members and contact details.",
+      "frontend/app/api/auth/login/route.ts": "Defines an API route that handles incoming requests to authenticate users, validating credentials and managing session tokens.",
+      "frontend/app/dashboard/page.tsx": "Contains a React component that renders the main layout of the frontend app's dashboard page with interactive elements and styles applied.",
+      "frontend/app/favicon.ico": "Contains a small icon used by web browsers to display in tab or bookmark bar for quick identification of site links",
+      "frontend/app/globals.css": "Provides global styling rules that are applied across the entire application",
+      "frontend/app/layout.tsx": "Handles layout structure and components, implementing React's JSX syntax for dynamic UI rendering",
+      "frontend/app/page.tsx": "Contains page-specific logic including state management, event handling, and component lifecycle methods",
+      "frontend/app/features/page.tsx": "A TypeScript-powered React component representing a page in the application's user interface, handling state and rendering UI elements.",
+      "frontend/app/roadmap/page.tsx": "A React component file that implements and renders an interactive roadmap page within the frontend app.",
+      "frontend/app/whitepaper/page.tsx": "Contains TypeScript files that implement UI elements and logic specific to displaying content on different pages of the white paper.",
+      "frontend/components/ActionButtons.tsx": "Contains an interactive component that renders buttons to perform actions within the app",
+      "frontend/components/CoinDetailsCard.tsx": "Displays detailed information about coins, including price and stats",
+      "frontend/components/CoinSelector.tsx": "Provides users with options for selecting different cryptocurrencies from a list or search results",
+      "frontend/components/DepositeModal.tsx": "Manages modal dialogs that allow users to deposit funds into their accounts securely",
+      "frontend/components/Footer.tsx": "Includes the footer section of web pages, containing links and copyright information",
+      "frontend/components/GoogleSignInButton.tsx": "Handles user authentication through Google sign-in for convenience",
+      "frontend/components/Header.tsx": "Provides a consistent header across different views in the application with navigation options",
+      "frontend/components/InvestmentCard.tsx": "Displays individual investment opportunities or portfolios to users within cards",
+      "frontend/components/Navbar.tsx": "Contains navigational links and possibly dropdown menus, allowing easy access throughout app sections",
+      "frontend/components/ProfileModal.tsx": "Manages modals for displaying user profile information in a detailed view",
+      "frontend/components/ProfitTrendChart.tsx": "A component that renders a chart visualizing profits over time using Chart.js or similar library",
+      "frontend/components/RecentTradeReport.tsx": "A React component displaying the most recently executed trades for an account in tabular format",
+      "frontend/components/WithdrawModal.tsx": "A modal dialog implemented as a React component to handle withdrawal requests from users",
+      "frontend/contexts/AuthContext.tsx": "Handles the creation, providing access to an authenticated user's session data within a component tree.",
+      "frontend/contexts/GlobalContext.tsx": "Provides shared resources like theme preferences across different components in the app.",
+      "frontend/hooks/userAuth.ts": "Contains TypeScript code to handle user authentication, including login and registration processes.",
+      "frontend/utils/api.ts": "Contains TypeScript interfaces representing data structures returned from an external RESTful service and a function to fetch this data using Axios or Fetch",
+      "frontend/utils/interfaces.ts": "Provides TypeScript types that define contracts between different parts of the application, ensuring consistent use across frontend components"
     }
   },
-  "tree_view": "├─ main.py\n├─ project_analysis.json\n└─ requirements.txt\n"
+  "tree_view": "├─ .DS_Store\n├─ .github\n│  └─ workflows\n│     └─ main.yml\n├─ README.md\n├─ backend\n│  ├─ .gitpod.yml\n│  ├─ Dockerfile\n│  ├─ app\n│  │  ├─ __init__.py\n│  │  ├─ coin\n│  │  │  ├─ __init__.py\n│  │  │  ├─ coin.py\n│  │  │  └─ models.py\n│  │  ├─ main.py\n│  │  ├─ services\n│  │  │  ├─ __init__.py\n│  │  │  ├─ disclaimer.md\n│  │  │  ├─ file_handler.py\n│  │  │  ├─ file_manager.py\n│  │  │  ├─ messaging.py\n│  │  │  └─ mongodb_service.py\n│  │  ├─ trader_bot\n│  │  │  └─ disclaimer.md\n│  │  └─ users\n│  │     ├─ models.py\n│  │     └─ user.py\n│  ├─ manual_trigger.py\n│  ├─ note.txt\n│  ├─ requirements.txt\n│  ├─ run.py\n│  └─ run_dev.py\n├─ docker-compose.yml\n└─ frontend\n   ├─ Dockerfile\n   ├─ README.md\n   ├─ app\n   │  ├─ about\n   │  │  └─ page.tsx\n   │  ├─ api\n   │  │  └─ auth\n   │  │     └─ login\n   │  │        └─ route.ts\n   │  ├─ dashboard\n   │  │  └─ page.tsx\n   │  ├─ favicon.ico\n   │  ├─ features\n   │  │  └─ page.tsx\n   │  ├─ globals.css\n   │  ├─ layout.tsx\n   │  ├─ page.tsx\n   │  ├─ roadmap\n   │  │  └─ page.tsx\n   │  └─ whitepaper\n   │     └─ page.tsx\n   ├─ components\n   │  ├─ ActionButtons.tsx\n   │  ├─ CoinDetailsCard.tsx\n   │  ├─ CoinSelector.tsx\n   │  ├─ DepositeModal.tsx\n   │  ├─ Footer.tsx\n   │  ├─ GoogleSignInButton.tsx\n   │  ├─ Header.tsx\n   │  ├─ InvestmentCard.tsx\n   │  ├─ Navbar.tsx\n   │  ├─ ProfileModal.tsx\n   │  ├─ ProfitTrendChart.tsx\n   │  ├─ RecentTradeReport.tsx\n   │  └─ WithdrawModal.tsx\n   ├─ contexts\n   │  ├─ AuthContext.tsx\n   │  └─ GlobalContext.tsx\n   ├─ eslint.config.mjs\n   ├─ hooks\n   │  └─ userAuth.ts\n   ├─ middleware.ts\n   ├─ next.config.ts\n   ├─ package.json\n   ├─ postcss.config.mjs\n   ├─ tailwind.config.js\n   ├─ tsconfig.json\n   └─ utils\n      ├─ api.ts\n      └─ interfaces.ts\n"
 }
