@@ -15,16 +15,20 @@ class ProjectAnalyzer:
         model="phi4-mini:3.8b",
         temperature=0.3,
         timeout=60,
+        max_files=1000,  # NEW: Configurable maximum file count
     ):
         self.chat_model = ChatOllama(
             base_url=base_url, model=model, temperature=temperature, timeout=timeout
         )
+        self.max_files = max_files  # Store as instance variable
         self.default_ignore = {
             "__pycache__",
             ".git",
             ".gitignore",
             ".DS_Store",
             "node_modules",
+            "test-ledger",
+            "target",
             ".env",
             ".venv",
             "venv",
@@ -93,14 +97,34 @@ class ProjectAnalyzer:
         }
 
     def should_ignore(self, path: Path, ignore_patterns: Set[str]) -> bool:
+        # These folders must be blocked no matter how deep they are
+        BLOCK_ANYWHERE = {
+            "node_modules",
+            ".git",
+            "test-ledger",
+            "__pycache__",
+            ".next",
+            "dist",
+            "build",
+            ".cache",
+            ".venv",
+            "venv",
+            ".pytest_cache",
+            ".mypy_cache",
+        }
+
+        # Check if any blocked folder appears anywhere in the path
+        if any(blocked in path.parts for blocked in BLOCK_ANYWHERE):
+            return True
+
+        # Existing name-based and extension checks
         name = path.name.lower()
-        if name in ignore_patterns:
+        if name in {p.lower() for p in ignore_patterns}:
             return True
         for pattern in ignore_patterns:
-            if pattern.startswith("*") and name.endswith(pattern[1:]):
+            if pattern.startswith("*.") and name.endswith(pattern[1:].lower()):
                 return True
-            if pattern.endswith("*") and name.startswith(pattern[:-1]):
-                return True
+
         return False
 
     def extract_json_from_markdown(self, response):
@@ -195,9 +219,10 @@ class ProjectAnalyzer:
                         )
                     else:
                         project_info["statistics"]["total_files"] += 1
-                        if project_info["statistics"]["total_files"] > 500:
+                        # UPDATED: Use self.max_files instead of hardcoded value
+                        if project_info["statistics"]["total_files"] > self.max_files:
                             raise ValueError(
-                                "Project contains more than 500 files. Aborting analysis."
+                                f"Project contains more than {self.max_files} files. Aborting analysis."
                             )
 
                         file_info = self.get_file_info(item)
@@ -349,15 +374,15 @@ Cover all the requested points with specific, insightful observations using defi
                     f"Extension: {file_info.get('extension', 'unknown')}\n"
                     f"Preview: {file_info['content_preview'][:300]}...\n"
                 )
-        
+
         stats = project_info["statistics"]
-        
+
         # Get main file types for context
         main_files = []
         for file_info in project_info["files"][:10]:
             if file_info.get("is_code"):
                 main_files.append(f"{file_info['name']}")
-        
+
         prompt_template = ChatPromptTemplate.from_template(
             """You are writing a project description as if you are the project owner introducing YOUR project to others.
 
@@ -393,22 +418,43 @@ Examples of what NOT to do:
 
 Be definitive, confident, and direct about what the project IS and DOES."""
         )
-        
+
         try:
             llm_chain = prompt_template | self.chat_model | StrOutputParser()
-            description = llm_chain.invoke({
-                "project_name": project_info['project_name'],
-                "languages": ', '.join(stats['languages']) if stats['languages'] else 'Unknown',
-                "total_files": stats['total_files'],
-                "main_files": ', '.join([f"`{f}`" for f in main_files[:5]]) if main_files else 'No main files identified',
-                "file_types": ', '.join([f"`{ext}`({count})" for ext, count in list(stats['file_types'].items())[:5]]),
-                "file_preview": '\n'.join(file_summary[:10])
-            })
+            description = llm_chain.invoke(
+                {
+                    "project_name": project_info["project_name"],
+                    "languages": (
+                        ", ".join(stats["languages"])
+                        if stats["languages"]
+                        else "Unknown"
+                    ),
+                    "total_files": stats["total_files"],
+                    "main_files": (
+                        ", ".join([f"`{f}`" for f in main_files[:5]])
+                        if main_files
+                        else "No main files identified"
+                    ),
+                    "file_types": ", ".join(
+                        [
+                            f"`{ext}`({count})"
+                            for ext, count in list(stats["file_types"].items())[:5]
+                        ]
+                    ),
+                    "file_preview": "\n".join(file_summary[:10]),
+                }
+            )
             return description.strip()
         except Exception as e:
             # Fallback natural description
-            languages = ', '.join(stats['languages']) if stats['languages'] else 'mixed technologies'
-            project_title = project_info['project_name'].replace('_', ' ').replace('-', ' ').title()
+            languages = (
+                ", ".join(stats["languages"])
+                if stats["languages"]
+                else "mixed technologies"
+            )
+            project_title = (
+                project_info["project_name"].replace("_", " ").replace("-", " ").title()
+            )
             return f"""🚀 **{project_title}** is a software project built with {languages}. 
 
 This project contains {stats['total_files']} files organized across {stats['total_directories']} directories, with {stats['code_files']} code files making up the core functionality. The project follows standard project organization patterns and is ready for development.
@@ -555,18 +601,18 @@ Based on the file structure and technology stack, this is a well-organized codeb
         print(
             f"Found {project_info['statistics']['total_files']} files in {project_info['statistics']['total_directories']} directories"
         )
-        
+
         print("Generating natural project description...")
         natural_description = self.generate_natural_description(project_info)
-        
+
         print("Generating LLM summary...")
         llm_summary = self.generate_summary(project_info)
-        
+
         descriptions = {}
         if generate_readme:
             print("Generating detailed descriptions...")
             descriptions = self.generate_descriptions(project_info)
-        
+
         report = {
             "project_info": project_info,
             "natural_description": natural_description,
@@ -586,7 +632,8 @@ Based on the file structure and technology stack, this is a well-organized codeb
 
 
 def main():
-    analyzer = ProjectAnalyzer(timeout=120)
+    # UPDATED: Now you can easily change max_files here
+    analyzer = ProjectAnalyzer(timeout=120, max_files=500)
     project_path = input("Enter the path to the project folder: ").strip()
 
     if not os.path.isdir(project_path):
@@ -612,11 +659,11 @@ def main():
         )
 
         # Generate the README content with natural description first
-        project_name = results['project_info']['project_name']
-        natural_description = results['natural_description']
-        
+        project_name = results["project_info"]["project_name"]
+        natural_description = results["natural_description"]
+
         # Quick stats with emojis
-        stats = results['project_info']['statistics']
+        stats = results["project_info"]["statistics"]
         quick_stats = f"""## 📊 Quick Stats
 
 - 📁 **{stats['total_files']} files** across {stats['total_directories']} directories
@@ -673,7 +720,7 @@ PROJECT STRUCTURE:
                 flat_list += f"- {icon} **`{path}`** - {desc}\n"
 
         # Create the complete README content with natural description first
-        project_title = project_name.replace('_', ' ').replace('-', ' ').title()
+        project_title = project_name.replace("_", " ").replace("-", " ").title()
         readme_content = f"""# {project_title}
 
 {natural_description}
@@ -707,5 +754,3 @@ PROJECT STRUCTURE:
 
 if __name__ == "__main__":
     main()
-
-# /Users/darlingtongospel/Sites/ai_trader_bot_course

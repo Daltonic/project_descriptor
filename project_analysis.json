@@ -1,142 +1,1125 @@
 {
   "project_info": {
-    "project_name": "project_descriptor",
-    "root_path": "/Users/darlingtongospel/Sites/project_descriptor",
+    "project_name": "dappPay",
+    "root_path": "/Users/darlingtongospel/Sites/dappPay",
     "structure": [
+      {
+        "name": ".env.local",
+        "type": "file",
+        "path": ".env.local",
+        "size": 221,
+        "extension": ".local"
+      },
       {
         "name": "README.md",
         "type": "file",
         "path": "README.md",
-        "size": 4491,
+        "size": 1147,
         "extension": ".md"
       },
       {
-        "name": "main.py",
-        "type": "file",
-        "path": "main.py",
-        "size": 27334,
-        "extension": ".py"
+        "name": "anchor",
+        "type": "directory",
+        "path": "anchor",
+        "items": [
+          {
+            "name": ".anchor",
+            "type": "directory",
+            "path": "anchor/.anchor",
+            "items": [
+              {
+                "name": "program-logs",
+                "type": "directory",
+                "path": "anchor/.anchor/program-logs",
+                "items": []
+              }
+            ]
+          },
+          {
+            "name": ".prettierignore",
+            "type": "file",
+            "path": "anchor/.prettierignore",
+            "size": 61,
+            "extension": ""
+          },
+          {
+            "name": "Anchor.toml",
+            "type": "file",
+            "path": "anchor/Anchor.toml",
+            "size": 356,
+            "extension": ".toml"
+          },
+          {
+            "name": "Cargo.lock",
+            "type": "file",
+            "path": "anchor/Cargo.lock",
+            "size": 39574,
+            "extension": ".lock"
+          },
+          {
+            "name": "Cargo.toml",
+            "type": "file",
+            "path": "anchor/Cargo.toml",
+            "size": 215,
+            "extension": ".toml"
+          },
+          {
+            "name": "migrations",
+            "type": "directory",
+            "path": "anchor/migrations",
+            "items": [
+              {
+                "name": "deploy.ts",
+                "type": "file",
+                "path": "anchor/migrations/deploy.ts",
+                "size": 425,
+                "extension": ".ts"
+              }
+            ]
+          },
+          {
+            "name": "package.json",
+            "type": "file",
+            "path": "anchor/package.json",
+            "size": 460,
+            "extension": ".json"
+          },
+          {
+            "name": "programs",
+            "type": "directory",
+            "path": "anchor/programs",
+            "items": [
+              {
+                "name": "payroll_program",
+                "type": "directory",
+                "path": "anchor/programs/payroll_program",
+                "items": [
+                  {
+                    "name": "Cargo.toml",
+                    "type": "file",
+                    "path": "anchor/programs/payroll_program/Cargo.toml",
+                    "size": 346,
+                    "extension": ".toml"
+                  },
+                  {
+                    "name": "Xargo.toml",
+                    "type": "file",
+                    "path": "anchor/programs/payroll_program/Xargo.toml",
+                    "size": 62,
+                    "extension": ".toml"
+                  },
+                  {
+                    "name": "src",
+                    "type": "directory",
+                    "path": "anchor/programs/payroll_program/src",
+                    "items": [
+                      {
+                        "name": "errors",
+                        "type": "directory",
+                        "path": "anchor/programs/payroll_program/src/errors",
+                        "items": [
+                          {
+                            "name": "mod.rs",
+                            "type": "file",
+                            "path": "anchor/programs/payroll_program/src/errors/mod.rs",
+                            "size": 564,
+                            "extension": ".rs"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "instructions",
+                        "type": "directory",
+                        "path": "anchor/programs/payroll_program/src/instructions",
+                        "items": [
+                          {
+                            "name": "add_worker.rs",
+                            "type": "file",
+                            "path": "anchor/programs/payroll_program/src/instructions/add_worker.rs",
+                            "size": 1446,
+                            "extension": ".rs"
+                          },
+                          {
+                            "name": "create_org.rs",
+                            "type": "file",
+                            "path": "anchor/programs/payroll_program/src/instructions/create_org.rs",
+                            "size": 1006,
+                            "extension": ".rs"
+                          },
+                          {
+                            "name": "fund_treasury.rs",
+                            "type": "file",
+                            "path": "anchor/programs/payroll_program/src/instructions/fund_treasury.rs",
+                            "size": 1103,
+                            "extension": ".rs"
+                          },
+                          {
+                            "name": "mod.rs",
+                            "type": "file",
+                            "path": "anchor/programs/payroll_program/src/instructions/mod.rs",
+                            "size": 227,
+                            "extension": ".rs"
+                          },
+                          {
+                            "name": "process_payroll.rs",
+                            "type": "file",
+                            "path": "anchor/programs/payroll_program/src/instructions/process_payroll.rs",
+                            "size": 3584,
+                            "extension": ".rs"
+                          },
+                          {
+                            "name": "withdraw.rs",
+                            "type": "file",
+                            "path": "anchor/programs/payroll_program/src/instructions/withdraw.rs",
+                            "size": 1200,
+                            "extension": ".rs"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "lib.rs",
+                        "type": "file",
+                        "path": "anchor/programs/payroll_program/src/lib.rs",
+                        "size": 1009,
+                        "extension": ".rs"
+                      },
+                      {
+                        "name": "states",
+                        "type": "directory",
+                        "path": "anchor/programs/payroll_program/src/states",
+                        "items": [
+                          {
+                            "name": "mod.rs",
+                            "type": "file",
+                            "path": "anchor/programs/payroll_program/src/states/mod.rs",
+                            "size": 82,
+                            "extension": ".rs"
+                          },
+                          {
+                            "name": "organization.rs",
+                            "type": "file",
+                            "path": "anchor/programs/payroll_program/src/states/organization.rs",
+                            "size": 638,
+                            "extension": ".rs"
+                          },
+                          {
+                            "name": "worker.rs",
+                            "type": "file",
+                            "path": "anchor/programs/payroll_program/src/states/worker.rs",
+                            "size": 549,
+                            "extension": ".rs"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "tests",
+            "type": "directory",
+            "path": "anchor/tests",
+            "items": [
+              {
+                "name": "payroll_program.ts",
+                "type": "file",
+                "path": "anchor/tests/payroll_program.ts",
+                "size": 26627,
+                "extension": ".ts"
+              }
+            ]
+          },
+          {
+            "name": "tsconfig.json",
+            "type": "file",
+            "path": "anchor/tsconfig.json",
+            "size": 205,
+            "extension": ".json"
+          }
+        ]
       },
       {
-        "name": "notes.json",
+        "name": "app",
+        "type": "directory",
+        "path": "app",
+        "items": [
+          {
+            "name": "about",
+            "type": "directory",
+            "path": "app/about",
+            "items": [
+              {
+                "name": "page.tsx",
+                "type": "file",
+                "path": "app/about/page.tsx",
+                "size": 18210,
+                "extension": ".tsx"
+              }
+            ]
+          },
+          {
+            "name": "dashboard",
+            "type": "directory",
+            "path": "app/dashboard",
+            "items": [
+              {
+                "name": "page.tsx",
+                "type": "file",
+                "path": "app/dashboard/page.tsx",
+                "size": 899,
+                "extension": ".tsx"
+              }
+            ]
+          },
+          {
+            "name": "favicon.ico",
+            "type": "file",
+            "path": "app/favicon.ico",
+            "size": 25931,
+            "extension": ".ico"
+          },
+          {
+            "name": "features",
+            "type": "directory",
+            "path": "app/features",
+            "items": [
+              {
+                "name": "page.tsx",
+                "type": "file",
+                "path": "app/features/page.tsx",
+                "size": 15767,
+                "extension": ".tsx"
+              }
+            ]
+          },
+          {
+            "name": "globals.css",
+            "type": "file",
+            "path": "app/globals.css",
+            "size": 488,
+            "extension": ".css"
+          },
+          {
+            "name": "layout.tsx",
+            "type": "file",
+            "path": "app/layout.tsx",
+            "size": 461,
+            "extension": ".tsx"
+          },
+          {
+            "name": "page.tsx",
+            "type": "file",
+            "path": "app/page.tsx",
+            "size": 748,
+            "extension": ".tsx"
+          },
+          {
+            "name": "privacy",
+            "type": "directory",
+            "path": "app/privacy",
+            "items": [
+              {
+                "name": "page.tsx",
+                "type": "file",
+                "path": "app/privacy/page.tsx",
+                "size": 15101,
+                "extension": ".tsx"
+              }
+            ]
+          },
+          {
+            "name": "test",
+            "type": "directory",
+            "path": "app/test",
+            "items": [
+              {
+                "name": "page.tsx",
+                "type": "file",
+                "path": "app/test/page.tsx",
+                "size": 32309,
+                "extension": ".tsx"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "components",
+        "type": "directory",
+        "path": "components",
+        "items": [
+          {
+            "name": "ChatPanel.tsx",
+            "type": "file",
+            "path": "components/ChatPanel.tsx",
+            "size": 13695,
+            "extension": ".tsx"
+          },
+          {
+            "name": "ClientProviders.tsx",
+            "type": "file",
+            "path": "components/ClientProviders.tsx",
+            "size": 1021,
+            "extension": ".tsx"
+          },
+          {
+            "name": "Dashboard.tsx",
+            "type": "file",
+            "path": "components/Dashboard.tsx",
+            "size": 20839,
+            "extension": ".tsx"
+          },
+          {
+            "name": "Footer.tsx",
+            "type": "file",
+            "path": "components/Footer.tsx",
+            "size": 11162,
+            "extension": ".tsx"
+          },
+          {
+            "name": "Header.tsx",
+            "type": "file",
+            "path": "components/Header.tsx",
+            "size": 5835,
+            "extension": ".tsx"
+          },
+          {
+            "name": "HomePage.tsx",
+            "type": "file",
+            "path": "components/HomePage.tsx",
+            "size": 15847,
+            "extension": ".tsx"
+          },
+          {
+            "name": "OrganizationsPanel.tsx",
+            "type": "file",
+            "path": "components/OrganizationsPanel.tsx",
+            "size": 13283,
+            "extension": ".tsx"
+          }
+        ]
+      },
+      {
+        "name": "eslint.config.mjs",
         "type": "file",
-        "path": "notes.json",
-        "size": 305695,
+        "path": "eslint.config.mjs",
+        "size": 465,
+        "extension": ".mjs"
+      },
+      {
+        "name": "lib",
+        "type": "directory",
+        "path": "lib",
+        "items": [
+          {
+            "name": "mcp-tools.ts",
+            "type": "file",
+            "path": "lib/mcp-tools.ts",
+            "size": 859,
+            "extension": ".ts"
+          },
+          {
+            "name": "payroll-mcp-tools.ts",
+            "type": "file",
+            "path": "lib/payroll-mcp-tools.ts",
+            "size": 18715,
+            "extension": ".ts"
+          }
+        ]
+      },
+      {
+        "name": "next-env.d.ts",
+        "type": "file",
+        "path": "next-env.d.ts",
+        "size": 251,
+        "extension": ".ts"
+      },
+      {
+        "name": "next.config.ts",
+        "type": "file",
+        "path": "next.config.ts",
+        "size": 181,
+        "extension": ".ts"
+      },
+      {
+        "name": "package.json",
+        "type": "file",
+        "path": "package.json",
+        "size": 1075,
         "extension": ".json"
       },
       {
-        "name": "project_analysis.json",
+        "name": "postcss.config.mjs",
         "type": "file",
-        "path": "project_analysis.json",
-        "size": 85285,
+        "path": "postcss.config.mjs",
+        "size": 94,
+        "extension": ".mjs"
+      },
+      {
+        "name": "services",
+        "type": "directory",
+        "path": "services",
+        "items": [
+          {
+            "name": "blockchain.tsx",
+            "type": "file",
+            "path": "services/blockchain.tsx",
+            "size": 13971,
+            "extension": ".tsx"
+          }
+        ]
+      },
+      {
+        "name": "tsconfig.json",
+        "type": "file",
+        "path": "tsconfig.json",
+        "size": 666,
         "extension": ".json"
       },
       {
-        "name": "requirements.txt",
-        "type": "file",
-        "path": "requirements.txt",
-        "size": 171,
-        "extension": ".txt"
-      },
-      {
-        "name": "text_translator.py",
-        "type": "file",
-        "path": "text_translator.py",
-        "size": 9487,
-        "extension": ".py"
+        "name": "utils",
+        "type": "directory",
+        "path": "utils",
+        "items": [
+          {
+            "name": "helper.ts",
+            "type": "file",
+            "path": "utils/helper.ts",
+            "size": 929,
+            "extension": ".ts"
+          },
+          {
+            "name": "interface.ts",
+            "type": "file",
+            "path": "utils/interface.ts",
+            "size": 2582,
+            "extension": ".ts"
+          }
+        ]
       }
     ],
     "files": [
       {
+        "name": ".env.local",
+        "path": "/Users/darlingtongospel/Sites/dappPay/.env.local",
+        "size": 221,
+        "extension": ".local",
+        "is_code": false,
+        "content_preview": null,
+        "relative_path": ".env.local"
+      },
+      {
         "name": "README.md",
-        "path": "/Users/darlingtongospel/Sites/project_descriptor/README.md",
-        "size": 4491,
+        "path": "/Users/darlingtongospel/Sites/dappPay/README.md",
+        "size": 1147,
         "extension": ".md",
         "is_code": true,
-        "content_preview": "# Project Descriptor\n\nI built this Python-based tool called **Project Descriptor** specifically designed for analyzing complex projects by breaking them down into manageable components using advanced language processing techniques.\n\nThis powerful application leverages a combination of natural language understanding (NLU) models, like ChatOllama from LangChain and other essential libraries to parse project files. It can process the main Python script (`main.py`), configuration details stored in `...",
-        "line_count": 69,
+        "content_preview": "┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐\n│   Frontend      │    │   MCP Server     │    │   Solana        │\n│ (Next.js/TS)    │◄──►│ (Node.js/LLM)    │◄──►│   Blockchain    │\n│                 │    │                  │    │ (Rust/Anchor)   │\n│ - Home Page     │    │ - LLM Function   │    │                 │\n│ - Dashboard     │    │   Calling        │    │ - Payroll PDA   │\n│   + Chat UI     │    │ - Tx Signing     │    │ - Instructions  │\n│ - Wallet Connect│    │ - RPC ...",
+        "line_count": 12,
         "relative_path": "README.md"
       },
       {
-        "name": "main.py",
-        "path": "/Users/darlingtongospel/Sites/project_descriptor/main.py",
-        "size": 27334,
-        "extension": ".py",
-        "is_code": true,
-        "content_preview": "import os\nimport re\nimport json\nfrom pathlib import Path\nfrom typing import List, Dict, Set\nfrom langchain_core.prompts import ChatPromptTemplate\nfrom langchain_ollama import ChatOllama\nfrom langchain_core.output_parsers import StrOutputParser\n\n\nclass ProjectAnalyzer:\n    def __init__(\n        self,\n        base_url=\"http://localhost:11434\",\n        model=\"phi4-mini:3.8b\",\n        temperature=0.3,\n        timeout=60,\n    ):\n        self.chat_model = ChatOllama(\n            base_url=base_url, mod...",
-        "line_count": 711,
-        "relative_path": "main.py"
+        "name": ".prettierignore",
+        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/.prettierignore",
+        "size": 61,
+        "extension": "",
+        "is_code": false,
+        "content_preview": null,
+        "relative_path": "anchor/.prettierignore"
       },
       {
-        "name": "notes.json",
-        "path": "/Users/darlingtongospel/Sites/project_descriptor/notes.json",
-        "size": 305695,
+        "name": "Anchor.toml",
+        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/Anchor.toml",
+        "size": 356,
+        "extension": ".toml",
+        "is_code": false,
+        "content_preview": null,
+        "relative_path": "anchor/Anchor.toml"
+      },
+      {
+        "name": "Cargo.lock",
+        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/Cargo.lock",
+        "size": 39574,
+        "extension": ".lock",
+        "is_code": false,
+        "content_preview": null,
+        "relative_path": "anchor/Cargo.lock"
+      },
+      {
+        "name": "Cargo.toml",
+        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/Cargo.toml",
+        "size": 215,
+        "extension": ".toml",
+        "is_code": false,
+        "content_preview": null,
+        "relative_path": "anchor/Cargo.toml"
+      },
+      {
+        "name": "deploy.ts",
+        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/migrations/deploy.ts",
+        "size": 425,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "// Migrations are an early feature. Currently, they're nothing more than this\n// single deploy script that's invoked from the CLI, injecting a provider\n// configured from the workspace's Anchor.toml.\nimport * as anchor from \"@coral-xyz/anchor\";\n\nmodule.exports = async function (provider: anchor.AnchorProvider) {\n  // Configure client to use the provider.\n  anchor.setProvider(provider);\n  // Add your deploy script here.\n};",
+        "line_count": 10,
+        "relative_path": "anchor/migrations/deploy.ts"
+      },
+      {
+        "name": "package.json",
+        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/package.json",
+        "size": 460,
         "extension": ".json",
         "is_code": true,
-        "content_preview": null,
-        "relative_path": "notes.json"
+        "content_preview": "{\n  \"license\": \"ISC\",\n  \"scripts\": {\n    \"lint:fix\": \"prettier */*.js \\\"*/**/*{.js,.ts}\\\" -w\",\n    \"lint\": \"prettier */*.js \\\"*/**/*{.js,.ts}\\\" --check\"\n  },\n  \"dependencies\": {\n    \"@coral-xyz/anchor\": \"0.32.1\"\n  },\n  \"devDependencies\": {\n    \"@types/bn.js\": \"^5.1.0\",\n    \"@types/chai\": \"^4.3.0\",\n    \"@types/mocha\": \"^9.0.0\",\n    \"chai\": \"^4.3.4\",\n    \"mocha\": \"^9.0.3\",\n    \"prettier\": \"^2.6.2\",\n    \"ts-mocha\": \"^10.0.0\",\n    \"typescript\": \"^4.3.5\"\n  }\n}\n",
+        "line_count": 20,
+        "relative_path": "anchor/package.json"
       },
       {
-        "name": "project_analysis.json",
-        "path": "/Users/darlingtongospel/Sites/project_descriptor/project_analysis.json",
-        "size": 85285,
+        "name": "Cargo.toml",
+        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/programs/payroll_program/Cargo.toml",
+        "size": 346,
+        "extension": ".toml",
+        "is_code": false,
+        "content_preview": null,
+        "relative_path": "anchor/programs/payroll_program/Cargo.toml"
+      },
+      {
+        "name": "Xargo.toml",
+        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/programs/payroll_program/Xargo.toml",
+        "size": 62,
+        "extension": ".toml",
+        "is_code": false,
+        "content_preview": null,
+        "relative_path": "anchor/programs/payroll_program/Xargo.toml"
+      },
+      {
+        "name": "mod.rs",
+        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/programs/payroll_program/src/errors/mod.rs",
+        "size": 564,
+        "extension": ".rs",
+        "is_code": true,
+        "content_preview": "use anchor_lang::prelude::*;\n\n#[error_code]\npub enum PayrollError {\n    #[msg(\"Unauthorized access\")]\n    Unauthorized,\n    #[msg(\"Invalid organization name length\")]\n    InvalidName,\n    #[msg(\"Invalid salary amount\")]\n    InvalidSalary,\n    #[msg(\"Invalid amount\")]\n    InvalidAmount,\n    #[msg(\"Insufficient funds in treasury\")]\n    InsufficientFunds,\n    #[msg(\"Missing worker account in remaining accounts\")]\n    MissingWorkerAccount,\n    #[msg(\"Invalid worker PDA\")]\n    InvalidWorkerPDA,\n    #...",
+        "line_count": 21,
+        "relative_path": "anchor/programs/payroll_program/src/errors/mod.rs"
+      },
+      {
+        "name": "add_worker.rs",
+        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/programs/payroll_program/src/instructions/add_worker.rs",
+        "size": 1446,
+        "extension": ".rs",
+        "is_code": true,
+        "content_preview": "use crate::errors::PayrollError;\nuse crate::states::{Organization, Worker};\nuse anchor_lang::prelude::*;\n\npub fn add_worker(ctx: Context<AddWorkerCtx>, salary: u64) -> Result<()> {\n    require!(salary > 0, PayrollError::InvalidSalary);\n\n    let worker = &mut ctx.accounts.worker;\n    worker.org = ctx.accounts.org.key();\n    worker.worker_pubkey = ctx.accounts.worker_pubkey.key();\n    worker.salary = salary;\n    worker.last_paid_cycle = 0;\n    worker.created_at = Clock::get()?.unix_timestamp;\n    ...",
+        "line_count": 53,
+        "relative_path": "anchor/programs/payroll_program/src/instructions/add_worker.rs"
+      },
+      {
+        "name": "create_org.rs",
+        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/programs/payroll_program/src/instructions/create_org.rs",
+        "size": 1006,
+        "extension": ".rs",
+        "is_code": true,
+        "content_preview": "use crate::errors::PayrollError;\nuse crate::states::Organization;\nuse anchor_lang::prelude::*;\n\npub fn create_org(ctx: Context<CreateOrgCtx>, name: String) -> Result<()> {\n    require!(\n        name.len() <= Organization::MAX_NAME_LEN,\n        PayrollError::InvalidName\n    );\n\n    let org = &mut ctx.accounts.org;\n    org.authority = ctx.accounts.authority.key();\n    org.name = name.clone();\n    org.treasury = 0;\n    org.workers_count = 0;\n    org.created_at = Clock::get()?.unix_timestamp;\n    or...",
+        "line_count": 39,
+        "relative_path": "anchor/programs/payroll_program/src/instructions/create_org.rs"
+      },
+      {
+        "name": "fund_treasury.rs",
+        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/programs/payroll_program/src/instructions/fund_treasury.rs",
+        "size": 1103,
+        "extension": ".rs",
+        "is_code": true,
+        "content_preview": "use anchor_lang::prelude::*;\nuse anchor_lang::system_program;\nuse crate::errors::PayrollError;\nuse crate::states::Organization;\n\npub fn fund_treasury(ctx: Context<FundTreasuryCtx>, amount: u64) -> Result<()> {\n    require!(amount > 0, PayrollError::InvalidAmount);\n\n    let cpi_accounts = system_program::Transfer {\n        from: ctx.accounts.authority.to_account_info(),\n        to: ctx.accounts.org.to_account_info(),\n    };\n    let cpi_ctx = CpiContext::new(\n        ctx.accounts.system_program.to...",
+        "line_count": 38,
+        "relative_path": "anchor/programs/payroll_program/src/instructions/fund_treasury.rs"
+      },
+      {
+        "name": "mod.rs",
+        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/programs/payroll_program/src/instructions/mod.rs",
+        "size": 227,
+        "extension": ".rs",
+        "is_code": true,
+        "content_preview": "pub mod create_org;\npub mod add_worker;\npub mod fund_treasury;\npub mod process_payroll;\npub mod withdraw;\n\npub use create_org::*;\npub use add_worker::*;\npub use fund_treasury::*;\npub use process_payroll::*;\npub use withdraw::*;",
+        "line_count": 11,
+        "relative_path": "anchor/programs/payroll_program/src/instructions/mod.rs"
+      },
+      {
+        "name": "process_payroll.rs",
+        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/programs/payroll_program/src/instructions/process_payroll.rs",
+        "size": 3584,
+        "extension": ".rs",
+        "is_code": true,
+        "content_preview": "use crate::errors::PayrollError;\nuse crate::states::{Organization, Worker};\nuse anchor_lang::prelude::*;\n\npub fn process_payroll<'info>(\n    ctx: Context<'_, '_, 'info, 'info, ProcessPayrollCtx<'info>>,\n    cycle_timestamp: u64,\n) -> Result<()> {\n    let num_workers = ctx.accounts.org.workers_count as usize;\n    let num_expected_accounts = num_workers * 2;\n\n    require!(\n        ctx.remaining_accounts.len() == num_expected_accounts,\n        PayrollError::MissingWorkerAccount\n    );\n\n    let org_...",
+        "line_count": 114,
+        "relative_path": "anchor/programs/payroll_program/src/instructions/process_payroll.rs"
+      },
+      {
+        "name": "withdraw.rs",
+        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/programs/payroll_program/src/instructions/withdraw.rs",
+        "size": 1200,
+        "extension": ".rs",
+        "is_code": true,
+        "content_preview": "use crate::errors::PayrollError;\nuse crate::states::Organization;\nuse anchor_lang::prelude::*;\n\npub fn withdraw(ctx: Context<WithdrawCtx>, amount: u64) -> Result<()> {\n    require!(amount > 0, PayrollError::InvalidAmount);\n    require!(\n        ctx.accounts.org.treasury >= amount,\n        PayrollError::InsufficientFunds\n    );\n\n    // Transfer lamports directly (not using system_program::transfer)\n    // This is necessary because the org PDA contains data\n    **ctx\n        .accounts\n        .org...",
+        "line_count": 44,
+        "relative_path": "anchor/programs/payroll_program/src/instructions/withdraw.rs"
+      },
+      {
+        "name": "lib.rs",
+        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/programs/payroll_program/src/lib.rs",
+        "size": 1009,
+        "extension": ".rs",
+        "is_code": true,
+        "content_preview": "#![allow(unexpected_cfgs)]\n\nuse anchor_lang::prelude::*;\n\npub mod errors;\npub mod instructions;\npub mod states;\n\nuse instructions::*;\n\ndeclare_id!(\"A9fnM3skS5kbECt2isFV2EGvS4D7hnsMjnqi2YBwaeed\");\n\n#[program]\npub mod payroll_program {\n    use super::*;\n\n    pub fn create_org(ctx: Context<CreateOrgCtx>, name: String) -> Result<()> {\n        instructions::create_org(ctx, name)\n    }\n\n    pub fn add_worker(ctx: Context<AddWorkerCtx>, salary: u64) -> Result<()> {\n        instructions::add_worker(ctx,...",
+        "line_count": 39,
+        "relative_path": "anchor/programs/payroll_program/src/lib.rs"
+      },
+      {
+        "name": "mod.rs",
+        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/programs/payroll_program/src/states/mod.rs",
+        "size": 82,
+        "extension": ".rs",
+        "is_code": true,
+        "content_preview": "pub mod organization;\npub mod worker;\n\npub use organization::*;\npub use worker::*;",
+        "line_count": 5,
+        "relative_path": "anchor/programs/payroll_program/src/states/mod.rs"
+      },
+      {
+        "name": "organization.rs",
+        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/programs/payroll_program/src/states/organization.rs",
+        "size": 638,
+        "extension": ".rs",
+        "is_code": true,
+        "content_preview": "use anchor_lang::prelude::*;\n\n#[account]\n#[derive(InitSpace)]\npub struct Organization {\n    pub authority: Pubkey,\n    #[max_len(100)]\n    pub name: String,\n    pub treasury: u64,\n    pub workers_count: u64,\n    pub created_at: i64,\n    pub bump: u8,\n}\n\nimpl Organization {\n    pub const MAX_NAME_LEN: usize = 100;\n\n    pub const INIT_SPACE: usize = 32   // authority\n        + 4 + 100                      // name (String)\n        + 8                            // treasury\n        + 8              ...",
+        "line_count": 24,
+        "relative_path": "anchor/programs/payroll_program/src/states/organization.rs"
+      },
+      {
+        "name": "worker.rs",
+        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/programs/payroll_program/src/states/worker.rs",
+        "size": 549,
+        "extension": ".rs",
+        "is_code": true,
+        "content_preview": "use anchor_lang::prelude::*;\n\n#[account]\n#[derive(InitSpace)]\npub struct Worker {\n    pub org: Pubkey,\n    pub worker_pubkey: Pubkey,\n    pub salary: u64,\n    pub last_paid_cycle: u64,\n    pub created_at: i64,\n    pub bump: u8,\n}\n\nimpl Worker {\n    pub const INIT_SPACE: usize = 32  // org\n        + 32                          // worker_pubkey\n        + 8                           // salary\n        + 8                           // last_paid_cycle\n        + 8                           // created_a...",
+        "line_count": 21,
+        "relative_path": "anchor/programs/payroll_program/src/states/worker.rs"
+      },
+      {
+        "name": "payroll_program.ts",
+        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/tests/payroll_program.ts",
+        "size": 26627,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "// Complete test file with all fixes applied\n\nimport * as anchor from '@coral-xyz/anchor'\nimport { Program, BN } from '@coral-xyz/anchor'\nimport { PayrollProgram } from '../target/types/payroll_program'\nimport { PublicKey, Keypair, LAMPORTS_PER_SOL } from '@solana/web3.js'\nimport { assert } from 'chai'\n\ndescribe('Payroll Program - Comprehensive Tests', () => {\n  const provider = anchor.AnchorProvider.env()\n  anchor.setProvider(provider)\n\n  const program = anchor.workspace.PayrollProgram as Progr...",
+        "line_count": 836,
+        "relative_path": "anchor/tests/payroll_program.ts"
+      },
+      {
+        "name": "tsconfig.json",
+        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/tsconfig.json",
+        "size": 205,
         "extension": ".json",
         "is_code": true,
-        "content_preview": null,
-        "relative_path": "project_analysis.json"
+        "content_preview": "{\n  \"compilerOptions\": {\n    \"types\": [\"mocha\", \"chai\"],\n    \"typeRoots\": [\"./node_modules/@types\"],\n    \"lib\": [\"es2015\"],\n    \"module\": \"commonjs\",\n    \"target\": \"es6\",\n    \"esModuleInterop\": true\n  }\n}\n",
+        "line_count": 10,
+        "relative_path": "anchor/tsconfig.json"
       },
       {
-        "name": "requirements.txt",
-        "path": "/Users/darlingtongospel/Sites/project_descriptor/requirements.txt",
-        "size": 171,
-        "extension": ".txt",
+        "name": "page.tsx",
+        "path": "/Users/darlingtongospel/Sites/dappPay/app/about/page.tsx",
+        "size": 18210,
+        "extension": ".tsx",
         "is_code": true,
-        "content_preview": "python-dotenv==1.0.1\nlangchain==0.3.22\nlangchain-core==0.3.50\nlangchain_community==0.3.20\nlangchain_openai==0.3.12\nlangchain-ollama==0.3.0\nlangchain_text_splitters==0.3.7\n",
-        "line_count": 7,
-        "relative_path": "requirements.txt"
-      },
-      {
-        "name": "text_translator.py",
-        "path": "/Users/darlingtongospel/Sites/project_descriptor/text_translator.py",
-        "size": 9487,
-        "extension": ".py",
-        "is_code": true,
-        "content_preview": "import os\nimport re\nimport json\nfrom pathlib import Path\nfrom typing import List, Dict\nfrom langchain_core.prompts import ChatPromptTemplate\nfrom langchain_ollama import ChatOllama\nfrom langchain_core.output_parsers import StrOutputParser\n\n\nclass TextExtractor:\n    def __init__(\n        self,\n        base_url=\"http://localhost:11434\",\n        model=\"phi4-mini:3.8b\",\n        temperature=0.3,\n        timeout=60,\n    ):\n        self.chat_model = ChatOllama(\n            base_url=base_url, model=mode...",
+        "content_preview": "\"use client\";\n\nimport { useEffect, useRef } from 'react';\nimport { Sparkles, Shield, Zap, Users, Award, Target, Heart } from 'lucide-react';\nimport Header from '@/components/Header';\nimport Footer from '@/components/Footer';\n\n// Particle background component\nconst ParticleBackground = () => {\n    const canvasRef = useRef<HTMLCanvasElement>(null);\n\n    useEffect(() => {\n        const canvas = canvasRef.current;\n        if (!canvas) return;\n\n        const ctx = canvas.getContext('2d');\n        if ...",
         "line_count": 271,
-        "relative_path": "text_translator.py"
+        "relative_path": "app/about/page.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "path": "/Users/darlingtongospel/Sites/dappPay/app/dashboard/page.tsx",
+        "size": 899,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "// app/dashboard/page.tsx\n\"use client\"\n\nimport { useEffect } from 'react';\nimport { useWallet } from '@solana/wallet-adapter-react';\nimport { useRouter } from 'next/navigation';\nimport Dashboard from '@/components/Dashboard';\n\nexport default function DashboardPage() {\n    const { connected, connecting } = useWallet();\n    const router = useRouter();\n\n    // derive loading state from connecting instead of local state to avoid synchronous setState in effect\n    const isLoading = connecting;\n\n    u...",
+        "line_count": 31,
+        "relative_path": "app/dashboard/page.tsx"
+      },
+      {
+        "name": "favicon.ico",
+        "path": "/Users/darlingtongospel/Sites/dappPay/app/favicon.ico",
+        "size": 25931,
+        "extension": ".ico",
+        "is_code": false,
+        "content_preview": null,
+        "relative_path": "app/favicon.ico"
+      },
+      {
+        "name": "page.tsx",
+        "path": "/Users/darlingtongospel/Sites/dappPay/app/features/page.tsx",
+        "size": 15767,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "\"use client\";\n\nimport { useEffect, useRef } from 'react';\nimport { Sparkles, Shield, Zap, Brain, Key, Clock, Lock, Bolt, MessageCircle, Database, Globe, TrendingUp } from 'lucide-react';\nimport Header from '@/components/Header';\nimport Footer from '@/components/Footer';\n\n// Particle background\nconst ParticleBackground = () => {\n    const canvasRef = useRef<HTMLCanvasElement>(null);\n\n    useEffect(() => {\n        const canvas = canvasRef.current;\n        if (!canvas) return;\n\n        const ctx = ...",
+        "line_count": 283,
+        "relative_path": "app/features/page.tsx"
+      },
+      {
+        "name": "globals.css",
+        "path": "/Users/darlingtongospel/Sites/dappPay/app/globals.css",
+        "size": 488,
+        "extension": ".css",
+        "is_code": true,
+        "content_preview": "@import \"tailwindcss\";\n\n:root {\n  --background: #ffffff;\n  --foreground: #171717;\n}\n\n@theme inline {\n  --color-background: var(--background);\n  --color-foreground: var(--foreground);\n  --font-sans: var(--font-geist-sans);\n  --font-mono: var(--font-geist-mono);\n}\n\n@media (prefers-color-scheme: dark) {\n  :root {\n    --background: #0a0a0a;\n    --foreground: #ededed;\n  }\n}\n\nbody {\n  background: var(--background);\n  color: var(--foreground);\n  font-family: Arial, Helvetica, sans-serif;\n}\n",
+        "line_count": 26,
+        "relative_path": "app/globals.css"
+      },
+      {
+        "name": "layout.tsx",
+        "path": "/Users/darlingtongospel/Sites/dappPay/app/layout.tsx",
+        "size": 461,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "// app/layout.tsx\nimport type { Metadata } from 'next'\nimport './globals.css'\nimport ClientProviders from '@/components/ClientProviders'\n\nexport const metadata: Metadata = {\n  title: 'DappPay',\n  description: 'AI-Powered Payroll on Solana',\n}\n\nexport default function RootLayout({\n  children,\n}: {\n  children: React.ReactNode\n}) {\n  return (\n    <html lang=\"en\">\n      <body>\n        <ClientProviders>{children}</ClientProviders>\n      </body>\n    </html>\n  )\n}",
+        "line_count": 23,
+        "relative_path": "app/layout.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "path": "/Users/darlingtongospel/Sites/dappPay/app/page.tsx",
+        "size": 748,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "// app/page.tsx\n\"use client\"\n\nimport { useEffect } from 'react';\nimport { useWallet } from '@solana/wallet-adapter-react';\nimport { useRouter } from 'next/navigation';\nimport HomePage from '@/components/HomePage';\n\nexport default function Home() {\n  const { connected, connecting } = useWallet();\n  const router = useRouter();\n\n  // derive loading state from connecting instead of local state to avoid synchronous setState in effect\n  const isLoading = connecting;\n\n  useEffect(() => {\n    if (connec...",
+        "line_count": 27,
+        "relative_path": "app/page.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "path": "/Users/darlingtongospel/Sites/dappPay/app/privacy/page.tsx",
+        "size": 15101,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "\"use client\";\n\nimport Header from '@/components/Header';\nimport Footer from '@/components/Footer';\nimport { Clock, Lock, Mail, Shield, Zap, Eye, Database, FileCheck } from 'lucide-react';\n\nexport default function PrivacyPage() {\n    const sections = [\n        {\n            icon: Zap,\n            title: '1. Information We Collect',\n            color: 'text-[#DC1FFF]',\n            bgColor: 'from-[#DC1FFF]/10 to-[#DC1FFF]/5',\n            content: (\n                <>\n                    <p classNam...",
+        "line_count": 234,
+        "relative_path": "app/privacy/page.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "path": "/Users/darlingtongospel/Sites/dappPay/app/test/page.tsx",
+        "size": 32309,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "\"use client\";\n\nimport { useState, useEffect } from 'react';\nimport dynamic from 'next/dynamic';\nimport { useWallet } from '@solana/wallet-adapter-react';\nimport { PublicKey } from '@solana/web3.js';\nimport {\n    getProvider,\n    getProviderReadonly,\n    createOrganization,\n    addWorker,\n    fundTreasury,\n    processPayroll,\n    withdrawFromTreasury,\n    fetchUserOrganizations,\n    fetchAllOrganizations,\n    fetchOrganizationDetails,\n    fetchOrganizationWorkers,\n    fetchWorkerDetails,\n    fetc...",
+        "line_count": 702,
+        "relative_path": "app/test/page.tsx"
+      },
+      {
+        "name": "ChatPanel.tsx",
+        "path": "/Users/darlingtongospel/Sites/dappPay/components/ChatPanel.tsx",
+        "size": 13695,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "import { useRef, useEffect, useState } from 'react';\nimport { Send, Bot, User } from 'lucide-react';\nimport { PublicKey } from '@solana/web3.js';\nimport ReactMarkdown from 'react-markdown';\nimport type { Components } from 'react-markdown';\n\ntype Message = {\n    role: 'user' | 'bot';\n    content: string;\n    timestamp: Date;\n};\n\ntype ChatMessage = Message & {\n    id: string;\n};\n\ninterface ChatPanelProps {\n    messages: ChatMessage[];\n    input: string;\n    isLoading: boolean;\n    isPayrollOpen: b...",
+        "line_count": 249,
+        "relative_path": "components/ChatPanel.tsx"
+      },
+      {
+        "name": "ClientProviders.tsx",
+        "path": "/Users/darlingtongospel/Sites/dappPay/components/ClientProviders.tsx",
+        "size": 1021,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "// app/components/ClientProviders.tsx\n\"use client\"\n\nimport { ReactNode, useMemo } from 'react';\nimport { ConnectionProvider, WalletProvider } from '@solana/wallet-adapter-react';\nimport { WalletModalProvider } from '@solana/wallet-adapter-react-ui';\nimport { PhantomWalletAdapter } from '@solana/wallet-adapter-wallets';\nimport { clusterApiUrl } from '@solana/web3.js';\nimport '@solana/wallet-adapter-react-ui/styles.css';\n\ninterface ClientProvidersProps {\n    children: ReactNode;\n}\n\nexport default ...",
+        "line_count": 27,
+        "relative_path": "components/ClientProviders.tsx"
+      },
+      {
+        "name": "Dashboard.tsx",
+        "path": "/Users/darlingtongospel/Sites/dappPay/components/Dashboard.tsx",
+        "size": 20839,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "// app/components/Dashboard.tsx\n\"use client\"\nimport { useState, useEffect } from 'react';\nimport { useWallet } from '@solana/wallet-adapter-react';\nimport Header from './Header';\nimport ChatPanel from './ChatPanel';\nimport OrganizationsPanel from './OrganizationsPanel';\nimport { Menu } from 'lucide-react';\nimport { Message, PayrollSummary, WorkerSummary } from '@/utils/interface';\nimport { blockchainMcpTools, setWalletContext } from '@/lib/payroll-mcp-tools';\nimport Footer from './Footer';\n\ntype...",
+        "line_count": 616,
+        "relative_path": "components/Dashboard.tsx"
+      },
+      {
+        "name": "Footer.tsx",
+        "path": "/Users/darlingtongospel/Sites/dappPay/components/Footer.tsx",
+        "size": 11162,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "import Link from 'next/link';\nimport { Linkedin, Youtube, X, Zap, Heart } from 'lucide-react';\n\nconst Footer = () => {\n    return (\n        <footer className=\"bg-black/80 backdrop-blur-lg text-white py-8 sm:py-12 lg:py-16 border-t border-[#DC1FFF]/20 relative overflow-hidden\">\n            {/* Animated gradient line at top */}\n            <div className=\"absolute top-0 left-0 right-0 h-[2px] bg-linear-to-r from-transparent via-[#DC1FFF] to-transparent animate-pulse\" />\n            \n            {/...",
+        "line_count": 155,
+        "relative_path": "components/Footer.tsx"
+      },
+      {
+        "name": "Header.tsx",
+        "path": "/Users/darlingtongospel/Sites/dappPay/components/Header.tsx",
+        "size": 5835,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "import { useWallet } from '@solana/wallet-adapter-react';\nimport { WalletMultiButton } from '@solana/wallet-adapter-react-ui';\nimport { Zap, X, Sparkles } from 'lucide-react';\nimport Link from 'next/link';\nimport { useEffect, useState } from 'react';\n\nconst Header = () => {\n    const { connected, publicKey, disconnect } = useWallet();\n    const [scrolled, setScrolled] = useState(false);\n\n    useEffect(() => {\n        const handleScroll = () => {\n            setScrolled(window.scrollY > 20);\n    ...",
+        "line_count": 102,
+        "relative_path": "components/Header.tsx"
+      },
+      {
+        "name": "HomePage.tsx",
+        "path": "/Users/darlingtongospel/Sites/dappPay/components/HomePage.tsx",
+        "size": 15847,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "import { useEffect, useRef } from 'react';\nimport { useWalletModal } from '@solana/wallet-adapter-react-ui';\nimport { ChevronRight, Sparkles, Shield, Zap, Cpu, Lock, TrendingUp } from 'lucide-react';\nimport Header from './Header';\nimport Footer from './Footer';\n\nconst ParticleBackground = () => {\n    const canvasRef = useRef<HTMLCanvasElement>(null);\n\n    useEffect(() => {\n        const canvas = canvasRef.current;\n        if (!canvas) return;\n\n        const ctx = canvas.getContext('2d');\n       ...",
+        "line_count": 276,
+        "relative_path": "components/HomePage.tsx"
+      },
+      {
+        "name": "OrganizationsPanel.tsx",
+        "path": "/Users/darlingtongospel/Sites/dappPay/components/OrganizationsPanel.tsx",
+        "size": 13283,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "import { X, DollarSign, Users, TrendingUp, Building2, Sparkles } from 'lucide-react';\nimport { useState } from 'react';\nimport { PayrollSummary, WorkerSummary } from '@/utils/interface';\n\ninterface OrganizationsPanelProps {\n    organizations: PayrollSummary[];\n    selectedOrg: string | null;\n    isOpen: boolean;\n    onToggle: () => void;\n    onSelectOrg: (id: string) => void;\n    onViewDetails: (orgName: string) => void;\n    formatLamports: (lamports: number) => string;\n}\n\nconst OrganizationsPan...",
+        "line_count": 222,
+        "relative_path": "components/OrganizationsPanel.tsx"
+      },
+      {
+        "name": "eslint.config.mjs",
+        "path": "/Users/darlingtongospel/Sites/dappPay/eslint.config.mjs",
+        "size": 465,
+        "extension": ".mjs",
+        "is_code": false,
+        "content_preview": null,
+        "relative_path": "eslint.config.mjs"
+      },
+      {
+        "name": "mcp-tools.ts",
+        "path": "/Users/darlingtongospel/Sites/dappPay/lib/mcp-tools.ts",
+        "size": 859,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "// lib/mcp-tools.ts\nimport { tool } from 'ai'\nimport { z } from 'zod'\n\n// Define your MCP tools\nexport const mcpTools = {\n  // Tool 1: Get hello message\n  get_hello_message: tool({\n    description: 'Get a hello message from the server',\n    inputSchema: z.object({}), // No parameters needed\n    execute: async () => {\n      // Fetch data from your API\n      const response = await fetch('http://localhost:3000/api/hello')\n      const data = await response.json()\n      return data\n    },\n  }),\n\n  //...",
+        "line_count": 31,
+        "relative_path": "lib/mcp-tools.ts"
+      },
+      {
+        "name": "payroll-mcp-tools.ts",
+        "path": "/Users/darlingtongospel/Sites/dappPay/lib/payroll-mcp-tools.ts",
+        "size": 18715,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "// lib/payroll-mcp-tools.ts\nimport { tool } from 'ai'\nimport { z } from 'zod'\nimport { PublicKey, Transaction } from '@solana/web3.js'\nimport {\n  getProviderReadonly,\n  getProvider,\n  createOrganization,\n  addWorker,\n  fundTreasury,\n  processPayroll,\n  withdrawFromTreasury,\n  fetchUserOrganizations,\n  fetchAllOrganizations,\n  fetchOrganizationDetails,\n  fetchOrganizationWorkers,\n  fetchWorkerDetails,\n  fetchWorkersByWallet,\n  calculateNextPayrollDate,\n  checkPayrollDue,\n  getOrganizationBalance,...",
+        "line_count": 637,
+        "relative_path": "lib/payroll-mcp-tools.ts"
+      },
+      {
+        "name": "next-env.d.ts",
+        "path": "/Users/darlingtongospel/Sites/dappPay/next-env.d.ts",
+        "size": 251,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "/// <reference types=\"next\" />\n/// <reference types=\"next/image-types/global\" />\nimport \"./.next/dev/types/routes.d.ts\";\n\n// NOTE: This file should not be edited\n// see https://nextjs.org/docs/app/api-reference/config/typescript for more information.\n",
+        "line_count": 6,
+        "relative_path": "next-env.d.ts"
+      },
+      {
+        "name": "next.config.ts",
+        "path": "/Users/darlingtongospel/Sites/dappPay/next.config.ts",
+        "size": 181,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "// next.config.js\n/** @type {import('next').NextConfig} */\n\nconst nextConfig = {\n  experimental: {\n    // Enable MCP server\n    mcpServer: true,\n  },\n}\n\nmodule.exports = nextConfig\n",
+        "line_count": 11,
+        "relative_path": "next.config.ts"
+      },
+      {
+        "name": "package.json",
+        "path": "/Users/darlingtongospel/Sites/dappPay/package.json",
+        "size": 1075,
+        "extension": ".json",
+        "is_code": true,
+        "content_preview": "{\n  \"name\": \"dapppay\",\n  \"version\": \"0.1.0\",\n  \"private\": true,\n  \"scripts\": {\n    \"dev\": \"next dev\",\n    \"test\": \"anchor test\",\n    \"build\": \"next build\",\n    \"start\": \"next start\",\n    \"lint\": \"eslint\"\n  },\n  \"dependencies\": {\n    \"@ai-sdk/openai\": \"^2.0.66\",\n    \"@ai-sdk/react\": \"^2.0.93\",\n    \"@solana/wallet-adapter-base\": \"^0.9.27\",\n    \"@solana/wallet-adapter-react\": \"^0.15.39\",\n    \"@solana/wallet-adapter-react-ui\": \"^0.9.39\",\n    \"@solana/wallet-adapter-wallets\": \"^0.19.37\",\n    \"@solana...",
+        "line_count": 42,
+        "relative_path": "package.json"
+      },
+      {
+        "name": "postcss.config.mjs",
+        "path": "/Users/darlingtongospel/Sites/dappPay/postcss.config.mjs",
+        "size": 94,
+        "extension": ".mjs",
+        "is_code": false,
+        "content_preview": null,
+        "relative_path": "postcss.config.mjs"
+      },
+      {
+        "name": "blockchain.tsx",
+        "path": "/Users/darlingtongospel/Sites/dappPay/services/blockchain.tsx",
+        "size": 13971,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "// Blockchain Interface file for Payroll DApp - FIXED VERSION\nimport { AnchorProvider, BN, Program, Wallet } from '@coral-xyz/anchor'\nimport type { PayrollProgram } from '../anchor/target/types/payroll_program'\nimport {\n    Connection,\n    PublicKey,\n    SystemProgram,\n    TransactionSignature,\n    Transaction,\n    AccountMeta,\n} from '@solana/web3.js'\nimport idlJson from '../anchor/target/idl/payroll_program.json'\nimport { Organization, Worker } from '@/utils/interface'\nimport { getClusterURL }...",
+        "line_count": 487,
+        "relative_path": "services/blockchain.tsx"
+      },
+      {
+        "name": "tsconfig.json",
+        "path": "/Users/darlingtongospel/Sites/dappPay/tsconfig.json",
+        "size": 666,
+        "extension": ".json",
+        "is_code": true,
+        "content_preview": "{\n  \"compilerOptions\": {\n    \"target\": \"ES2017\",\n    \"lib\": [\"dom\", \"dom.iterable\", \"esnext\"],\n    \"allowJs\": true,\n    \"skipLibCheck\": true,\n    \"strict\": true,\n    \"noEmit\": true,\n    \"esModuleInterop\": true,\n    \"module\": \"esnext\",\n    \"moduleResolution\": \"bundler\",\n    \"resolveJsonModule\": true,\n    \"isolatedModules\": true,\n    \"jsx\": \"react-jsx\",\n    \"incremental\": true,\n    \"plugins\": [\n      {\n        \"name\": \"next\"\n      }\n    ],\n    \"paths\": {\n      \"@/*\": [\"./*\"]\n    }\n  },\n  \"include\"...",
+        "line_count": 34,
+        "relative_path": "tsconfig.json"
+      },
+      {
+        "name": "helper.ts",
+        "path": "/Users/darlingtongospel/Sites/dappPay/utils/helper.ts",
+        "size": 929,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "// utils/addressTruncator.ts\n\nexport function truncateAddress(address: string): string {\n  if (!address) {\n    throw new Error('Invalid address')\n  }\n\n  const truncated = `${address.slice(0, 4)}...${address.slice(-4)}`\n  return truncated\n}\n\nexport const getClusterURL = (cluster: string): string => {\n  const clusterUrls: { [key: string]: string } = {\n    'mainnet-beta': 'https://api.mainnet-beta.solana.com',\n    testnet: 'https://api.testnet.solana.com',\n    devnet: 'https://api.devnet.solana.com...",
+        "line_count": 32,
+        "relative_path": "utils/helper.ts"
+      },
+      {
+        "name": "interface.ts",
+        "path": "/Users/darlingtongospel/Sites/dappPay/utils/interface.ts",
+        "size": 2582,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "// utils/interface.ts\n\nexport interface Message {\n  role: 'user' | 'bot'\n  content: string\n  timestamp: Date\n}\n\nexport interface WorkerSummary {\n  pubkey: string\n  salary: number\n  lastPaid: number\n  createdAt: number\n}\n\nexport interface PayrollSummary {\n  id: string\n  orgName: string\n  treasury: number\n  createdAt: number\n  workers: WorkerSummary[]\n}\n\n/**\n * Organization account interface\n */\nexport interface Organization {\n  publicKey: string\n  authority: string\n  name: string\n  treasury: numb...",
+        "line_count": 140,
+        "relative_path": "utils/interface.ts"
       }
     ],
-    "directories": [],
+    "directories": [
+      "anchor",
+      "anchor/.anchor",
+      "anchor/.anchor/program-logs",
+      "anchor/migrations",
+      "anchor/programs",
+      "anchor/programs/payroll_program",
+      "anchor/programs/payroll_program/src",
+      "anchor/programs/payroll_program/src/errors",
+      "anchor/programs/payroll_program/src/instructions",
+      "anchor/programs/payroll_program/src/states",
+      "anchor/tests",
+      "app",
+      "app/about",
+      "app/dashboard",
+      "app/features",
+      "app/privacy",
+      "app/test",
+      "components",
+      "lib",
+      "services",
+      "utils"
+    ],
     "statistics": {
-      "total_files": 6,
-      "total_directories": 0,
-      "code_files": 6,
-      "total_size": 432463,
+      "total_files": 50,
+      "total_directories": 21,
+      "code_files": 40,
+      "total_size": 312491,
       "file_types": {
+        ".local": 1,
         ".md": 1,
-        ".py": 2,
-        ".json": 2,
-        ".txt": 1
+        ".toml": 4,
+        ".lock": 1,
+        ".ts": 8,
+        ".json": 4,
+        ".rs": 11,
+        ".tsx": 15,
+        ".ico": 1,
+        ".css": 1,
+        ".mjs": 2
       },
       "languages": [
-        "Python"
+        "CSS",
+        "TypeScript",
+        "Rust"
       ]
     }
   },
-  "natural_description": "I built **Project Descriptor**: A Python-based tool specifically designed for analyzing complex projects by breaking them down into manageable components using advanced language processing techniques.\n\nThis powerful application leverages a combination of natural language understanding (NLU) capabilities to dissect large-scale initiatives systematically, making it easier for users like you and me. With just six main files—`README.md`, `main.py`, `notes.json`, `project_analysis.json`, `requirements.txt`, plus an additional helper script—I have crafted this tool with a focus on clarity.\n\nThe core of **Project Descriptor** resides in its ability to parse through extensive project documentation, extract key insights and categorize them into digestible sections. Using Python libraries such as LangChain for language processing tasks combined with OpenAI's powerful models (via ChatOllama), it provides an intuitive way to understand intricate projects at a glance.\n\nWhether you're dealing with software development plans or large-scale business strategies, **Project Descriptor** simplifies the analysis process by automating complex linguistic evaluations. This tool is not just about breaking down text; it's designed for you and me—to streamline our understanding of multifaceted project details efficiently!\n\nFeel confident that this Python-based solution will significantly enhance your ability to manage projects with ease!",
-  "llm_summary": "PROJECT ANALYSIS\n\n**Project Type and Purpose:**\nBased on its structure (a single Python script at root) and files present (`main.py`), this project IS a command-line tool designed for analyzing complex projects by breaking them down into manageable components.\n\nThe `README.md` suggests that the purpose of Project Descriptor is to provide an analysis service, likely aimed towards software developers or IT professionals who need insights on large-scale systems. The inclusion of language-specific files (`text_translator.py`) implies it may also handle multilingual text processing tasks.\n\n\n**Technology Stack and Architecture:**\nThis project IS built using Python as its primary programming language; this is evident from the `.py` file extensions for all code-related components.\n\nThe architecture appears to USE a monolithic design pattern, given that there are no separate directories indicating microservices or modular separation. All functionalities seem TO BE contained within `main.py`, suggesting it serves both as an entry point and contains core logic.\n\n\n**Main Components:**\n- `README.md`: Provides documentation for the project.\n- `main.py`: Likely houses the main application logic, handling input processing (possibly from command-line arguments), invoking analysis functions on provided projects' data or descriptions (`notes.json` could contain such metadata).\n- `text_translator.py`: Contains functionality to translate text; this implies an internationalization feature for users who may not be fluent in Python's primary language.\n- The JSON files, including the project descriptor and requirements.txt (which lists dependencies), suggest that Project Descriptor IS designed with data interchangeability through a standardized format like JSON.\n\n\n**Code Quality Observations:**\nThe codebase appears TO BE structured logically; however, without seeing `main.py`'s contents or any other Python scripts in detail, it is impossible to conclusively assess the quality of coding practices. The presence of imports from libraries such as LangChain indicates an intention for advanced natural language processing tasks.\n\n\n**Potential Areas for Improvement:**\n- Modularization could improve maintainability and scalability; splitting functionalities into separate modules would align with best practice.\n- Documentation within `main.py` is missing, which can hinder understanding the application's flow or usage instructions. A comprehensive inline documentation should be included to explain complex logic blocks.\n\n- Dependency management in requirements.txt suggests a need for better version control practices (perhaps using virtual environments) and possibly adopting tools like pipenv.\n\n\n**Overall Assessment:**\nProject Descriptor IS an ambitious tool aimed at simplifying project analysis through advanced text processing capabilities, potentially serving as both educational material on software architecture breakdowns AND practical assistance to developers.\n\nRecommendations include:\n- Refactor the codebase into a modular structure for better maintainability.\n- Add comprehensive inline documentation within `main.py` and other components of this application. This will make it easier for future contributors or users who need guidance through its functionalities.\n- Consider adopting virtual environments using tools like pipenv to manage dependencies more effectively, ensuring consistent development across different setups.\n\nThe project IS a promising starting point but requires further refinement in terms of structure organization and documentation clarity before being considered production-ready.",
+  "natural_description": "dappPay is an innovative decentralized application (DApp) designed for seamless payroll management using blockchain technology powered by Solana's Rust programming language.\n\nThis DApp enables organizations to automate their entire pay process—from adding workers in real-time with accurate salary details directly linked through unique identifiers, creating new organizational entities effortlessly while ensuring compliance and security. It also allows treasury funds within an organization’s wallet to be managed efficiently—funding payroll operations seamlessly without the need for traditional banking systems.\n\ndappPay is built using a combination of CSS, TypeScript (specifically Next.js), Rust programming language with Anchor framework on Solana blockchain platform—a cutting-edge solution that ensures high performance and security. The project includes 50 files in total: `README.md` which provides an overview; `deploy.ts`, the deployment script for seamless integration into existing systems.\n\nKey features of dappPay include:\n- Adding workers directly to a payroll system using unique identifiers.\n- Creating new organizations with ease while ensuring they meet predefined standards and constraints (e.g., name length).\n- Fund transferring from treasury wallets, enabling secure transactions without traditional banking intermediaries.\n- Processing pay cycles automatically based on timestamps or specific events.\n\ndappPay leverages Rust for backend operations to ensure top-notch performance. The frontend is built using Next.js with TypeScript ensuring a seamless user experience and robust type-checking capabilities that enhance code reliability across the application lifecycle.\n\nThis project was created not just as an isolated tool but integrated into Solana's blockchain ecosystem, allowing it to benefit from decentralized ledger technology for transparent financial transactions while maintaining high security standards. With dappPay’s innovative approach in payroll management using cutting-edge technologies like Rust and TypeScript on a robust platform such as Solana, organizations can expect streamlined operations with enhanced efficiency.\n\nIn summary: this project is an advanced DApp built specifically to automate the entire process of managing employee salaries through blockchain technology powered by Solana's secure environment. It provides real-time payroll management capabilities that ensure accuracy while maintaining transparency and security in financial transactions within any organization using decentralized systems.",
+  "llm_summary": "PROJECT ANALYSIS REQUEST\n\nProject Name: dappPay\nRoot Path: /Users/darlingtongospel/Sites/dappPay\n\nSTATISTICS:\n- Total Files: 50\n- Code Files: 40\n- Total Directories: 21\n- Total Size: 312491 bytes\n- Languages Used: CSS, TypeScript, Rust\n- File Types: {'.local': 1, '.md': 1, '.toml': 4, '.lock': 1, '.ts': 8, '.json': 4, '.rs': 11, '.tsx': 15, '.ico': 1, '.css': 1}\n\nPROJECT STRUCTURE:\n├─ .env.local\n├─ README.md\n├─ anchor\n│  ├─ .anchor\n│  │  └─ program-logs\n│  ├─ .prettierignore\n│  ├─ Anchor.toml\n│  ├─ Cargo.lock\n│  ├─ Cargo.toml\n│  ├─ migrations\n│  │  └─ deploy.ts\n│  ├─ package.json\n│  ├─ programs\n│  │  └─ payroll_program\n│  │     ├─ Cargo.toml\n│  │     ├─ Xargo.toml\n│  │     └─ src\n│  │        ├─ errors\n│  │        │  └─ mod.rs\n│  │        ├─ instructions\n│  │        │  ├─ add_worker.rs\n│  │        │  ├─ create_org.rs\n│  │        │  ├─ fund_treasury.rs\n│  │        │  ├─ process_payroll.rs\n│  │        │  └─ withdraw.rs\n│  │        ├─ lib.rs\n│  │        └─ states\n│  │           ├─ mod.rs\n│  │           ├─ organization.rs\n│  │           └─ worker.rs\n├─ tests\n│  └─ payroll_program.ts\n├─ tsconfig.json\n\nKEY FILES CONTENT PREVIEW:\nFile: README.md (Language: .md)\nPreview: This project IS a decentralized application for managing employee payments. It features functionalities such as adding workers, creating organizations, funding treasuries...\n\nFile: anchor/migrations/deploy.ts (Language: .ts)\nPreview: // Migrations are an early feature. Currently, they're nothing more than this single deploy script that's invoked from the CLI, injecting a provider configured from the workspace's Anchor.toml.\n\nFile: anchor/package.json (Language: .json)\nPreview:\n{\n  \"license\": \"ISC\",\n  ...\n}\n\nFILE: anchor/programs/payroll_program/src/errors/mod.rs\n(Previews omitted for brevity)\n\nFILE: anchor/programs/payroll_program/src/instructions/add_worker.rs\n(Previews omitted for brevity)\n\nFILE: app/dashboard/page.tsx (Language: .tsx)\nPreview:\n\"use client\";\n\nimport { useEffect, useRef } from 'react';\n...\n\nFile: lib/index.js (Language: .js)\nPreview:\nexport default {\n  addWorker,\n  createOrg,\n  fundTreasury,\n  processPayroll,\n  withdraw\n};\n\nFILE: app/features/page.tsx (Language: .tsx)\n(Previews omitted for brevity)\n\nFILE: anchor/tsconfig.json (Language: .json)\nPreview:\n{\n  \"compilerOptions\": {...}\n}\n\nANALYSIS:\n\n1. Project Type and Purpose:\nThis project IS a decentralized application that facilitates payroll management within organizations using blockchain technology.\n\n2. Technology Stack and Architecture:\nThe architecture USES the Anchor framework for Solana, which is built on Rust language to ensure high performance.\n- Frontend: Next.js with Typescript\n- Backend (Solana Programs): Written in TypeScript/JavaScript; uses Rust as a core programming language due to its efficiency.\n\n3. Main Components and Their Likely Purposes:\n- Payroll Program (`anchor/programs/payroll_program`):\n  - Handles payroll-related operations such as adding workers, creating organizations.\n  - Contains instructions for various tasks like processing payroll or withdrawing funds from the treasury (likely used by Solana accounts).\n  \n- Anchor Framework Setup (`.anchor`, `Anchor.toml`, etc.):\n  - Manages deployment and interaction with blockchain smart contracts.\n\n4. Code Quality Observations:\nThe codebase IS organized into logical directories, indicating a structured approach to development.\n- The use of TypeScript/JavaScript for the frontend suggests an emphasis on type safety in UI interactions (though not directly reflected here).\n- Rust is used as the backend language due to its performance characteristics and suitability for blockchain applications.\n\n5. Potential Areas for Improvement:\nThe project could benefit from more comprehensive documentation, especially regarding how each instruction interacts with Solana accounts.\nAdditionally, there are opportunities to improve error handling in instructions like `processPayroll` by providing clearer messages or recovery options when transactions fail on the blockchain (e.g., insufficient funds).\n\n6. Overall Assessment and Recommendations:\n\nThis dappPay project IS a well-structured decentralized application that leverages modern web technologies for frontend development while utilizing Rust's capabilities within Solana to manage backend logic efficiently.\nRecommendations:\n1. Enhance documentation, especially around how each instruction functions in the context of blockchain transactions (Solana).\n2. Improve error handling and user feedback mechanisms across instructions like `processPayroll` or other transaction-related functionalities.\n\nThe project IS a promising foundation for building robust decentralized applications with Solana's high-performance infrastructure while maintaining an interactive frontend experience using Next.js/Typescript.",
   "descriptions": {
     "directories": {
-      "root": "The 'root' directory contains a collection of files related to software development, including documentation, source code for an application or script ('main.py'), configuration data in JSON format ('notes.json', 'project_analysis.json'), dependencies listed ('requirements.txt'), and additional Python scripts ('text_translator.py')."
+      "root": "The 'root' directory contains configuration files, scripts for a Node.js project using Next.js framework.",
+      "anchor": "The 'anchor' directory contains configuration files, lock files for dependencies management in Rust projects using Cargo, a TypeScript project setup with tsconfig.json, as well as general metadata about the package.",
+      "anchor/migrations": "The 'anchor/migrations' directory contains TypeScript migration files for setting up or modifying the Anchor blockchain's data structures.",
+      "anchor/programs/payroll_program": "The 'anchor/programs/payroll_program' directory contains Rust source files that implement a payroll program using the Anchor framework.",
+      "anchor/programs/payroll_program/src/errors": "The 'anchor/programs/payroll_program/src/errors' directory contains Rust source files that define custom error types for the payroll program, providing structured ways to handle various errors encountered during execution.",
+      "anchor/programs/payroll_program/src/instructions": "The 'anchor/programs/payroll_program/src/instructions' directory contains source code files that implement various payroll-related functionalities for an organization.",
+      "anchor/programs/payroll_program/src": "Description unavailable due to missing JSON",
+      "anchor/programs/payroll_program/src/states": "The 'anchor/programs/payroll_program/src/states' directory contains Rust source files that implement the state management for a payroll program, including modules like mod.rs which serves as an entry point to other components.",
+      "anchor/tests": "Description unavailable due to missing JSON",
+      "app/about": "The 'app/about' directory contains files related to the About page, which provides information about the application or organization.",
+      "app/dashboard": "The 'app/dashboard' directory contains the source code for a React component that renders an interactive dashboard page.",
+      "app": "The 'app' directory contains the essential files for a web application, including assets like icons and stylesheets as well as React components.",
+      "app/features": "Description unavailable due to missing JSON",
+      "app/privacy": "The 'app/privacy' directory contains TypeScript files that implement privacy-related features for a web application.",
+      "app/test": "The 'app/test' directory contains test files for the application, specifically designed to handle unit testing scenarios.",
+      "components": "The 'components' directory contains React components for a web application, specifically designed to handle various UI elements such as chat panels, client providers, dashboards, footers, headers, home pages, organizations panels.",
+      "lib": "The 'lib' directory contains TypeScript files that implement the MCP (Microservices Pattern) tools for payroll processing.",
+      "services": "The 'services' directory contains files related to blockchain technology, specifically implementing a smart contract platform using TypeScript.",
+      "utils": "The 'utils' directory contains utility functions, classes, interfaces that are used across the project for common tasks.",
+      "anchor/.anchor": "",
+      "anchor/.anchor/program-logs": "",
+      "anchor/programs": ""
     },
     "files": {
-      "root/README.md": "Provides instructions on how the project is structured and used.",
-      "root/main.py": "Contains the main application logic or script that runs when executing this directory's contents as a program.",
-      "root/notes.json": "Stores configuration settings, notes for developers, or other metadata in JSON format.",
-      "root/project_analysis.json": "Holds analysis results of some aspect related to 'root' project files and/or data structures.",
-      "root/requirements.txt": "Lists the dependencies required by this directory's projects when installed using a package manager like pip.",
-      "root/text_translator.py": "Contains Python code that implements text translation functionality."
+      "root/.env.local": "Contains environment variables specific to the local development setup",
+      "root/README.md": "Provides documentation and instructions on setting up or running this application",
+      "root/eslint.config.mjs": "Defines ESLint rules configuration file used in code linting process for JavaScript files",
+      "root/next-env.d.ts": "Type definitions for Next.js environment variables, enabling TypeScript support with proper type checks",
+      "root/next.config.ts": "Configuration script that defines custom settings and optimizations specific to the Next.js application",
+      "root/package.json": "Contains metadata about the project including dependencies, scripts, versions used by npm or yarn package managers",
+      "root/postcss.config.mjs": "Configures PostCSS plugins for transforming CSS with JavaScript during build process in a Node.js environment",
+      "root/tsconfig.json": "TypeScript configuration file that specifies compiler options and includes settings specific to the project",
+      "anchor/.prettierignore": "Specifies which files and directories Prettier should ignore when formatting code",
+      "anchor/Anchor.toml": "Contains configuration settings for Anchor CLI tool used in building Solana programs using Rust language",
+      "anchor/Cargo.lock": "Locks down a specific version of dependencies to ensure consistent builds across environments by locking the versions specified in Cargo.toml",
+      "anchor/Cargo.toml": "Specifies metadata and dependency information required when compiling projects with cargo, including build instructions for Anchor toolchain",
+      "anchor/package.json": "Contains general package configuration details such as name, description, author, version number etc., used mainly to manage Node.js packages like TypeScript project dependencies",
+      "anchor/tsconfig.json": "Configures the options and compiler settings required when compiling a TypeScript codebase",
+      "anchor/migrations/deploy.ts": "Contains a script that deploys smart contracts to an existing block chain using Anchor, which automates this process.",
+      "anchor/programs/payroll_program/Cargo.toml": "Contains metadata about dependencies, build settings for compiling and packaging this project with Cargo.",
+      "anchor/programs/payroll_program/Xargo.toml": "Provides configuration options used by Xargo to manage external crates needed in conjunction with cargo.",
+      "anchor/programs/payroll_program/src/errors/mod.rs": "Defines a module named 'errors', which consolidates all related custom error definitions and implementations into one cohesive unit within this payroll application context.",
+      "anchor/programs/payroll_program/src/errors/error.rs": "Contains Rust code that defines an enum representing different types of payment-related errors, such as invalid input or failed processing attempts.",
+      "anchor/programs/payroll_program/src/instructions/add_worker.rs": "Contains Rust functions to add a new worker's details into the organization's database",
+      "anchor/programs/payroll_program/src/instructions/create_org.rs": "Includes mechanisms in Rust language to create and initialize organizational structures within the system",
+      "anchor/programs/payroll_program/src/instructions/fund_treasury.rs": "Provides functionality using Rust for managing funds allocation specifically towards an organization’s treasury account",
+      "anchor/programs/payroll_program/src/instructions/mod.rs": "Serves as a module definition file that organizes related source files into logical groups, ensuring proper compilation order of payroll-related instructions in Rust language",
+      "anchor/programs/payroll_program/src/instructions/process_payroll.rs": "Handles the processing and calculation aspects involved with executing pay cycles for workers within organizations using Rust programming constructs",
+      "anchor/programs/payroll_program/src/instructions/withdraw.rs": "Includes functions to facilitate withdrawal transactions from an organization's treasury account as part of financial operations",
+      "anchor/programs/payroll_program/src/lib.rs": "Description unavailable due to missing JSON",
+      "anchor/programs/payroll_program/src/states/mod.rs": "Defines and exports public items from this module's submodules such as 'organization' and 'worker', serving as their root file in Rust",
+      "anchor/programs/payroll_program/src/states/organization.rs": "Contains the definition of a payroll program organization, including its attributes like employees count or salary details. It provides methods to manipulate these properties.",
+      "anchor/programs/payroll_program/src/states/worker.rs": "Defines worker-related functionalities within an organization's context by providing structures for workers' data and functions that operate on this information.",
+      "anchor/tests/payroll_program.ts": "Description unavailable due to missing JSON",
+      "app/about/page.tsx": "A React component that renders content for an About page in a web application.",
+      "app/dashboard/page.tsx": "Contains TypeScript JSX syntax to define, render, and manage state of a dynamic web-based dashboard interface.",
+      "app/favicon.ico": "This icon represents the app in browser tabs or bookmarks",
+      "app/globals.css": "Provides global styling rules that apply to all pages within this project",
+      "app/layout.tsx": "Contains a reusable layout component for consistent page structure across different views",
+      "app/page.tsx": "Implements specific content and functionality of an individual web page",
+      "app/features/page.tsx": "Description unavailable due to missing JSON",
+      "app/privacy/page.tsx": "Contains the main page component implementing user interface elements related to app privacy settings.",
+      "app/test/page.tsx": "Contains a React component representing an application's page. Handles rendering of UI elements and manages state transitions based on user interactions.",
+      "components/ChatPanel.tsx": "Contains the ChatPanel component which renders and manages user interactions in real-time messaging interfaces",
+      "components/ClientProviders.tsx": "Provides context for managing state related to clients within a React application using Context API or similar patterns",
+      "components/Dashboard.tsx": "Handles rendering of dashboard UI elements, displaying aggregated data visualizations and statistics",
+      "components/Footer.tsx": "Contains the Footer component which renders navigation links at the bottom of web pages",
+      "components/Header.tsx": "Provides Header component for managing top-level navigational menus or branding content on a webpage",
+      "components/HomePage.tsx": "Handles rendering Home Page UI elements, serving as an entry point to display primary features and information upon loading",
+      "components/OrganizationsPanel.tsx": "Contains Organizations Panel component which renders organizational structures like departments, teams, etc.",
+      "lib/mcp-tools.ts": "Contains functions to handle various aspects of microservice communication patterns, specifically tailored for a Payroll system using Microservices Pattern.",
+      "lib/payroll-mcp-tools.ts": "Provides specialized implementations and extensions on top of the base MCP tools required by the 'lib' directory's payroll application.",
+      "services/blockchain.tsx": "Contains the main implementation for initializing and managing interactions with a decentralized blockchain network.",
+      "utils/helper.ts": "Provides helper methods to streamline repetitive code patterns within TypeScript applications",
+      "utils/interface.ts": "Defines a set of related properties and types which can be implemented by other modules in the application"
     }
   },
-  "tree_view": "├─ README.md\n├─ main.py\n├─ notes.json\n├─ project_analysis.json\n├─ requirements.txt\n└─ text_translator.py\n"
+  "tree_view": "├─ .env.local\n├─ README.md\n├─ anchor\n│  ├─ .anchor\n│  │  └─ program-logs\n│  ├─ .prettierignore\n│  ├─ Anchor.toml\n│  ├─ Cargo.lock\n│  ├─ Cargo.toml\n│  ├─ migrations\n│  │  └─ deploy.ts\n│  ├─ package.json\n│  ├─ programs\n│  │  └─ payroll_program\n│  │     ├─ Cargo.toml\n│  │     ├─ Xargo.toml\n│  │     └─ src\n│  │        ├─ errors\n│  │        │  └─ mod.rs\n│  │        ├─ instructions\n│  │        │  ├─ add_worker.rs\n│  │        │  ├─ create_org.rs\n│  │        │  ├─ fund_treasury.rs\n│  │        │  ├─ mod.rs\n│  │        │  ├─ process_payroll.rs\n│  │        │  └─ withdraw.rs\n│  │        ├─ lib.rs\n│  │        └─ states\n│  │           ├─ mod.rs\n│  │           ├─ organization.rs\n│  │           └─ worker.rs\n│  ├─ tests\n│  │  └─ payroll_program.ts\n│  └─ tsconfig.json\n├─ app\n│  ├─ about\n│  │  └─ page.tsx\n│  ├─ dashboard\n│  │  └─ page.tsx\n│  ├─ favicon.ico\n│  ├─ features\n│  │  └─ page.tsx\n│  ├─ globals.css\n│  ├─ layout.tsx\n│  ├─ page.tsx\n│  ├─ privacy\n│  │  └─ page.tsx\n│  └─ test\n│     └─ page.tsx\n├─ components\n│  ├─ ChatPanel.tsx\n│  ├─ ClientProviders.tsx\n│  ├─ Dashboard.tsx\n│  ├─ Footer.tsx\n│  ├─ Header.tsx\n│  ├─ HomePage.tsx\n│  └─ OrganizationsPanel.tsx\n├─ eslint.config.mjs\n├─ lib\n│  ├─ mcp-tools.ts\n│  └─ payroll-mcp-tools.ts\n├─ next-env.d.ts\n├─ next.config.ts\n├─ package.json\n├─ postcss.config.mjs\n├─ services\n│  └─ blockchain.tsx\n├─ tsconfig.json\n└─ utils\n   ├─ helper.ts\n   └─ interface.ts\n"
 }
