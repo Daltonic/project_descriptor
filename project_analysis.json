@@ -1,1125 +1,1823 @@
 {
   "project_info": {
-    "project_name": "dappPay",
-    "root_path": "/Users/darlingtongospel/Sites/dappPay",
+    "project_name": "open_bench",
+    "root_path": "/Users/darlingtongospel/Sites/open_bench",
     "structure": [
       {
-        "name": ".env.local",
+        "name": ".env.example",
         "type": "file",
-        "path": ".env.local",
-        "size": 221,
-        "extension": ".local"
+        "path": ".env.example",
+        "size": 1857,
+        "extension": ".example"
+      },
+      {
+        "name": ".inngest",
+        "type": "directory",
+        "path": ".inngest",
+        "items": [
+          {
+            "name": "main.db",
+            "type": "file",
+            "path": ".inngest/main.db",
+            "size": 135168,
+            "extension": ".db"
+          }
+        ]
+      },
+      {
+        "name": "Note.txt",
+        "type": "file",
+        "path": "Note.txt",
+        "size": 156,
+        "extension": ".txt"
       },
       {
         "name": "README.md",
         "type": "file",
         "path": "README.md",
-        "size": 1147,
+        "size": 38713,
         "extension": ".md"
       },
       {
-        "name": "anchor",
+        "name": "backend",
         "type": "directory",
-        "path": "anchor",
+        "path": "backend",
         "items": [
           {
-            "name": ".anchor",
-            "type": "directory",
-            "path": "anchor/.anchor",
-            "items": [
-              {
-                "name": "program-logs",
-                "type": "directory",
-                "path": "anchor/.anchor/program-logs",
-                "items": []
-              }
-            ]
-          },
-          {
-            "name": ".prettierignore",
+            "name": "Dockerfile",
             "type": "file",
-            "path": "anchor/.prettierignore",
-            "size": 61,
+            "path": "backend/Dockerfile",
+            "size": 487,
             "extension": ""
           },
           {
-            "name": "Anchor.toml",
-            "type": "file",
-            "path": "anchor/Anchor.toml",
-            "size": 356,
-            "extension": ".toml"
-          },
-          {
-            "name": "Cargo.lock",
-            "type": "file",
-            "path": "anchor/Cargo.lock",
-            "size": 39574,
-            "extension": ".lock"
-          },
-          {
-            "name": "Cargo.toml",
-            "type": "file",
-            "path": "anchor/Cargo.toml",
-            "size": 215,
-            "extension": ".toml"
-          },
-          {
-            "name": "migrations",
+            "name": "app",
             "type": "directory",
-            "path": "anchor/migrations",
+            "path": "backend/app",
             "items": [
               {
-                "name": "deploy.ts",
-                "type": "file",
-                "path": "anchor/migrations/deploy.ts",
-                "size": 425,
-                "extension": ".ts"
-              }
-            ]
-          },
-          {
-            "name": "package.json",
-            "type": "file",
-            "path": "anchor/package.json",
-            "size": 460,
-            "extension": ".json"
-          },
-          {
-            "name": "programs",
-            "type": "directory",
-            "path": "anchor/programs",
-            "items": [
-              {
-                "name": "payroll_program",
+                "name": "core",
                 "type": "directory",
-                "path": "anchor/programs/payroll_program",
+                "path": "backend/app/core",
                 "items": [
                   {
-                    "name": "Cargo.toml",
+                    "name": "config.py",
                     "type": "file",
-                    "path": "anchor/programs/payroll_program/Cargo.toml",
-                    "size": 346,
-                    "extension": ".toml"
+                    "path": "backend/app/core/config.py",
+                    "size": 3993,
+                    "extension": ".py"
                   },
                   {
-                    "name": "Xargo.toml",
+                    "name": "database.py",
                     "type": "file",
-                    "path": "anchor/programs/payroll_program/Xargo.toml",
-                    "size": 62,
-                    "extension": ".toml"
+                    "path": "backend/app/core/database.py",
+                    "size": 673,
+                    "extension": ".py"
+                  }
+                ]
+              },
+              {
+                "name": "main.py",
+                "type": "file",
+                "path": "backend/app/main.py",
+                "size": 2802,
+                "extension": ".py"
+              },
+              {
+                "name": "models",
+                "type": "directory",
+                "path": "backend/app/models",
+                "items": [
+                  {
+                    "name": "orm.py",
+                    "type": "file",
+                    "path": "backend/app/models/orm.py",
+                    "size": 4174,
+                    "extension": ".py"
+                  }
+                ]
+              },
+              {
+                "name": "routers",
+                "type": "directory",
+                "path": "backend/app/routers",
+                "items": [
+                  {
+                    "name": "approve.py",
+                    "type": "file",
+                    "path": "backend/app/routers/approve.py",
+                    "size": 2948,
+                    "extension": ".py"
                   },
                   {
-                    "name": "src",
-                    "type": "directory",
-                    "path": "anchor/programs/payroll_program/src",
-                    "items": [
-                      {
-                        "name": "errors",
-                        "type": "directory",
-                        "path": "anchor/programs/payroll_program/src/errors",
-                        "items": [
-                          {
-                            "name": "mod.rs",
-                            "type": "file",
-                            "path": "anchor/programs/payroll_program/src/errors/mod.rs",
-                            "size": 564,
-                            "extension": ".rs"
-                          }
-                        ]
-                      },
-                      {
-                        "name": "instructions",
-                        "type": "directory",
-                        "path": "anchor/programs/payroll_program/src/instructions",
-                        "items": [
-                          {
-                            "name": "add_worker.rs",
-                            "type": "file",
-                            "path": "anchor/programs/payroll_program/src/instructions/add_worker.rs",
-                            "size": 1446,
-                            "extension": ".rs"
-                          },
-                          {
-                            "name": "create_org.rs",
-                            "type": "file",
-                            "path": "anchor/programs/payroll_program/src/instructions/create_org.rs",
-                            "size": 1006,
-                            "extension": ".rs"
-                          },
-                          {
-                            "name": "fund_treasury.rs",
-                            "type": "file",
-                            "path": "anchor/programs/payroll_program/src/instructions/fund_treasury.rs",
-                            "size": 1103,
-                            "extension": ".rs"
-                          },
-                          {
-                            "name": "mod.rs",
-                            "type": "file",
-                            "path": "anchor/programs/payroll_program/src/instructions/mod.rs",
-                            "size": 227,
-                            "extension": ".rs"
-                          },
-                          {
-                            "name": "process_payroll.rs",
-                            "type": "file",
-                            "path": "anchor/programs/payroll_program/src/instructions/process_payroll.rs",
-                            "size": 3584,
-                            "extension": ".rs"
-                          },
-                          {
-                            "name": "withdraw.rs",
-                            "type": "file",
-                            "path": "anchor/programs/payroll_program/src/instructions/withdraw.rs",
-                            "size": 1200,
-                            "extension": ".rs"
-                          }
-                        ]
-                      },
-                      {
-                        "name": "lib.rs",
-                        "type": "file",
-                        "path": "anchor/programs/payroll_program/src/lib.rs",
-                        "size": 1009,
-                        "extension": ".rs"
-                      },
-                      {
-                        "name": "states",
-                        "type": "directory",
-                        "path": "anchor/programs/payroll_program/src/states",
-                        "items": [
-                          {
-                            "name": "mod.rs",
-                            "type": "file",
-                            "path": "anchor/programs/payroll_program/src/states/mod.rs",
-                            "size": 82,
-                            "extension": ".rs"
-                          },
-                          {
-                            "name": "organization.rs",
-                            "type": "file",
-                            "path": "anchor/programs/payroll_program/src/states/organization.rs",
-                            "size": 638,
-                            "extension": ".rs"
-                          },
-                          {
-                            "name": "worker.rs",
-                            "type": "file",
-                            "path": "anchor/programs/payroll_program/src/states/worker.rs",
-                            "size": 549,
-                            "extension": ".rs"
-                          }
-                        ]
-                      }
-                    ]
+                    "name": "pipeline.py",
+                    "type": "file",
+                    "path": "backend/app/routers/pipeline.py",
+                    "size": 12716,
+                    "extension": ".py"
+                  },
+                  {
+                    "name": "runs.py",
+                    "type": "file",
+                    "path": "backend/app/routers/runs.py",
+                    "size": 2813,
+                    "extension": ".py"
+                  },
+                  {
+                    "name": "tasks.py",
+                    "type": "file",
+                    "path": "backend/app/routers/tasks.py",
+                    "size": 1025,
+                    "extension": ".py"
+                  }
+                ]
+              },
+              {
+                "name": "schemas",
+                "type": "directory",
+                "path": "backend/app/schemas",
+                "items": [
+                  {
+                    "name": "schemas.py",
+                    "type": "file",
+                    "path": "backend/app/schemas/schemas.py",
+                    "size": 3118,
+                    "extension": ".py"
+                  }
+                ]
+              },
+              {
+                "name": "services",
+                "type": "directory",
+                "path": "backend/app/services",
+                "items": [
+                  {
+                    "name": "agent_prompt.py",
+                    "type": "file",
+                    "path": "backend/app/services/agent_prompt.py",
+                    "size": 9503,
+                    "extension": ".py"
+                  },
+                  {
+                    "name": "agent_quality.py",
+                    "type": "file",
+                    "path": "backend/app/services/agent_quality.py",
+                    "size": 6060,
+                    "extension": ".py"
+                  },
+                  {
+                    "name": "easiness.py",
+                    "type": "file",
+                    "path": "backend/app/services/easiness.py",
+                    "size": 11398,
+                    "extension": ".py"
+                  },
+                  {
+                    "name": "llm.py",
+                    "type": "file",
+                    "path": "backend/app/services/llm.py",
+                    "size": 4214,
+                    "extension": ".py"
+                  },
+                  {
+                    "name": "pipeline.py",
+                    "type": "file",
+                    "path": "backend/app/services/pipeline.py",
+                    "size": 22470,
+                    "extension": ".py"
+                  },
+                  {
+                    "name": "quality.py",
+                    "type": "file",
+                    "path": "backend/app/services/quality.py",
+                    "size": 6436,
+                    "extension": ".py"
+                  },
+                  {
+                    "name": "sia.py",
+                    "type": "file",
+                    "path": "backend/app/services/sia.py",
+                    "size": 3593,
+                    "extension": ".py"
+                  },
+                  {
+                    "name": "sia_client.py",
+                    "type": "file",
+                    "path": "backend/app/services/sia_client.py",
+                    "size": 7981,
+                    "extension": ".py"
+                  },
+                  {
+                    "name": "similarity.py",
+                    "type": "file",
+                    "path": "backend/app/services/similarity.py",
+                    "size": 4499,
+                    "extension": ".py"
                   }
                 ]
               }
             ]
           },
           {
-            "name": "tests",
+            "name": "requirements.txt",
+            "type": "file",
+            "path": "backend/requirements.txt",
+            "size": 188,
+            "extension": ".txt"
+          }
+        ]
+      },
+      {
+        "name": "docker-compose.yml",
+        "type": "file",
+        "path": "docker-compose.yml",
+        "size": 4642,
+        "extension": ".yml"
+      },
+      {
+        "name": "frontend",
+        "type": "directory",
+        "path": "frontend",
+        "items": [
+          {
+            "name": ".env.example",
+            "type": "file",
+            "path": "frontend/.env.example",
+            "size": 2136,
+            "extension": ".example"
+          },
+          {
+            "name": "Dockerfile",
+            "type": "file",
+            "path": "frontend/Dockerfile",
+            "size": 2099,
+            "extension": ""
+          },
+          {
+            "name": "next-env.d.ts",
+            "type": "file",
+            "path": "frontend/next-env.d.ts",
+            "size": 247,
+            "extension": ".ts"
+          },
+          {
+            "name": "next.config.ts",
+            "type": "file",
+            "path": "frontend/next.config.ts",
+            "size": 393,
+            "extension": ".ts"
+          },
+          {
+            "name": "package.json",
+            "type": "file",
+            "path": "frontend/package.json",
+            "size": 846,
+            "extension": ".json"
+          },
+          {
+            "name": "postcss.config.js",
+            "type": "file",
+            "path": "frontend/postcss.config.js",
+            "size": 83,
+            "extension": ".js"
+          },
+          {
+            "name": "src",
             "type": "directory",
-            "path": "anchor/tests",
+            "path": "frontend/src",
             "items": [
               {
-                "name": "payroll_program.ts",
-                "type": "file",
-                "path": "anchor/tests/payroll_program.ts",
-                "size": 26627,
-                "extension": ".ts"
+                "name": "app",
+                "type": "directory",
+                "path": "frontend/src/app",
+                "items": [
+                  {
+                    "name": "admin",
+                    "type": "directory",
+                    "path": "frontend/src/app/admin",
+                    "items": [
+                      {
+                        "name": "page.tsx",
+                        "type": "file",
+                        "path": "frontend/src/app/admin/page.tsx",
+                        "size": 28654,
+                        "extension": ".tsx"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "api",
+                    "type": "directory",
+                    "path": "frontend/src/app/api",
+                    "items": [
+                      {
+                        "name": "admin",
+                        "type": "directory",
+                        "path": "frontend/src/app/api/admin",
+                        "items": [
+                          {
+                            "name": "ready-tasks",
+                            "type": "directory",
+                            "path": "frontend/src/app/api/admin/ready-tasks",
+                            "items": [
+                              {
+                                "name": "route.ts",
+                                "type": "file",
+                                "path": "frontend/src/app/api/admin/ready-tasks/route.ts",
+                                "size": 715,
+                                "extension": ".ts"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "stats",
+                            "type": "directory",
+                            "path": "frontend/src/app/api/admin/stats",
+                            "items": [
+                              {
+                                "name": "route.ts",
+                                "type": "file",
+                                "path": "frontend/src/app/api/admin/stats/route.ts",
+                                "size": 1424,
+                                "extension": ".ts"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "health",
+                        "type": "directory",
+                        "path": "frontend/src/app/api/health",
+                        "items": [
+                          {
+                            "name": "route.ts",
+                            "type": "file",
+                            "path": "frontend/src/app/api/health/route.ts",
+                            "size": 350,
+                            "extension": ".ts"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "inngest",
+                        "type": "directory",
+                        "path": "frontend/src/app/api/inngest",
+                        "items": [
+                          {
+                            "name": "route.ts",
+                            "type": "file",
+                            "path": "frontend/src/app/api/inngest/route.ts",
+                            "size": 301,
+                            "extension": ".ts"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "models",
+                        "type": "directory",
+                        "path": "frontend/src/app/api/models",
+                        "items": [
+                          {
+                            "name": "route.ts",
+                            "type": "file",
+                            "path": "frontend/src/app/api/models/route.ts",
+                            "size": 1046,
+                            "extension": ".ts"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "projects",
+                        "type": "directory",
+                        "path": "frontend/src/app/api/projects",
+                        "items": [
+                          {
+                            "name": "[id]",
+                            "type": "directory",
+                            "path": "frontend/src/app/api/projects/[id]",
+                            "items": [
+                              {
+                                "name": "route.ts",
+                                "type": "file",
+                                "path": "frontend/src/app/api/projects/[id]/route.ts",
+                                "size": 716,
+                                "extension": ".ts"
+                              },
+                              {
+                                "name": "tasks",
+                                "type": "directory",
+                                "path": "frontend/src/app/api/projects/[id]/tasks",
+                                "items": [
+                                  {
+                                    "name": "[taskId]",
+                                    "type": "directory",
+                                    "path": "frontend/src/app/api/projects/[id]/tasks/[taskId]",
+                                    "items": [
+                                      {
+                                        "name": "approve",
+                                        "type": "directory",
+                                        "path": "frontend/src/app/api/projects/[id]/tasks/[taskId]/approve",
+                                        "items": [
+                                          {
+                                            "name": "route.ts",
+                                            "type": "file",
+                                            "path": "frontend/src/app/api/projects/[id]/tasks/[taskId]/approve/route.ts",
+                                            "size": 960,
+                                            "extension": ".ts"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "name": "reject",
+                                        "type": "directory",
+                                        "path": "frontend/src/app/api/projects/[id]/tasks/[taskId]/reject",
+                                        "items": [
+                                          {
+                                            "name": "route.ts",
+                                            "type": "file",
+                                            "path": "frontend/src/app/api/projects/[id]/tasks/[taskId]/reject/route.ts",
+                                            "size": 960,
+                                            "extension": ".ts"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "name": "revert",
+                                        "type": "directory",
+                                        "path": "frontend/src/app/api/projects/[id]/tasks/[taskId]/revert",
+                                        "items": [
+                                          {
+                                            "name": "route.ts",
+                                            "type": "file",
+                                            "path": "frontend/src/app/api/projects/[id]/tasks/[taskId]/revert/route.ts",
+                                            "size": 986,
+                                            "extension": ".ts"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "name": "route.ts",
+                                        "type": "file",
+                                        "path": "frontend/src/app/api/projects/[id]/tasks/[taskId]/route.ts",
+                                        "size": 1584,
+                                        "extension": ".ts"
+                                      },
+                                      {
+                                        "name": "runs",
+                                        "type": "directory",
+                                        "path": "frontend/src/app/api/projects/[id]/tasks/[taskId]/runs",
+                                        "items": [
+                                          {
+                                            "name": "route.ts",
+                                            "type": "file",
+                                            "path": "frontend/src/app/api/projects/[id]/tasks/[taskId]/runs/route.ts",
+                                            "size": 1986,
+                                            "extension": ".ts"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "name": "route.ts",
+                                    "type": "file",
+                                    "path": "frontend/src/app/api/projects/[id]/tasks/route.ts",
+                                    "size": 2906,
+                                    "extension": ".ts"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "route.ts",
+                            "type": "file",
+                            "path": "frontend/src/app/api/projects/route.ts",
+                            "size": 1788,
+                            "extension": ".ts"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "runs",
+                        "type": "directory",
+                        "path": "frontend/src/app/api/runs",
+                        "items": [
+                          {
+                            "name": "[id]",
+                            "type": "directory",
+                            "path": "frontend/src/app/api/runs/[id]",
+                            "items": [
+                              {
+                                "name": "route.ts",
+                                "type": "file",
+                                "path": "frontend/src/app/api/runs/[id]/route.ts",
+                                "size": 295,
+                                "extension": ".ts"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "route.ts",
+                            "type": "file",
+                            "path": "frontend/src/app/api/runs/route.ts",
+                            "size": 557,
+                            "extension": ".ts"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "tasks",
+                        "type": "directory",
+                        "path": "frontend/src/app/api/tasks",
+                        "items": [
+                          {
+                            "name": "[id]",
+                            "type": "directory",
+                            "path": "frontend/src/app/api/tasks/[id]",
+                            "items": [
+                              {
+                                "name": "route.ts",
+                                "type": "file",
+                                "path": "frontend/src/app/api/tasks/[id]/route.ts",
+                                "size": 271,
+                                "extension": ".ts"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "route.ts",
+                            "type": "file",
+                            "path": "frontend/src/app/api/tasks/route.ts",
+                            "size": 1174,
+                            "extension": ".ts"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "dashboard",
+                    "type": "directory",
+                    "path": "frontend/src/app/dashboard",
+                    "items": [
+                      {
+                        "name": "page.tsx",
+                        "type": "file",
+                        "path": "frontend/src/app/dashboard/page.tsx",
+                        "size": 6115,
+                        "extension": ".tsx"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "globals.css",
+                    "type": "file",
+                    "path": "frontend/src/app/globals.css",
+                    "size": 4626,
+                    "extension": ".css"
+                  },
+                  {
+                    "name": "layout.tsx",
+                    "type": "file",
+                    "path": "frontend/src/app/layout.tsx",
+                    "size": 502,
+                    "extension": ".tsx"
+                  },
+                  {
+                    "name": "page.tsx",
+                    "type": "file",
+                    "path": "frontend/src/app/page.tsx",
+                    "size": 13330,
+                    "extension": ".tsx"
+                  },
+                  {
+                    "name": "projects",
+                    "type": "directory",
+                    "path": "frontend/src/app/projects",
+                    "items": [
+                      {
+                        "name": "[id]",
+                        "type": "directory",
+                        "path": "frontend/src/app/projects/[id]",
+                        "items": [
+                          {
+                            "name": "page.tsx",
+                            "type": "file",
+                            "path": "frontend/src/app/projects/[id]/page.tsx",
+                            "size": 5849,
+                            "extension": ".tsx"
+                          },
+                          {
+                            "name": "submit",
+                            "type": "directory",
+                            "path": "frontend/src/app/projects/[id]/submit",
+                            "items": [
+                              {
+                                "name": "page.tsx",
+                                "type": "file",
+                                "path": "frontend/src/app/projects/[id]/submit/page.tsx",
+                                "size": 19407,
+                                "extension": ".tsx"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "new",
+                        "type": "directory",
+                        "path": "frontend/src/app/projects/new",
+                        "items": [
+                          {
+                            "name": "page.tsx",
+                            "type": "file",
+                            "path": "frontend/src/app/projects/new/page.tsx",
+                            "size": 9999,
+                            "extension": ".tsx"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "components",
+                "type": "directory",
+                "path": "frontend/src/components",
+                "items": [
+                  {
+                    "name": "LogTerminal.tsx",
+                    "type": "file",
+                    "path": "frontend/src/components/LogTerminal.tsx",
+                    "size": 2523,
+                    "extension": ".tsx"
+                  },
+                  {
+                    "name": "NavBar.tsx",
+                    "type": "file",
+                    "path": "frontend/src/components/NavBar.tsx",
+                    "size": 2960,
+                    "extension": ".tsx"
+                  },
+                  {
+                    "name": "PipelineStages.tsx",
+                    "type": "file",
+                    "path": "frontend/src/components/PipelineStages.tsx",
+                    "size": 6128,
+                    "extension": ".tsx"
+                  },
+                  {
+                    "name": "ScoreDisplay.tsx",
+                    "type": "file",
+                    "path": "frontend/src/components/ScoreDisplay.tsx",
+                    "size": 1024,
+                    "extension": ".tsx"
+                  },
+                  {
+                    "name": "SiaProof.tsx",
+                    "type": "file",
+                    "path": "frontend/src/components/SiaProof.tsx",
+                    "size": 1646,
+                    "extension": ".tsx"
+                  },
+                  {
+                    "name": "StatusBadge.tsx",
+                    "type": "file",
+                    "path": "frontend/src/components/StatusBadge.tsx",
+                    "size": 1376,
+                    "extension": ".tsx"
+                  },
+                  {
+                    "name": "TaskActions.tsx",
+                    "type": "file",
+                    "path": "frontend/src/components/TaskActions.tsx",
+                    "size": 3588,
+                    "extension": ".tsx"
+                  },
+                  {
+                    "name": "TaskRow.tsx",
+                    "type": "file",
+                    "path": "frontend/src/components/TaskRow.tsx",
+                    "size": 30511,
+                    "extension": ".tsx"
+                  },
+                  {
+                    "name": "admin",
+                    "type": "directory",
+                    "path": "frontend/src/components/admin",
+                    "items": [
+                      {
+                        "name": "BenchmarkCards.tsx",
+                        "type": "file",
+                        "path": "frontend/src/components/admin/BenchmarkCards.tsx",
+                        "size": 12384,
+                        "extension": ".tsx"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "lib",
+                "type": "directory",
+                "path": "frontend/src/lib",
+                "items": [
+                  {
+                    "name": "admin-context.tsx",
+                    "type": "file",
+                    "path": "frontend/src/lib/admin-context.tsx",
+                    "size": 6424,
+                    "extension": ".tsx"
+                  },
+                  {
+                    "name": "inngest",
+                    "type": "directory",
+                    "path": "frontend/src/lib/inngest",
+                    "items": [
+                      {
+                        "name": "client.ts",
+                        "type": "file",
+                        "path": "frontend/src/lib/inngest/client.ts",
+                        "size": 726,
+                        "extension": ".ts"
+                      },
+                      {
+                        "name": "pipeline-inngest.ts",
+                        "type": "file",
+                        "path": "frontend/src/lib/inngest/pipeline-inngest.ts",
+                        "size": 12100,
+                        "extension": ".ts"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "prisma",
+                    "type": "directory",
+                    "path": "frontend/src/lib/prisma",
+                    "items": [
+                      {
+                        "name": "client.ts",
+                        "type": "file",
+                        "path": "frontend/src/lib/prisma/client.ts",
+                        "size": 403,
+                        "extension": ".ts"
+                      },
+                      {
+                        "name": "index.ts",
+                        "type": "file",
+                        "path": "frontend/src/lib/prisma/index.ts",
+                        "size": 69,
+                        "extension": ".ts"
+                      },
+                      {
+                        "name": "migrations",
+                        "type": "directory",
+                        "path": "frontend/src/lib/prisma/migrations",
+                        "items": [
+                          {
+                            "name": "20260608193949_initial",
+                            "type": "directory",
+                            "path": "frontend/src/lib/prisma/migrations/20260608193949_initial",
+                            "items": [
+                              {
+                                "name": "migration.sql",
+                                "type": "file",
+                                "path": "frontend/src/lib/prisma/migrations/20260608193949_initial/migration.sql",
+                                "size": 3343,
+                                "extension": ".sql"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "migration_lock.toml",
+                            "type": "file",
+                            "path": "frontend/src/lib/prisma/migrations/migration_lock.toml",
+                            "size": 128,
+                            "extension": ".toml"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "schema.prisma",
+                        "type": "file",
+                        "path": "frontend/src/lib/prisma/schema.prisma",
+                        "size": 4445,
+                        "extension": ".prisma"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "types.ts",
+                    "type": "file",
+                    "path": "frontend/src/lib/types.ts",
+                    "size": 3085,
+                    "extension": ".ts"
+                  }
+                ]
               }
             ]
+          },
+          {
+            "name": "tailwind.config.ts",
+            "type": "file",
+            "path": "frontend/tailwind.config.ts",
+            "size": 1557,
+            "extension": ".ts"
           },
           {
             "name": "tsconfig.json",
             "type": "file",
-            "path": "anchor/tsconfig.json",
-            "size": 205,
+            "path": "frontend/tsconfig.json",
+            "size": 702,
             "extension": ".json"
-          }
-        ]
-      },
-      {
-        "name": "app",
-        "type": "directory",
-        "path": "app",
-        "items": [
-          {
-            "name": "about",
-            "type": "directory",
-            "path": "app/about",
-            "items": [
-              {
-                "name": "page.tsx",
-                "type": "file",
-                "path": "app/about/page.tsx",
-                "size": 18210,
-                "extension": ".tsx"
-              }
-            ]
           },
           {
-            "name": "dashboard",
-            "type": "directory",
-            "path": "app/dashboard",
-            "items": [
-              {
-                "name": "page.tsx",
-                "type": "file",
-                "path": "app/dashboard/page.tsx",
-                "size": 899,
-                "extension": ".tsx"
-              }
-            ]
-          },
-          {
-            "name": "favicon.ico",
+            "name": "tsconfig.tsbuildinfo",
             "type": "file",
-            "path": "app/favicon.ico",
-            "size": 25931,
-            "extension": ".ico"
-          },
-          {
-            "name": "features",
-            "type": "directory",
-            "path": "app/features",
-            "items": [
-              {
-                "name": "page.tsx",
-                "type": "file",
-                "path": "app/features/page.tsx",
-                "size": 15767,
-                "extension": ".tsx"
-              }
-            ]
-          },
-          {
-            "name": "globals.css",
-            "type": "file",
-            "path": "app/globals.css",
-            "size": 488,
-            "extension": ".css"
-          },
-          {
-            "name": "layout.tsx",
-            "type": "file",
-            "path": "app/layout.tsx",
-            "size": 461,
-            "extension": ".tsx"
-          },
-          {
-            "name": "page.tsx",
-            "type": "file",
-            "path": "app/page.tsx",
-            "size": 748,
-            "extension": ".tsx"
-          },
-          {
-            "name": "privacy",
-            "type": "directory",
-            "path": "app/privacy",
-            "items": [
-              {
-                "name": "page.tsx",
-                "type": "file",
-                "path": "app/privacy/page.tsx",
-                "size": 15101,
-                "extension": ".tsx"
-              }
-            ]
-          },
-          {
-            "name": "test",
-            "type": "directory",
-            "path": "app/test",
-            "items": [
-              {
-                "name": "page.tsx",
-                "type": "file",
-                "path": "app/test/page.tsx",
-                "size": 32309,
-                "extension": ".tsx"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "components",
-        "type": "directory",
-        "path": "components",
-        "items": [
-          {
-            "name": "ChatPanel.tsx",
-            "type": "file",
-            "path": "components/ChatPanel.tsx",
-            "size": 13695,
-            "extension": ".tsx"
-          },
-          {
-            "name": "ClientProviders.tsx",
-            "type": "file",
-            "path": "components/ClientProviders.tsx",
-            "size": 1021,
-            "extension": ".tsx"
-          },
-          {
-            "name": "Dashboard.tsx",
-            "type": "file",
-            "path": "components/Dashboard.tsx",
-            "size": 20839,
-            "extension": ".tsx"
-          },
-          {
-            "name": "Footer.tsx",
-            "type": "file",
-            "path": "components/Footer.tsx",
-            "size": 11162,
-            "extension": ".tsx"
-          },
-          {
-            "name": "Header.tsx",
-            "type": "file",
-            "path": "components/Header.tsx",
-            "size": 5835,
-            "extension": ".tsx"
-          },
-          {
-            "name": "HomePage.tsx",
-            "type": "file",
-            "path": "components/HomePage.tsx",
-            "size": 15847,
-            "extension": ".tsx"
-          },
-          {
-            "name": "OrganizationsPanel.tsx",
-            "type": "file",
-            "path": "components/OrganizationsPanel.tsx",
-            "size": 13283,
-            "extension": ".tsx"
-          }
-        ]
-      },
-      {
-        "name": "eslint.config.mjs",
-        "type": "file",
-        "path": "eslint.config.mjs",
-        "size": 465,
-        "extension": ".mjs"
-      },
-      {
-        "name": "lib",
-        "type": "directory",
-        "path": "lib",
-        "items": [
-          {
-            "name": "mcp-tools.ts",
-            "type": "file",
-            "path": "lib/mcp-tools.ts",
-            "size": 859,
-            "extension": ".ts"
-          },
-          {
-            "name": "payroll-mcp-tools.ts",
-            "type": "file",
-            "path": "lib/payroll-mcp-tools.ts",
-            "size": 18715,
-            "extension": ".ts"
-          }
-        ]
-      },
-      {
-        "name": "next-env.d.ts",
-        "type": "file",
-        "path": "next-env.d.ts",
-        "size": 251,
-        "extension": ".ts"
-      },
-      {
-        "name": "next.config.ts",
-        "type": "file",
-        "path": "next.config.ts",
-        "size": 181,
-        "extension": ".ts"
-      },
-      {
-        "name": "package.json",
-        "type": "file",
-        "path": "package.json",
-        "size": 1075,
-        "extension": ".json"
-      },
-      {
-        "name": "postcss.config.mjs",
-        "type": "file",
-        "path": "postcss.config.mjs",
-        "size": 94,
-        "extension": ".mjs"
-      },
-      {
-        "name": "services",
-        "type": "directory",
-        "path": "services",
-        "items": [
-          {
-            "name": "blockchain.tsx",
-            "type": "file",
-            "path": "services/blockchain.tsx",
-            "size": 13971,
-            "extension": ".tsx"
-          }
-        ]
-      },
-      {
-        "name": "tsconfig.json",
-        "type": "file",
-        "path": "tsconfig.json",
-        "size": 666,
-        "extension": ".json"
-      },
-      {
-        "name": "utils",
-        "type": "directory",
-        "path": "utils",
-        "items": [
-          {
-            "name": "helper.ts",
-            "type": "file",
-            "path": "utils/helper.ts",
-            "size": 929,
-            "extension": ".ts"
-          },
-          {
-            "name": "interface.ts",
-            "type": "file",
-            "path": "utils/interface.ts",
-            "size": 2582,
-            "extension": ".ts"
+            "path": "frontend/tsconfig.tsbuildinfo",
+            "size": 146819,
+            "extension": ".tsbuildinfo"
           }
         ]
       }
     ],
     "files": [
       {
-        "name": ".env.local",
-        "path": "/Users/darlingtongospel/Sites/dappPay/.env.local",
-        "size": 221,
-        "extension": ".local",
+        "name": ".env.example",
+        "path": "/Users/darlingtongospel/Sites/open_bench/.env.example",
+        "size": 1857,
+        "extension": ".example",
         "is_code": false,
         "content_preview": null,
-        "relative_path": ".env.local"
+        "relative_path": ".env.example"
+      },
+      {
+        "name": "main.db",
+        "path": "/Users/darlingtongospel/Sites/open_bench/.inngest/main.db",
+        "size": 135168,
+        "extension": ".db",
+        "is_code": false,
+        "content_preview": null,
+        "relative_path": ".inngest/main.db"
+      },
+      {
+        "name": "Note.txt",
+        "path": "/Users/darlingtongospel/Sites/open_bench/Note.txt",
+        "size": 156,
+        "extension": ".txt",
+        "is_code": true,
+        "content_preview": "npx inngest-cli@latest dev -u http://localhost:3000/api/inngest --no-discovery --no-poll --persist\n\nuvicorn app.main:app --host 0.0.0.0 --port 8000 --reload",
+        "line_count": 3,
+        "relative_path": "Note.txt"
       },
       {
         "name": "README.md",
-        "path": "/Users/darlingtongospel/Sites/dappPay/README.md",
-        "size": 1147,
+        "path": "/Users/darlingtongospel/Sites/open_bench/README.md",
+        "size": 38713,
         "extension": ".md",
         "is_code": true,
-        "content_preview": "┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐\n│   Frontend      │    │   MCP Server     │    │   Solana        │\n│ (Next.js/TS)    │◄──►│ (Node.js/LLM)    │◄──►│   Blockchain    │\n│                 │    │                  │    │ (Rust/Anchor)   │\n│ - Home Page     │    │ - LLM Function   │    │                 │\n│ - Dashboard     │    │   Calling        │    │ - Payroll PDA   │\n│   + Chat UI     │    │ - Tx Signing     │    │ - Instructions  │\n│ - Wallet Connect│    │ - RPC ...",
-        "line_count": 12,
+        "content_preview": "# Open Bench\n\nIntroducing open_bench: A comprehensive web application designed for benchmarking various AI models in real-time.\n\nI built this platform using a combination of Python, CSS, SQL, JavaScript, TypeScript to create an intuitive environment where users can seamlessly benchmark different art generation algorithms against each other on my local machine or any remote server. This project is perfect if you're looking into comparing the performance and quality output between various AI model...",
+        "line_count": 398,
         "relative_path": "README.md"
       },
       {
-        "name": ".prettierignore",
-        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/.prettierignore",
-        "size": 61,
+        "name": "Dockerfile",
+        "path": "/Users/darlingtongospel/Sites/open_bench/backend/Dockerfile",
+        "size": 487,
         "extension": "",
         "is_code": false,
         "content_preview": null,
-        "relative_path": "anchor/.prettierignore"
+        "relative_path": "backend/Dockerfile"
       },
       {
-        "name": "Anchor.toml",
-        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/Anchor.toml",
-        "size": 356,
-        "extension": ".toml",
-        "is_code": false,
-        "content_preview": null,
-        "relative_path": "anchor/Anchor.toml"
-      },
-      {
-        "name": "Cargo.lock",
-        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/Cargo.lock",
-        "size": 39574,
-        "extension": ".lock",
-        "is_code": false,
-        "content_preview": null,
-        "relative_path": "anchor/Cargo.lock"
-      },
-      {
-        "name": "Cargo.toml",
-        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/Cargo.toml",
-        "size": 215,
-        "extension": ".toml",
-        "is_code": false,
-        "content_preview": null,
-        "relative_path": "anchor/Cargo.toml"
-      },
-      {
-        "name": "deploy.ts",
-        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/migrations/deploy.ts",
-        "size": 425,
-        "extension": ".ts",
+        "name": "config.py",
+        "path": "/Users/darlingtongospel/Sites/open_bench/backend/app/core/config.py",
+        "size": 3993,
+        "extension": ".py",
         "is_code": true,
-        "content_preview": "// Migrations are an early feature. Currently, they're nothing more than this\n// single deploy script that's invoked from the CLI, injecting a provider\n// configured from the workspace's Anchor.toml.\nimport * as anchor from \"@coral-xyz/anchor\";\n\nmodule.exports = async function (provider: anchor.AnchorProvider) {\n  // Configure client to use the provider.\n  anchor.setProvider(provider);\n  // Add your deploy script here.\n};",
-        "line_count": 10,
-        "relative_path": "anchor/migrations/deploy.ts"
+        "content_preview": "from pydantic_settings import BaseSettings\nfrom typing import List\n\n\nclass Settings(BaseSettings):\n    DATABASE_URL: str\n\n    CORS_ORIGINS: List[str] = [\"http://localhost:3000\"]\n\n    OLLAMA_BASE_URL: str = \"http://localhost:11434\"\n    # Model used for task instruction embeddings (similarity check)\n    OLLAMA_EMBED_MODEL: str = \"nomic-embed-text:latest\"\n\n    # ── OpenAI ────────────────────────────────────────────────────────────────\n    OPENAI_API_KEY: str = \"\"\n    OPENAI_BASE_URL: str = \"https:...",
+        "line_count": 79,
+        "relative_path": "backend/app/core/config.py"
       },
       {
-        "name": "package.json",
-        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/package.json",
-        "size": 460,
-        "extension": ".json",
+        "name": "database.py",
+        "path": "/Users/darlingtongospel/Sites/open_bench/backend/app/core/database.py",
+        "size": 673,
+        "extension": ".py",
         "is_code": true,
-        "content_preview": "{\n  \"license\": \"ISC\",\n  \"scripts\": {\n    \"lint:fix\": \"prettier */*.js \\\"*/**/*{.js,.ts}\\\" -w\",\n    \"lint\": \"prettier */*.js \\\"*/**/*{.js,.ts}\\\" --check\"\n  },\n  \"dependencies\": {\n    \"@coral-xyz/anchor\": \"0.32.1\"\n  },\n  \"devDependencies\": {\n    \"@types/bn.js\": \"^5.1.0\",\n    \"@types/chai\": \"^4.3.0\",\n    \"@types/mocha\": \"^9.0.0\",\n    \"chai\": \"^4.3.4\",\n    \"mocha\": \"^9.0.3\",\n    \"prettier\": \"^2.6.2\",\n    \"ts-mocha\": \"^10.0.0\",\n    \"typescript\": \"^4.3.5\"\n  }\n}\n",
-        "line_count": 20,
-        "relative_path": "anchor/package.json"
-      },
-      {
-        "name": "Cargo.toml",
-        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/programs/payroll_program/Cargo.toml",
-        "size": 346,
-        "extension": ".toml",
-        "is_code": false,
-        "content_preview": null,
-        "relative_path": "anchor/programs/payroll_program/Cargo.toml"
-      },
-      {
-        "name": "Xargo.toml",
-        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/programs/payroll_program/Xargo.toml",
-        "size": 62,
-        "extension": ".toml",
-        "is_code": false,
-        "content_preview": null,
-        "relative_path": "anchor/programs/payroll_program/Xargo.toml"
-      },
-      {
-        "name": "mod.rs",
-        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/programs/payroll_program/src/errors/mod.rs",
-        "size": 564,
-        "extension": ".rs",
-        "is_code": true,
-        "content_preview": "use anchor_lang::prelude::*;\n\n#[error_code]\npub enum PayrollError {\n    #[msg(\"Unauthorized access\")]\n    Unauthorized,\n    #[msg(\"Invalid organization name length\")]\n    InvalidName,\n    #[msg(\"Invalid salary amount\")]\n    InvalidSalary,\n    #[msg(\"Invalid amount\")]\n    InvalidAmount,\n    #[msg(\"Insufficient funds in treasury\")]\n    InsufficientFunds,\n    #[msg(\"Missing worker account in remaining accounts\")]\n    MissingWorkerAccount,\n    #[msg(\"Invalid worker PDA\")]\n    InvalidWorkerPDA,\n    #...",
-        "line_count": 21,
-        "relative_path": "anchor/programs/payroll_program/src/errors/mod.rs"
-      },
-      {
-        "name": "add_worker.rs",
-        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/programs/payroll_program/src/instructions/add_worker.rs",
-        "size": 1446,
-        "extension": ".rs",
-        "is_code": true,
-        "content_preview": "use crate::errors::PayrollError;\nuse crate::states::{Organization, Worker};\nuse anchor_lang::prelude::*;\n\npub fn add_worker(ctx: Context<AddWorkerCtx>, salary: u64) -> Result<()> {\n    require!(salary > 0, PayrollError::InvalidSalary);\n\n    let worker = &mut ctx.accounts.worker;\n    worker.org = ctx.accounts.org.key();\n    worker.worker_pubkey = ctx.accounts.worker_pubkey.key();\n    worker.salary = salary;\n    worker.last_paid_cycle = 0;\n    worker.created_at = Clock::get()?.unix_timestamp;\n    ...",
-        "line_count": 53,
-        "relative_path": "anchor/programs/payroll_program/src/instructions/add_worker.rs"
-      },
-      {
-        "name": "create_org.rs",
-        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/programs/payroll_program/src/instructions/create_org.rs",
-        "size": 1006,
-        "extension": ".rs",
-        "is_code": true,
-        "content_preview": "use crate::errors::PayrollError;\nuse crate::states::Organization;\nuse anchor_lang::prelude::*;\n\npub fn create_org(ctx: Context<CreateOrgCtx>, name: String) -> Result<()> {\n    require!(\n        name.len() <= Organization::MAX_NAME_LEN,\n        PayrollError::InvalidName\n    );\n\n    let org = &mut ctx.accounts.org;\n    org.authority = ctx.accounts.authority.key();\n    org.name = name.clone();\n    org.treasury = 0;\n    org.workers_count = 0;\n    org.created_at = Clock::get()?.unix_timestamp;\n    or...",
-        "line_count": 39,
-        "relative_path": "anchor/programs/payroll_program/src/instructions/create_org.rs"
-      },
-      {
-        "name": "fund_treasury.rs",
-        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/programs/payroll_program/src/instructions/fund_treasury.rs",
-        "size": 1103,
-        "extension": ".rs",
-        "is_code": true,
-        "content_preview": "use anchor_lang::prelude::*;\nuse anchor_lang::system_program;\nuse crate::errors::PayrollError;\nuse crate::states::Organization;\n\npub fn fund_treasury(ctx: Context<FundTreasuryCtx>, amount: u64) -> Result<()> {\n    require!(amount > 0, PayrollError::InvalidAmount);\n\n    let cpi_accounts = system_program::Transfer {\n        from: ctx.accounts.authority.to_account_info(),\n        to: ctx.accounts.org.to_account_info(),\n    };\n    let cpi_ctx = CpiContext::new(\n        ctx.accounts.system_program.to...",
-        "line_count": 38,
-        "relative_path": "anchor/programs/payroll_program/src/instructions/fund_treasury.rs"
-      },
-      {
-        "name": "mod.rs",
-        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/programs/payroll_program/src/instructions/mod.rs",
-        "size": 227,
-        "extension": ".rs",
-        "is_code": true,
-        "content_preview": "pub mod create_org;\npub mod add_worker;\npub mod fund_treasury;\npub mod process_payroll;\npub mod withdraw;\n\npub use create_org::*;\npub use add_worker::*;\npub use fund_treasury::*;\npub use process_payroll::*;\npub use withdraw::*;",
-        "line_count": 11,
-        "relative_path": "anchor/programs/payroll_program/src/instructions/mod.rs"
-      },
-      {
-        "name": "process_payroll.rs",
-        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/programs/payroll_program/src/instructions/process_payroll.rs",
-        "size": 3584,
-        "extension": ".rs",
-        "is_code": true,
-        "content_preview": "use crate::errors::PayrollError;\nuse crate::states::{Organization, Worker};\nuse anchor_lang::prelude::*;\n\npub fn process_payroll<'info>(\n    ctx: Context<'_, '_, 'info, 'info, ProcessPayrollCtx<'info>>,\n    cycle_timestamp: u64,\n) -> Result<()> {\n    let num_workers = ctx.accounts.org.workers_count as usize;\n    let num_expected_accounts = num_workers * 2;\n\n    require!(\n        ctx.remaining_accounts.len() == num_expected_accounts,\n        PayrollError::MissingWorkerAccount\n    );\n\n    let org_...",
-        "line_count": 114,
-        "relative_path": "anchor/programs/payroll_program/src/instructions/process_payroll.rs"
-      },
-      {
-        "name": "withdraw.rs",
-        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/programs/payroll_program/src/instructions/withdraw.rs",
-        "size": 1200,
-        "extension": ".rs",
-        "is_code": true,
-        "content_preview": "use crate::errors::PayrollError;\nuse crate::states::Organization;\nuse anchor_lang::prelude::*;\n\npub fn withdraw(ctx: Context<WithdrawCtx>, amount: u64) -> Result<()> {\n    require!(amount > 0, PayrollError::InvalidAmount);\n    require!(\n        ctx.accounts.org.treasury >= amount,\n        PayrollError::InsufficientFunds\n    );\n\n    // Transfer lamports directly (not using system_program::transfer)\n    // This is necessary because the org PDA contains data\n    **ctx\n        .accounts\n        .org...",
-        "line_count": 44,
-        "relative_path": "anchor/programs/payroll_program/src/instructions/withdraw.rs"
-      },
-      {
-        "name": "lib.rs",
-        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/programs/payroll_program/src/lib.rs",
-        "size": 1009,
-        "extension": ".rs",
-        "is_code": true,
-        "content_preview": "#![allow(unexpected_cfgs)]\n\nuse anchor_lang::prelude::*;\n\npub mod errors;\npub mod instructions;\npub mod states;\n\nuse instructions::*;\n\ndeclare_id!(\"A9fnM3skS5kbECt2isFV2EGvS4D7hnsMjnqi2YBwaeed\");\n\n#[program]\npub mod payroll_program {\n    use super::*;\n\n    pub fn create_org(ctx: Context<CreateOrgCtx>, name: String) -> Result<()> {\n        instructions::create_org(ctx, name)\n    }\n\n    pub fn add_worker(ctx: Context<AddWorkerCtx>, salary: u64) -> Result<()> {\n        instructions::add_worker(ctx,...",
-        "line_count": 39,
-        "relative_path": "anchor/programs/payroll_program/src/lib.rs"
-      },
-      {
-        "name": "mod.rs",
-        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/programs/payroll_program/src/states/mod.rs",
-        "size": 82,
-        "extension": ".rs",
-        "is_code": true,
-        "content_preview": "pub mod organization;\npub mod worker;\n\npub use organization::*;\npub use worker::*;",
-        "line_count": 5,
-        "relative_path": "anchor/programs/payroll_program/src/states/mod.rs"
-      },
-      {
-        "name": "organization.rs",
-        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/programs/payroll_program/src/states/organization.rs",
-        "size": 638,
-        "extension": ".rs",
-        "is_code": true,
-        "content_preview": "use anchor_lang::prelude::*;\n\n#[account]\n#[derive(InitSpace)]\npub struct Organization {\n    pub authority: Pubkey,\n    #[max_len(100)]\n    pub name: String,\n    pub treasury: u64,\n    pub workers_count: u64,\n    pub created_at: i64,\n    pub bump: u8,\n}\n\nimpl Organization {\n    pub const MAX_NAME_LEN: usize = 100;\n\n    pub const INIT_SPACE: usize = 32   // authority\n        + 4 + 100                      // name (String)\n        + 8                            // treasury\n        + 8              ...",
-        "line_count": 24,
-        "relative_path": "anchor/programs/payroll_program/src/states/organization.rs"
-      },
-      {
-        "name": "worker.rs",
-        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/programs/payroll_program/src/states/worker.rs",
-        "size": 549,
-        "extension": ".rs",
-        "is_code": true,
-        "content_preview": "use anchor_lang::prelude::*;\n\n#[account]\n#[derive(InitSpace)]\npub struct Worker {\n    pub org: Pubkey,\n    pub worker_pubkey: Pubkey,\n    pub salary: u64,\n    pub last_paid_cycle: u64,\n    pub created_at: i64,\n    pub bump: u8,\n}\n\nimpl Worker {\n    pub const INIT_SPACE: usize = 32  // org\n        + 32                          // worker_pubkey\n        + 8                           // salary\n        + 8                           // last_paid_cycle\n        + 8                           // created_a...",
-        "line_count": 21,
-        "relative_path": "anchor/programs/payroll_program/src/states/worker.rs"
-      },
-      {
-        "name": "payroll_program.ts",
-        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/tests/payroll_program.ts",
-        "size": 26627,
-        "extension": ".ts",
-        "is_code": true,
-        "content_preview": "// Complete test file with all fixes applied\n\nimport * as anchor from '@coral-xyz/anchor'\nimport { Program, BN } from '@coral-xyz/anchor'\nimport { PayrollProgram } from '../target/types/payroll_program'\nimport { PublicKey, Keypair, LAMPORTS_PER_SOL } from '@solana/web3.js'\nimport { assert } from 'chai'\n\ndescribe('Payroll Program - Comprehensive Tests', () => {\n  const provider = anchor.AnchorProvider.env()\n  anchor.setProvider(provider)\n\n  const program = anchor.workspace.PayrollProgram as Progr...",
-        "line_count": 836,
-        "relative_path": "anchor/tests/payroll_program.ts"
-      },
-      {
-        "name": "tsconfig.json",
-        "path": "/Users/darlingtongospel/Sites/dappPay/anchor/tsconfig.json",
-        "size": 205,
-        "extension": ".json",
-        "is_code": true,
-        "content_preview": "{\n  \"compilerOptions\": {\n    \"types\": [\"mocha\", \"chai\"],\n    \"typeRoots\": [\"./node_modules/@types\"],\n    \"lib\": [\"es2015\"],\n    \"module\": \"commonjs\",\n    \"target\": \"es6\",\n    \"esModuleInterop\": true\n  }\n}\n",
-        "line_count": 10,
-        "relative_path": "anchor/tsconfig.json"
-      },
-      {
-        "name": "page.tsx",
-        "path": "/Users/darlingtongospel/Sites/dappPay/app/about/page.tsx",
-        "size": 18210,
-        "extension": ".tsx",
-        "is_code": true,
-        "content_preview": "\"use client\";\n\nimport { useEffect, useRef } from 'react';\nimport { Sparkles, Shield, Zap, Users, Award, Target, Heart } from 'lucide-react';\nimport Header from '@/components/Header';\nimport Footer from '@/components/Footer';\n\n// Particle background component\nconst ParticleBackground = () => {\n    const canvasRef = useRef<HTMLCanvasElement>(null);\n\n    useEffect(() => {\n        const canvas = canvasRef.current;\n        if (!canvas) return;\n\n        const ctx = canvas.getContext('2d');\n        if ...",
-        "line_count": 271,
-        "relative_path": "app/about/page.tsx"
-      },
-      {
-        "name": "page.tsx",
-        "path": "/Users/darlingtongospel/Sites/dappPay/app/dashboard/page.tsx",
-        "size": 899,
-        "extension": ".tsx",
-        "is_code": true,
-        "content_preview": "// app/dashboard/page.tsx\n\"use client\"\n\nimport { useEffect } from 'react';\nimport { useWallet } from '@solana/wallet-adapter-react';\nimport { useRouter } from 'next/navigation';\nimport Dashboard from '@/components/Dashboard';\n\nexport default function DashboardPage() {\n    const { connected, connecting } = useWallet();\n    const router = useRouter();\n\n    // derive loading state from connecting instead of local state to avoid synchronous setState in effect\n    const isLoading = connecting;\n\n    u...",
-        "line_count": 31,
-        "relative_path": "app/dashboard/page.tsx"
-      },
-      {
-        "name": "favicon.ico",
-        "path": "/Users/darlingtongospel/Sites/dappPay/app/favicon.ico",
-        "size": 25931,
-        "extension": ".ico",
-        "is_code": false,
-        "content_preview": null,
-        "relative_path": "app/favicon.ico"
-      },
-      {
-        "name": "page.tsx",
-        "path": "/Users/darlingtongospel/Sites/dappPay/app/features/page.tsx",
-        "size": 15767,
-        "extension": ".tsx",
-        "is_code": true,
-        "content_preview": "\"use client\";\n\nimport { useEffect, useRef } from 'react';\nimport { Sparkles, Shield, Zap, Brain, Key, Clock, Lock, Bolt, MessageCircle, Database, Globe, TrendingUp } from 'lucide-react';\nimport Header from '@/components/Header';\nimport Footer from '@/components/Footer';\n\n// Particle background\nconst ParticleBackground = () => {\n    const canvasRef = useRef<HTMLCanvasElement>(null);\n\n    useEffect(() => {\n        const canvas = canvasRef.current;\n        if (!canvas) return;\n\n        const ctx = ...",
-        "line_count": 283,
-        "relative_path": "app/features/page.tsx"
-      },
-      {
-        "name": "globals.css",
-        "path": "/Users/darlingtongospel/Sites/dappPay/app/globals.css",
-        "size": 488,
-        "extension": ".css",
-        "is_code": true,
-        "content_preview": "@import \"tailwindcss\";\n\n:root {\n  --background: #ffffff;\n  --foreground: #171717;\n}\n\n@theme inline {\n  --color-background: var(--background);\n  --color-foreground: var(--foreground);\n  --font-sans: var(--font-geist-sans);\n  --font-mono: var(--font-geist-mono);\n}\n\n@media (prefers-color-scheme: dark) {\n  :root {\n    --background: #0a0a0a;\n    --foreground: #ededed;\n  }\n}\n\nbody {\n  background: var(--background);\n  color: var(--foreground);\n  font-family: Arial, Helvetica, sans-serif;\n}\n",
-        "line_count": 26,
-        "relative_path": "app/globals.css"
-      },
-      {
-        "name": "layout.tsx",
-        "path": "/Users/darlingtongospel/Sites/dappPay/app/layout.tsx",
-        "size": 461,
-        "extension": ".tsx",
-        "is_code": true,
-        "content_preview": "// app/layout.tsx\nimport type { Metadata } from 'next'\nimport './globals.css'\nimport ClientProviders from '@/components/ClientProviders'\n\nexport const metadata: Metadata = {\n  title: 'DappPay',\n  description: 'AI-Powered Payroll on Solana',\n}\n\nexport default function RootLayout({\n  children,\n}: {\n  children: React.ReactNode\n}) {\n  return (\n    <html lang=\"en\">\n      <body>\n        <ClientProviders>{children}</ClientProviders>\n      </body>\n    </html>\n  )\n}",
+        "content_preview": "\"\"\"\ndatabase.py\n-----------\nRead/write access to the shared Postgres instance.\nSchema is fully owned by Prisma (frontend) — this backend never calls\ncreate_all, run_sync, or any DDL. It only reads and updates rows.\n\"\"\"\nfrom sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker, AsyncSession\nfrom sqlalchemy.orm import DeclarativeBase\n\nfrom app.core.config import settings\n\nengine = create_async_engine(settings.DATABASE_URL, echo=False)\nAsyncSessionLocal = async_sessionmaker(engine,...",
         "line_count": 23,
-        "relative_path": "app/layout.tsx"
+        "relative_path": "backend/app/core/database.py"
       },
       {
-        "name": "page.tsx",
-        "path": "/Users/darlingtongospel/Sites/dappPay/app/page.tsx",
-        "size": 748,
-        "extension": ".tsx",
+        "name": "main.py",
+        "path": "/Users/darlingtongospel/Sites/open_bench/backend/app/main.py",
+        "size": 2802,
+        "extension": ".py",
         "is_code": true,
-        "content_preview": "// app/page.tsx\n\"use client\"\n\nimport { useEffect } from 'react';\nimport { useWallet } from '@solana/wallet-adapter-react';\nimport { useRouter } from 'next/navigation';\nimport HomePage from '@/components/HomePage';\n\nexport default function Home() {\n  const { connected, connecting } = useWallet();\n  const router = useRouter();\n\n  // derive loading state from connecting instead of local state to avoid synchronous setState in effect\n  const isLoading = connecting;\n\n  useEffect(() => {\n    if (connec...",
-        "line_count": 27,
-        "relative_path": "app/page.tsx"
+        "content_preview": "from contextlib import asynccontextmanager\n\nfrom fastapi import Depends, FastAPI\nfrom fastapi.middleware.cors import CORSMiddleware\nfrom sqlalchemy import text\nfrom sqlalchemy.ext.asyncio import AsyncSession\n\nfrom app.core.config import settings\nfrom app.core.database import get_db\nfrom app.routers import approve, pipeline, runs, tasks\nfrom app.services import sia_client\n\n\n@asynccontextmanager\nasync def lifespan(app: FastAPI):\n    # Prisma (frontend) owns the schema — we never call create_all he...",
+        "line_count": 78,
+        "relative_path": "backend/app/main.py"
       },
       {
-        "name": "page.tsx",
-        "path": "/Users/darlingtongospel/Sites/dappPay/app/privacy/page.tsx",
-        "size": 15101,
-        "extension": ".tsx",
+        "name": "orm.py",
+        "path": "/Users/darlingtongospel/Sites/open_bench/backend/app/models/orm.py",
+        "size": 4174,
+        "extension": ".py",
         "is_code": true,
-        "content_preview": "\"use client\";\n\nimport Header from '@/components/Header';\nimport Footer from '@/components/Footer';\nimport { Clock, Lock, Mail, Shield, Zap, Eye, Database, FileCheck } from 'lucide-react';\n\nexport default function PrivacyPage() {\n    const sections = [\n        {\n            icon: Zap,\n            title: '1. Information We Collect',\n            color: 'text-[#DC1FFF]',\n            bgColor: 'from-[#DC1FFF]/10 to-[#DC1FFF]/5',\n            content: (\n                <>\n                    <p classNam...",
-        "line_count": 234,
-        "relative_path": "app/privacy/page.tsx"
+        "content_preview": "# app/models/orm.py\n#\n# These ORM classes mirror the Prisma schema owned by the frontend.\n# DO NOT add columns, rename tables, or run DDL from here.\n# If the Prisma schema changes, update these classes to match.\n\nfrom sqlalchemy import Column, String, Float, Integer, Boolean, DateTime, Text, ForeignKey\nfrom sqlalchemy.orm import relationship\nfrom app.core.database import Base\n\n\nclass Project(Base):\n    __tablename__ = \"Project\"\n\n    id          = Column(String, primary_key=True)\n    name        ...",
+        "line_count": 103,
+        "relative_path": "backend/app/models/orm.py"
       },
       {
-        "name": "page.tsx",
-        "path": "/Users/darlingtongospel/Sites/dappPay/app/test/page.tsx",
-        "size": 32309,
-        "extension": ".tsx",
+        "name": "approve.py",
+        "path": "/Users/darlingtongospel/Sites/open_bench/backend/app/routers/approve.py",
+        "size": 2948,
+        "extension": ".py",
         "is_code": true,
-        "content_preview": "\"use client\";\n\nimport { useState, useEffect } from 'react';\nimport dynamic from 'next/dynamic';\nimport { useWallet } from '@solana/wallet-adapter-react';\nimport { PublicKey } from '@solana/web3.js';\nimport {\n    getProvider,\n    getProviderReadonly,\n    createOrganization,\n    addWorker,\n    fundTreasury,\n    processPayroll,\n    withdrawFromTreasury,\n    fetchUserOrganizations,\n    fetchAllOrganizations,\n    fetchOrganizationDetails,\n    fetchOrganizationWorkers,\n    fetchWorkerDetails,\n    fetc...",
-        "line_count": 702,
-        "relative_path": "app/test/page.tsx"
+        "content_preview": "# ── Sia upload on approval ────────────────────────────────────────────────────\n#\n# Add this endpoint to app/routers/pipeline.py (or keep it in its own router).\n# It's called by the frontend (or Inngest) when a reviewer clicks \"Approve\".\n#\n# What it does:\n#   1. Marks the task as \"approved\" in Postgres.\n#   2. Uploads the task ZIP to the Sia network.\n#   3. Stores the returned object ID in Task.siaHash.\n#\n# The frontend already owns the status write via the Next.js API layer,\n# but the Sia uplo...",
+        "line_count": 88,
+        "relative_path": "backend/app/routers/approve.py"
       },
       {
-        "name": "ChatPanel.tsx",
-        "path": "/Users/darlingtongospel/Sites/dappPay/components/ChatPanel.tsx",
-        "size": 13695,
-        "extension": ".tsx",
+        "name": "pipeline.py",
+        "path": "/Users/darlingtongospel/Sites/open_bench/backend/app/routers/pipeline.py",
+        "size": 12716,
+        "extension": ".py",
         "is_code": true,
-        "content_preview": "import { useRef, useEffect, useState } from 'react';\nimport { Send, Bot, User } from 'lucide-react';\nimport { PublicKey } from '@solana/web3.js';\nimport ReactMarkdown from 'react-markdown';\nimport type { Components } from 'react-markdown';\n\ntype Message = {\n    role: 'user' | 'bot';\n    content: string;\n    timestamp: Date;\n};\n\ntype ChatMessage = Message & {\n    id: string;\n};\n\ninterface ChatPanelProps {\n    messages: ChatMessage[];\n    input: string;\n    isLoading: boolean;\n    isPayrollOpen: b...",
-        "line_count": 249,
-        "relative_path": "components/ChatPanel.tsx"
+        "content_preview": "# app/routers/pipeline.py\n\nimport os\nimport re\nimport sys\nimport zipfile\nfrom datetime import datetime, timezone\n\nfrom fastapi import APIRouter, Depends, HTTPException\nfrom sqlalchemy.ext.asyncio import AsyncSession\nfrom cuid2 import Cuid\n\nfrom app.core.database import get_db\nfrom app.core.config import settings\nfrom app.models.orm import Task, PipelineLog, BenchmarkRun, RunLog\nfrom app.schemas.schemas import (\n    PipelineStageRequest,\n    PipelineStageResponse,\n    BenchmarkExecuteRequest,\n)\nf...",
+        "line_count": 331,
+        "relative_path": "backend/app/routers/pipeline.py"
       },
       {
-        "name": "ClientProviders.tsx",
-        "path": "/Users/darlingtongospel/Sites/dappPay/components/ClientProviders.tsx",
-        "size": 1021,
-        "extension": ".tsx",
+        "name": "runs.py",
+        "path": "/Users/darlingtongospel/Sites/open_bench/backend/app/routers/runs.py",
+        "size": 2813,
+        "extension": ".py",
         "is_code": true,
-        "content_preview": "// app/components/ClientProviders.tsx\n\"use client\"\n\nimport { ReactNode, useMemo } from 'react';\nimport { ConnectionProvider, WalletProvider } from '@solana/wallet-adapter-react';\nimport { WalletModalProvider } from '@solana/wallet-adapter-react-ui';\nimport { PhantomWalletAdapter } from '@solana/wallet-adapter-wallets';\nimport { clusterApiUrl } from '@solana/web3.js';\nimport '@solana/wallet-adapter-react-ui/styles.css';\n\ninterface ClientProvidersProps {\n    children: ReactNode;\n}\n\nexport default ...",
-        "line_count": 27,
-        "relative_path": "components/ClientProviders.tsx"
+        "content_preview": "# app/routers/runs.py\n#\n# Run endpoints. Creation and status updates happen via the Inngest pipeline.\n# This router exposes:\n#   GET  /api/runs/{run_id}         — fetch a single run\n#   GET  /api/runs/{run_id}/logs    — SSE stream of RunLog rows for live tailing\n\nimport asyncio\nimport json\nfrom datetime import datetime, timezone\n\nfrom fastapi import APIRouter, Depends, HTTPException\nfrom fastapi.responses import StreamingResponse\nfrom sqlalchemy.ext.asyncio import AsyncSession\nfrom sqlalchemy im...",
+        "line_count": 81,
+        "relative_path": "backend/app/routers/runs.py"
       },
       {
-        "name": "Dashboard.tsx",
-        "path": "/Users/darlingtongospel/Sites/dappPay/components/Dashboard.tsx",
-        "size": 20839,
-        "extension": ".tsx",
+        "name": "tasks.py",
+        "path": "/Users/darlingtongospel/Sites/open_bench/backend/app/routers/tasks.py",
+        "size": 1025,
+        "extension": ".py",
         "is_code": true,
-        "content_preview": "// app/components/Dashboard.tsx\n\"use client\"\nimport { useState, useEffect } from 'react';\nimport { useWallet } from '@solana/wallet-adapter-react';\nimport Header from './Header';\nimport ChatPanel from './ChatPanel';\nimport OrganizationsPanel from './OrganizationsPanel';\nimport { Menu } from 'lucide-react';\nimport { Message, PayrollSummary, WorkerSummary } from '@/utils/interface';\nimport { blockchainMcpTools, setWalletContext } from '@/lib/payroll-mcp-tools';\nimport Footer from './Footer';\n\ntype...",
-        "line_count": 616,
-        "relative_path": "components/Dashboard.tsx"
+        "content_preview": "# app/routers/tasks.py\n#\n# Read-only task endpoints.\n# The frontend (Next.js / Prisma) owns all task creation, status updates,\n# and approval writes. The backend only needs to read task data when the\n# pipeline service needs it — but these endpoints are handy for debugging.\n\nfrom fastapi import APIRouter, Depends, HTTPException\nfrom sqlalchemy.ext.asyncio import AsyncSession\nfrom sqlalchemy import select\n\nfrom app.core.database import get_db\nfrom app.models.orm import Task\nfrom app.schemas.schem...",
+        "line_count": 30,
+        "relative_path": "backend/app/routers/tasks.py"
       },
       {
-        "name": "Footer.tsx",
-        "path": "/Users/darlingtongospel/Sites/dappPay/components/Footer.tsx",
-        "size": 11162,
-        "extension": ".tsx",
+        "name": "schemas.py",
+        "path": "/Users/darlingtongospel/Sites/open_bench/backend/app/schemas/schemas.py",
+        "size": 3118,
+        "extension": ".py",
         "is_code": true,
-        "content_preview": "import Link from 'next/link';\nimport { Linkedin, Youtube, X, Zap, Heart } from 'lucide-react';\n\nconst Footer = () => {\n    return (\n        <footer className=\"bg-black/80 backdrop-blur-lg text-white py-8 sm:py-12 lg:py-16 border-t border-[#DC1FFF]/20 relative overflow-hidden\">\n            {/* Animated gradient line at top */}\n            <div className=\"absolute top-0 left-0 right-0 h-[2px] bg-linear-to-r from-transparent via-[#DC1FFF] to-transparent animate-pulse\" />\n            \n            {/...",
-        "line_count": 155,
-        "relative_path": "components/Footer.tsx"
+        "content_preview": "from __future__ import annotations\nfrom datetime import datetime\nfrom typing import Optional\nfrom pydantic import BaseModel\n\n\n# ─────────────────────────────────────────\n# Task\n# ─────────────────────────────────────────\n\nclass TaskRead(BaseModel):\n    id: str\n    projectId: str\n    title: str\n    description: str\n    domain: str\n    language: str\n    storagePath: str\n    status: str\n    scoringType: str\n    timeoutMs: int\n    similarityScore: Optional[float] = None\n    isDuplicate: Optional[boo...",
+        "line_count": 105,
+        "relative_path": "backend/app/schemas/schemas.py"
       },
       {
-        "name": "Header.tsx",
-        "path": "/Users/darlingtongospel/Sites/dappPay/components/Header.tsx",
-        "size": 5835,
-        "extension": ".tsx",
+        "name": "agent_prompt.py",
+        "path": "/Users/darlingtongospel/Sites/open_bench/backend/app/services/agent_prompt.py",
+        "size": 9503,
+        "extension": ".py",
         "is_code": true,
-        "content_preview": "import { useWallet } from '@solana/wallet-adapter-react';\nimport { WalletMultiButton } from '@solana/wallet-adapter-react-ui';\nimport { Zap, X, Sparkles } from 'lucide-react';\nimport Link from 'next/link';\nimport { useEffect, useState } from 'react';\n\nconst Header = () => {\n    const { connected, publicKey, disconnect } = useWallet();\n    const [scrolled, setScrolled] = useState(false);\n\n    useEffect(() => {\n        const handleScroll = () => {\n            setScrolled(window.scrollY > 20);\n    ...",
-        "line_count": 102,
-        "relative_path": "components/Header.tsx"
+        "content_preview": "# app/services/agent_prompt.py\n#\n# Builds the system + user prompts that are sent to the LLM agent during\n# easiness / difficulty probe runs.\n#\n# Extracted from easiness.py so the prompt can be iterated and unit-tested\n# independently of the orchestration logic.\n#\n# Design notes\n# ────────────\n# The key insight from high-performing agent runs is that the LLM needs:\n#   1. A strict, unambiguous JSON schema with field-level documentation.\n#   2. Concrete duration guidance so the agent doesn't stal...",
+        "line_count": 206,
+        "relative_path": "backend/app/services/agent_prompt.py"
       },
       {
-        "name": "HomePage.tsx",
-        "path": "/Users/darlingtongospel/Sites/dappPay/components/HomePage.tsx",
-        "size": 15847,
-        "extension": ".tsx",
+        "name": "agent_quality.py",
+        "path": "/Users/darlingtongospel/Sites/open_bench/backend/app/services/agent_quality.py",
+        "size": 6060,
+        "extension": ".py",
         "is_code": true,
-        "content_preview": "import { useEffect, useRef } from 'react';\nimport { useWalletModal } from '@solana/wallet-adapter-react-ui';\nimport { ChevronRight, Sparkles, Shield, Zap, Cpu, Lock, TrendingUp } from 'lucide-react';\nimport Header from './Header';\nimport Footer from './Footer';\n\nconst ParticleBackground = () => {\n    const canvasRef = useRef<HTMLCanvasElement>(null);\n\n    useEffect(() => {\n        const canvas = canvasRef.current;\n        if (!canvas) return;\n\n        const ctx = canvas.getContext('2d');\n       ...",
-        "line_count": 276,
-        "relative_path": "components/HomePage.tsx"
+        "content_preview": "# app/services/agent_quality.py\n#\n# Stage 8 — Agent Quality Check.\n#\n# LLM-as-judge evaluation focused on two things the quality check (stage 3)\n# doesn't cover deeply:\n#\n#   1. Instruction realism — does instruction.md read like a real task a\n#      developer would encounter, written naturally without AI-assistant prose?\n#\n#   2. No leaked assertions — does instruction.md avoid revealing test logic,\n#      expected values, assertion details, or oracle paths that would trivially\n#      hand the ...",
+        "line_count": 157,
+        "relative_path": "backend/app/services/agent_quality.py"
       },
       {
-        "name": "OrganizationsPanel.tsx",
-        "path": "/Users/darlingtongospel/Sites/dappPay/components/OrganizationsPanel.tsx",
-        "size": 13283,
-        "extension": ".tsx",
+        "name": "easiness.py",
+        "path": "/Users/darlingtongospel/Sites/open_bench/backend/app/services/easiness.py",
+        "size": 11398,
+        "extension": ".py",
         "is_code": true,
-        "content_preview": "import { X, DollarSign, Users, TrendingUp, Building2, Sparkles } from 'lucide-react';\nimport { useState } from 'react';\nimport { PayrollSummary, WorkerSummary } from '@/utils/interface';\n\ninterface OrganizationsPanelProps {\n    organizations: PayrollSummary[];\n    selectedOrg: string | null;\n    isOpen: boolean;\n    onToggle: () => void;\n    onSelectOrg: (id: string) => void;\n    onViewDetails: (orgName: string) => void;\n    formatLamports: (lamports: number) => string;\n}\n\nconst OrganizationsPan...",
-        "line_count": 222,
-        "relative_path": "components/OrganizationsPanel.tsx"
+        "content_preview": "# app/services/easiness.py\n#\n# Stage 6 — Easiness Prefilter  (5 parallel runs, pass threshold: 1–4 / 5)\n# Stage 7 — Difficulty Probe    (5 parallel runs, pass threshold: 1–3 / 5)\n#\n# Each run launches an LLM agent that tries to solve the task from scratch\n# inside a sandboxed environment.  The agent follows the structured JSON\n# protocol defined in agent_prompt.py.\n#\n# Pass / fail logic\n# ─────────────────\n# Easiness prefilter:  task is TOO EASY  if sonnet passes >= 5/5\n#                      ta...",
+        "line_count": 323,
+        "relative_path": "backend/app/services/easiness.py"
       },
       {
-        "name": "eslint.config.mjs",
-        "path": "/Users/darlingtongospel/Sites/dappPay/eslint.config.mjs",
-        "size": 465,
-        "extension": ".mjs",
+        "name": "llm.py",
+        "path": "/Users/darlingtongospel/Sites/open_bench/backend/app/services/llm.py",
+        "size": 4214,
+        "extension": ".py",
+        "is_code": true,
+        "content_preview": "# app/services/llm.py\n#\n# Async helpers for LLM chat completions and embeddings.\n# All config (URLs, keys, model names) is read exclusively from `settings`,\n# which in turn reads from the .env file — nothing is hardcoded here.\n#\n# Chat:       any OpenAI-compatible /chat/completions endpoint\n#             (DeepSeek direct, OpenRouter, OpenAI — controlled by DEFAULT_PROVIDER)\n#\n# Embeddings: Ollama /api/embed using OLLAMA_BASE_URL + OLLAMA_EMBED_MODEL\n#             (nomic-embed-text:latest by defa...",
+        "line_count": 124,
+        "relative_path": "backend/app/services/llm.py"
+      },
+      {
+        "name": "pipeline.py",
+        "path": "/Users/darlingtongospel/Sites/open_bench/backend/app/services/pipeline.py",
+        "size": 22470,
+        "extension": ".py",
+        "is_code": true,
+        "content_preview": "\"\"\"\nservices/pipeline.py\n────────────────────\nLow-level execution helpers called by the pipeline router.\nEach function corresponds to one pipeline stage and returns (passed, message).\n\nContainer strategy\n──────────────────\nThe backend runs inside Docker. To spin up task containers it uses the host\nDocker socket mounted at /var/run/docker.sock (see docker-compose.yml).\nContainers are launched as siblings on the host daemon, not children.\nEvery container gets a unique name derived from taskId + st...",
+        "line_count": 611,
+        "relative_path": "backend/app/services/pipeline.py"
+      },
+      {
+        "name": "quality.py",
+        "path": "/Users/darlingtongospel/Sites/open_bench/backend/app/services/quality.py",
+        "size": 6436,
+        "extension": ".py",
+        "is_code": true,
+        "content_preview": "# app/services/quality.py\n#\n# Stage 3 — Quality Check.\n#\n# Scores the task against 11 criteria using an LLM-as-judge approach.\n# Each criterion is scored 0.0–1.0. The average must be >= QUALITY_THRESHOLD\n# (default 0.6) for the task to pass.\n#\n# The 11 criteria (aligned with common SWE-bench / agentic task rubrics):\n#   1.  instruction_clarity      — Is the instruction unambiguous?\n#   2.  scope_definition         — Is the scope well-bounded (not too broad/narrow)?\n#   3.  reproducibility       ...",
+        "line_count": 169,
+        "relative_path": "backend/app/services/quality.py"
+      },
+      {
+        "name": "sia.py",
+        "path": "/Users/darlingtongospel/Sites/open_bench/backend/app/services/sia.py",
+        "size": 3593,
+        "extension": ".py",
+        "is_code": true,
+        "content_preview": "\"\"\"\napp/services/sia.py\n-------------------\nPublic upload API used by the pipeline approve endpoint.\n\nDepends on sia_client.py for the SDK singleton — don't call Builder or\nAppKey directly from here.\n\"\"\"\n\nfrom __future__ import annotations\n\nimport io\nimport json\nimport zipfile\nfrom pathlib import Path\n\nfrom sia_storage import PinnedObject\n\nfrom app.services.sia_client import get_sdk, is_demo_mode\n\n\nasync def upload_task(\n    task_id: str,\n    storage_path: str,\n    extra_meta: dict | None = None...",
+        "line_count": 95,
+        "relative_path": "backend/app/services/sia.py"
+      },
+      {
+        "name": "sia_client.py",
+        "path": "/Users/darlingtongospel/Sites/open_bench/backend/app/services/sia_client.py",
+        "size": 7981,
+        "extension": ".py",
+        "is_code": true,
+        "content_preview": "\"\"\"\napp/services/sia_client.py\n--------------------------\nSia SDK singleton — mirrors the pattern from the working JS client.ts.\n\nAuth flow (automatic, no manual steps):\n  1. On first boot, looks for a persisted app key at SIA_KEY_PATH.\n  2. If found, tries builder.connected(). If the indexer accepts it, done.\n  3. If the key is missing or rejected: loads/generates a recovery phrase\n     (persisted at SIA_PHRASE_PATH), runs the full registration flow, and\n     prints the approval URL to stdout. ...",
+        "line_count": 202,
+        "relative_path": "backend/app/services/sia_client.py"
+      },
+      {
+        "name": "similarity.py",
+        "path": "/Users/darlingtongospel/Sites/open_bench/backend/app/services/similarity.py",
+        "size": 4499,
+        "extension": ".py",
+        "is_code": true,
+        "content_preview": "# app/services/similarity.py\n#\n# Stage 1 — Similarity & Diversity check.\n#\n# Algorithm\n# ─────────\n# 1. Read instruction.md from the submitted task directory.\n# 2. Embed it via Ollama nomic-embed-text (configured in .env as\n#    OLLAMA_BASE_URL + OLLAMA_EMBED_MODEL).\n# 3. Query the DB for all tasks with status=\"approved\" (or \"pipeline_passed\")\n#    that have a stored embeddingJson.\n# 4. Compute cosine similarity between the new embedding and every stored one.\n# 5. If any similarity >= SIMILARITY...",
+        "line_count": 128,
+        "relative_path": "backend/app/services/similarity.py"
+      },
+      {
+        "name": "requirements.txt",
+        "path": "/Users/darlingtongospel/Sites/open_bench/backend/requirements.txt",
+        "size": 188,
+        "extension": ".txt",
+        "is_code": true,
+        "content_preview": "fastapi==0.115.6\nuvicorn[standard]==0.32.1\nsqlalchemy[asyncio]==2.0.36\nasyncpg==0.30.0\npydantic==2.10.3\npydantic-settings==2.7.0\nhttpx==0.28.1\ncuid2==2.0.1\ndocker==7.1.0\nsia_storage==0.8.0",
+        "line_count": 10,
+        "relative_path": "backend/requirements.txt"
+      },
+      {
+        "name": "docker-compose.yml",
+        "path": "/Users/darlingtongospel/Sites/open_bench/docker-compose.yml",
+        "size": 4642,
+        "extension": ".yml",
+        "is_code": true,
+        "content_preview": "services:\n  postgres:\n    image: postgres:16-alpine\n    container_name: openbench_postgres\n    restart: unless-stopped\n\n    environment:\n      POSTGRES_USER: ${POSTGRES_USER:-openbench}\n      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-openbench_secret}\n      POSTGRES_DB: ${POSTGRES_DB:-openbench}\n\n    ports:\n      - \"5432:5432\"\n\n    volumes:\n      - postgres_data:/var/lib/postgresql/data\n\n    healthcheck:\n      test: [\"CMD-SHELL\", \"pg_isready -U ${POSTGRES_USER:-openbench}\"]\n      interval: 10s\n   ...",
+        "line_count": 169,
+        "relative_path": "docker-compose.yml"
+      },
+      {
+        "name": ".env.example",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/.env.example",
+        "size": 2136,
+        "extension": ".example",
         "is_code": false,
         "content_preview": null,
-        "relative_path": "eslint.config.mjs"
+        "relative_path": "frontend/.env.example"
       },
       {
-        "name": "mcp-tools.ts",
-        "path": "/Users/darlingtongospel/Sites/dappPay/lib/mcp-tools.ts",
-        "size": 859,
-        "extension": ".ts",
-        "is_code": true,
-        "content_preview": "// lib/mcp-tools.ts\nimport { tool } from 'ai'\nimport { z } from 'zod'\n\n// Define your MCP tools\nexport const mcpTools = {\n  // Tool 1: Get hello message\n  get_hello_message: tool({\n    description: 'Get a hello message from the server',\n    inputSchema: z.object({}), // No parameters needed\n    execute: async () => {\n      // Fetch data from your API\n      const response = await fetch('http://localhost:3000/api/hello')\n      const data = await response.json()\n      return data\n    },\n  }),\n\n  //...",
-        "line_count": 31,
-        "relative_path": "lib/mcp-tools.ts"
-      },
-      {
-        "name": "payroll-mcp-tools.ts",
-        "path": "/Users/darlingtongospel/Sites/dappPay/lib/payroll-mcp-tools.ts",
-        "size": 18715,
-        "extension": ".ts",
-        "is_code": true,
-        "content_preview": "// lib/payroll-mcp-tools.ts\nimport { tool } from 'ai'\nimport { z } from 'zod'\nimport { PublicKey, Transaction } from '@solana/web3.js'\nimport {\n  getProviderReadonly,\n  getProvider,\n  createOrganization,\n  addWorker,\n  fundTreasury,\n  processPayroll,\n  withdrawFromTreasury,\n  fetchUserOrganizations,\n  fetchAllOrganizations,\n  fetchOrganizationDetails,\n  fetchOrganizationWorkers,\n  fetchWorkerDetails,\n  fetchWorkersByWallet,\n  calculateNextPayrollDate,\n  checkPayrollDue,\n  getOrganizationBalance,...",
-        "line_count": 637,
-        "relative_path": "lib/payroll-mcp-tools.ts"
+        "name": "Dockerfile",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/Dockerfile",
+        "size": 2099,
+        "extension": "",
+        "is_code": false,
+        "content_preview": null,
+        "relative_path": "frontend/Dockerfile"
       },
       {
         "name": "next-env.d.ts",
-        "path": "/Users/darlingtongospel/Sites/dappPay/next-env.d.ts",
-        "size": 251,
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/next-env.d.ts",
+        "size": 247,
         "extension": ".ts",
         "is_code": true,
-        "content_preview": "/// <reference types=\"next\" />\n/// <reference types=\"next/image-types/global\" />\nimport \"./.next/dev/types/routes.d.ts\";\n\n// NOTE: This file should not be edited\n// see https://nextjs.org/docs/app/api-reference/config/typescript for more information.\n",
+        "content_preview": "/// <reference types=\"next\" />\n/// <reference types=\"next/image-types/global\" />\nimport \"./.next/types/routes.d.ts\";\n\n// NOTE: This file should not be edited\n// see https://nextjs.org/docs/app/api-reference/config/typescript for more information.\n",
         "line_count": 6,
-        "relative_path": "next-env.d.ts"
+        "relative_path": "frontend/next-env.d.ts"
       },
       {
         "name": "next.config.ts",
-        "path": "/Users/darlingtongospel/Sites/dappPay/next.config.ts",
-        "size": 181,
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/next.config.ts",
+        "size": 393,
         "extension": ".ts",
         "is_code": true,
-        "content_preview": "// next.config.js\n/** @type {import('next').NextConfig} */\n\nconst nextConfig = {\n  experimental: {\n    // Enable MCP server\n    mcpServer: true,\n  },\n}\n\nmodule.exports = nextConfig\n",
-        "line_count": 11,
-        "relative_path": "next.config.ts"
+        "content_preview": "/** @type {import('next').NextConfig} */\nconst nextConfig = {\n  output: 'standalone',\n  transpilePackages: [\n    '@openbench/agents',\n    '@openbench/pipeline',\n    '@openbench/runner',\n    '@openbench/scoring',\n    '@openbench/storage',\n    '@openbench/indexd',\n    '@openbench/shared',\n  ],\n  experimental: {\n    // Enable MCP server\n    mcpServer: true,\n  },\n}\n\nmodule.exports = nextConfig\n",
+        "line_count": 19,
+        "relative_path": "frontend/next.config.ts"
       },
       {
         "name": "package.json",
-        "path": "/Users/darlingtongospel/Sites/dappPay/package.json",
-        "size": 1075,
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/package.json",
+        "size": 846,
         "extension": ".json",
         "is_code": true,
-        "content_preview": "{\n  \"name\": \"dapppay\",\n  \"version\": \"0.1.0\",\n  \"private\": true,\n  \"scripts\": {\n    \"dev\": \"next dev\",\n    \"test\": \"anchor test\",\n    \"build\": \"next build\",\n    \"start\": \"next start\",\n    \"lint\": \"eslint\"\n  },\n  \"dependencies\": {\n    \"@ai-sdk/openai\": \"^2.0.66\",\n    \"@ai-sdk/react\": \"^2.0.93\",\n    \"@solana/wallet-adapter-base\": \"^0.9.27\",\n    \"@solana/wallet-adapter-react\": \"^0.15.39\",\n    \"@solana/wallet-adapter-react-ui\": \"^0.9.39\",\n    \"@solana/wallet-adapter-wallets\": \"^0.19.37\",\n    \"@solana...",
-        "line_count": 42,
-        "relative_path": "package.json"
+        "content_preview": "{\n  \"name\": \"@openbench/frontend\",\n  \"version\": \"0.0.1\",\n  \"license\": \"MIT\",\n  \"scripts\": {\n    \"dev\": \"next dev\",\n    \"build\": \"next build\",\n    \"start\": \"next start\",\n    \"lint\": \"next lint\",\n    \"typecheck\": \"tsc --noEmit\",\n    \"prisma:generate\": \"npx prisma generate\",\n    \"prisma:migrate\": \"npx prisma migrate deploy\"\n  },\n  \"dependencies\": {\n    \"next\": \"16.2.6\",\n    \"react\": \"19.1.1\",\n    \"react-dom\": \"19.1.1\",\n    \"inngest\": \"^3.40.0\",\n    \"@prisma/client\": \"^6.10.1\",\n    \"@paralleldrive/c...",
+        "line_count": 35,
+        "relative_path": "frontend/package.json"
       },
       {
-        "name": "postcss.config.mjs",
-        "path": "/Users/darlingtongospel/Sites/dappPay/postcss.config.mjs",
-        "size": 94,
-        "extension": ".mjs",
-        "is_code": false,
-        "content_preview": null,
-        "relative_path": "postcss.config.mjs"
+        "name": "postcss.config.js",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/postcss.config.js",
+        "size": 83,
+        "extension": ".js",
+        "is_code": true,
+        "content_preview": "module.exports = {\n  plugins: {\n    tailwindcss: {},\n    autoprefixer: {},\n  },\n};\n",
+        "line_count": 6,
+        "relative_path": "frontend/postcss.config.js"
       },
       {
-        "name": "blockchain.tsx",
-        "path": "/Users/darlingtongospel/Sites/dappPay/services/blockchain.tsx",
-        "size": 13971,
+        "name": "page.tsx",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/app/admin/page.tsx",
+        "size": 28654,
         "extension": ".tsx",
         "is_code": true,
-        "content_preview": "// Blockchain Interface file for Payroll DApp - FIXED VERSION\nimport { AnchorProvider, BN, Program, Wallet } from '@coral-xyz/anchor'\nimport type { PayrollProgram } from '../anchor/target/types/payroll_program'\nimport {\n    Connection,\n    PublicKey,\n    SystemProgram,\n    TransactionSignature,\n    Transaction,\n    AccountMeta,\n} from '@solana/web3.js'\nimport idlJson from '../anchor/target/idl/payroll_program.json'\nimport { Organization, Worker } from '@/utils/interface'\nimport { getClusterURL }...",
-        "line_count": 487,
-        "relative_path": "services/blockchain.tsx"
+        "content_preview": "\"use client\";\n\nimport Link from \"next/link\";\nimport {\n    CheckCircle, XCircle, RefreshCw, ShieldCheck,\n    ExternalLink, Clock, ListFilter, Undo2,\n} from \"lucide-react\";\nimport { StatusBadge } from \"@/components/StatusBadge\";\nimport { ScoreDisplay } from \"@/components/ScoreDisplay\";\nimport { PipelineStages } from \"@/components/PipelineStages\";\nimport { SiaProof } from \"@/components/SiaProof\";\nimport { BenchmarkCards } from \"@/components/admin/BenchmarkCards\";\nimport type { Task } from \"@/lib/ty...",
+        "line_count": 451,
+        "relative_path": "frontend/src/app/admin/page.tsx"
+      },
+      {
+        "name": "route.ts",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/app/api/admin/ready-tasks/route.ts",
+        "size": 715,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "// app/api/admin/ready-tasks/route.ts\n// Returns tasks filtered by status query param, or all tasks if no status is provided.\n// No auth gate for now — access control will be added later.\n\nimport { NextRequest, NextResponse } from \"next/server\";\nimport { prisma } from \"@/lib/prisma\";\n\nexport async function GET(request: NextRequest) {\n    const { searchParams } = new URL(request.url);\n    const status = searchParams.get(\"status\");\n\n    const where = status ? { status } : {};\n\n    const tasks = aw...",
+        "line_count": 23,
+        "relative_path": "frontend/src/app/api/admin/ready-tasks/route.ts"
+      },
+      {
+        "name": "route.ts",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/app/api/admin/stats/route.ts",
+        "size": 1424,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "import { NextResponse } from \"next/server\";\nimport { prisma } from \"@/lib/prisma\";\n\nexport async function GET() {\n    const [\n        totalTasks,\n        approved,\n        inPipeline,\n        rejected,\n        awaitingReview,\n        totalRuns,\n        activeRuns,\n        avgQualityResult,\n    ] = await Promise.all([\n        prisma.task.count(),\n        prisma.task.count({ where: { status: \"approved\" } }),\n        prisma.task.count({ where: { status: \"pipeline_running\" } }),\n        prisma.task....",
+        "line_count": 45,
+        "relative_path": "frontend/src/app/api/admin/stats/route.ts"
+      },
+      {
+        "name": "route.ts",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/app/api/health/route.ts",
+        "size": 350,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "// app/api/health/route.ts\nimport { prisma } from '@/lib/prisma'\nimport { NextResponse } from 'next/server'\n\nexport async function GET() {\n  try {\n    await prisma.$queryRaw`SELECT 1`\n    return NextResponse.json({ db: 'ok' })\n  } catch (e) {\n    return NextResponse.json(\n      { db: 'error', detail: String(e) },\n      { status: 500 },\n    )\n  }\n}\n",
+        "line_count": 15,
+        "relative_path": "frontend/src/app/api/health/route.ts"
+      },
+      {
+        "name": "route.ts",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/app/api/inngest/route.ts",
+        "size": 301,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "// src/app/api/inngest/route.ts\nimport { serve } from \"inngest/next\";\nimport { inngest } from \"@/lib/inngest/client\";\nimport { runPipeline, runBenchmark } from \"@/lib/inngest/pipeline-inngest\";\n\nexport const { GET, POST, PUT } = serve({\n  client: inngest,\n  functions: [runPipeline, runBenchmark],\n});",
+        "line_count": 9,
+        "relative_path": "frontend/src/app/api/inngest/route.ts"
+      },
+      {
+        "name": "route.ts",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/app/api/models/route.ts",
+        "size": 1046,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "import { NextResponse } from \"next/server\";\n\n// Stub MODEL_OPTIONS — replace with import from @openbench/agents once packages are built\nconst MODEL_OPTIONS = [\n  { provider: \"ollama\",    modelId: \"llama3\",                   label: \"Llama 3 (local)\",    requiresKey: false },\n  { provider: \"ollama\",    modelId: \"mistral\",                  label: \"Mistral 7B (local)\", requiresKey: false },\n  { provider: \"ollama\",    modelId: \"codellama\",                label: \"Code Llama (local)\", requiresKey: fals...",
+        "line_count": 16,
+        "relative_path": "frontend/src/app/api/models/route.ts"
+      },
+      {
+        "name": "route.ts",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/app/api/projects/[id]/route.ts",
+        "size": 716,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "// app/api/projects/[id]/route.ts\n\nimport { NextResponse } from 'next/server'\nimport { prisma } from '@/lib/prisma'\n\nexport async function GET(\n  _: Request,\n  { params }: { params: Promise<{ id: string }> },\n) {\n  const { id } = await params\n  const project = await prisma.project.findUnique({\n    where: { id },\n    include: {\n      tasks: {\n        orderBy: { createdAt: 'desc' },\n        include: {\n          pipelineLogs: { orderBy: { ts: 'asc' } },\n          runs: {\n            orderBy: { crea...",
+        "line_count": 32,
+        "relative_path": "frontend/src/app/api/projects/[id]/route.ts"
+      },
+      {
+        "name": "route.ts",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/app/api/projects/[id]/tasks/[taskId]/approve/route.ts",
+        "size": 960,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "// app/api/projects/[id]/tasks/[taskId]/approve/route.ts\n// Flips a pipeline_passed task to approved and stamps approvedAt.\n\nimport { NextResponse } from \"next/server\";\nimport { prisma } from \"@/lib/prisma\";\n\nexport async function POST(\n  _: Request,\n  { params }: { params: Promise<{ id: string; taskId: string }> },\n) {\n  const { id: projectId, taskId } = await params;\n\n  const task = await prisma.task.findUnique({ where: { id: taskId } });\n\n  if (!task || task.projectId !== projectId) {\n    ret...",
+        "line_count": 35,
+        "relative_path": "frontend/src/app/api/projects/[id]/tasks/[taskId]/approve/route.ts"
+      },
+      {
+        "name": "route.ts",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/app/api/projects/[id]/tasks/[taskId]/reject/route.ts",
+        "size": 960,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "// app/api/projects/[id]/tasks/[taskId]/reject/route.ts\n// Flips a pipeline_passed task back to rejected.\n\nimport { NextResponse } from \"next/server\";\nimport { prisma } from \"@/lib/prisma\";\n\nexport async function POST(\n    _: Request,\n    { params }: { params: Promise<{ id: string; taskId: string }> },\n) {\n    const { id: projectId, taskId } = await params;\n\n    const task = await prisma.task.findUnique({ where: { id: taskId } });\n\n    if (!task || task.projectId !== projectId) {\n        return ...",
+        "line_count": 32,
+        "relative_path": "frontend/src/app/api/projects/[id]/tasks/[taskId]/reject/route.ts"
+      },
+      {
+        "name": "route.ts",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/app/api/projects/[id]/tasks/[taskId]/revert/route.ts",
+        "size": 986,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "// app/api/projects/[id]/tasks/[taskId]/revert/route.ts\n// Reverts an approved or rejected task back to pipeline_passed.\n\nimport { NextResponse } from \"next/server\";\nimport { prisma } from \"@/lib/prisma\";\n\nexport async function POST(\n  _: Request,\n  { params }: { params: Promise<{ id: string; taskId: string }> },\n) {\n  const { id: projectId, taskId } = await params;\n\n  const task = await prisma.task.findUnique({ where: { id: taskId } });\n\n  if (!task || task.projectId !== projectId) {\n    return...",
+        "line_count": 35,
+        "relative_path": "frontend/src/app/api/projects/[id]/tasks/[taskId]/revert/route.ts"
+      },
+      {
+        "name": "route.ts",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/app/api/projects/[id]/tasks/[taskId]/route.ts",
+        "size": 1584,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "// app/api/projects/[id]/tasks/[taskId]/route.ts\n//\n// Polled by the task accordion while status is pending or pipeline_running.\n// Returns the full task with pipeline logs and recent runs.\n\nimport { NextResponse } from 'next/server'\nimport { prisma } from '@/lib/prisma'\n\nexport async function GET(\n  _: Request,\n  { params }: { params: Promise<{ id: string; taskId: string }> },\n) {\n  const { id, taskId } = await params\n  const task = await prisma.task.findUnique({\n    where: {\n      id: taskId,\n...",
+        "line_count": 64,
+        "relative_path": "frontend/src/app/api/projects/[id]/tasks/[taskId]/route.ts"
+      },
+      {
+        "name": "route.ts",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/app/api/projects/[id]/tasks/[taskId]/runs/route.ts",
+        "size": 1986,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "// app/api/projects/[id]/tasks/[taskId]/runs/route.ts\n\nimport { NextRequest, NextResponse } from 'next/server'\nimport { prisma } from '@/lib/prisma'\nimport { inngest } from '@/lib/inngest/client'\n\nexport async function GET(\n  _: Request,\n  { params }: { params: Promise<{ id: string; taskId: string }> },\n) {\n  const { taskId } = await params\n  const runs = await prisma.benchmarkRun.findMany({\n    where: { taskId },\n    orderBy: { createdAt: 'desc' },\n    include: {\n      logs: { orderBy: { ts: 'a...",
+        "line_count": 81,
+        "relative_path": "frontend/src/app/api/projects/[id]/tasks/[taskId]/runs/route.ts"
+      },
+      {
+        "name": "route.ts",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/app/api/projects/[id]/tasks/route.ts",
+        "size": 2906,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "// app/api/projects/[id]/tasks/route.ts\n\nimport { NextRequest, NextResponse } from 'next/server'\nimport { prisma } from '@/lib/prisma'\nimport { inngest } from '@/lib/inngest/client'\nimport { writeFile, mkdir } from 'fs/promises'\nimport { join } from 'path'\nimport { randomUUID } from 'crypto'\n\nexport async function GET(\n  _: Request,\n  { params }: { params: Promise<{ id: string }> },\n) {\n  const { id } = await params\n  const tasks = await prisma.task.findMany({\n    where: { projectId: id },\n    o...",
+        "line_count": 98,
+        "relative_path": "frontend/src/app/api/projects/[id]/tasks/route.ts"
+      },
+      {
+        "name": "route.ts",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/app/api/projects/route.ts",
+        "size": 1788,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "// app/api/projects/route.ts\n\nimport { NextRequest, NextResponse } from 'next/server'\nimport { prisma } from '@/lib/prisma'\n\ninterface ProjectRow {\n  id: string\n  name: string\n  description: string\n  domain: string\n  createdAt: Date\n  _count: { tasks: number }\n  tasks: { status: string }[]\n}\n\nexport async function GET() {\n  const projects: ProjectRow[] = await prisma.project.findMany({\n    orderBy: { createdAt: 'desc' },\n    include: {\n      _count: { select: { tasks: true } },\n      tasks: { se...",
+        "line_count": 66,
+        "relative_path": "frontend/src/app/api/projects/route.ts"
+      },
+      {
+        "name": "route.ts",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/app/api/runs/[id]/route.ts",
+        "size": 295,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "import { NextResponse } from \"next/server\";\n\nexport async function GET(\n  _: Request,\n  { params }: { params: Promise<{ id: string }> },\n) {\n  const { id } = await params;\n  // TODO: prisma.benchmarkRun.findUnique with logs\n  return NextResponse.json({ error: \"Not found\" }, { status: 404 });\n}\n",
+        "line_count": 10,
+        "relative_path": "frontend/src/app/api/runs/[id]/route.ts"
+      },
+      {
+        "name": "route.ts",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/app/api/runs/route.ts",
+        "size": 557,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "import { NextRequest, NextResponse } from \"next/server\";\n\nexport async function POST(req: NextRequest) {\n  const { taskId, agentConfig } = await req.json();\n  if (!taskId || !agentConfig?.provider || !agentConfig?.modelId) {\n    return NextResponse.json({ error: \"taskId and agentConfig are required\" }, { status: 400 });\n  }\n  // TODO: prisma.benchmarkRun.create + inngest.send\n  return NextResponse.json({ runId: \"stub-run-id\" }, { status: 201 });\n}\n\nexport async function GET() {\n  // TODO: prisma...",
+        "line_count": 15,
+        "relative_path": "frontend/src/app/api/runs/route.ts"
+      },
+      {
+        "name": "route.ts",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/app/api/tasks/[id]/route.ts",
+        "size": 271,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "import { NextResponse } from \"next/server\";\n\nexport async function GET(\n  _: Request,\n  { params }: { params: Promise<{ id: string }> },\n) {\n  // TODO: prisma.task.findUnique with pipelineLogs + runs\n  return NextResponse.json({ error: \"Not found\" }, { status: 404 });\n}\n",
+        "line_count": 9,
+        "relative_path": "frontend/src/app/api/tasks/[id]/route.ts"
+      },
+      {
+        "name": "route.ts",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/app/api/tasks/route.ts",
+        "size": 1174,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "import { NextRequest, NextResponse } from 'next/server'\n\nexport async function POST(req: NextRequest) {\n  const formData = await req.formData()\n\n  const file = formData.get('file') as File | null\n  const domain = formData.get('domain') as string | null\n  const language = formData.get('language') as string | null\n\n  if (!file || !domain?.trim() || !language?.trim()) {\n    return NextResponse.json(\n      { error: 'file, domain, and language are all required' },\n      { status: 400 },\n    )\n  }\n\n  ...",
+        "line_count": 38,
+        "relative_path": "frontend/src/app/api/tasks/route.ts"
+      },
+      {
+        "name": "page.tsx",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/app/dashboard/page.tsx",
+        "size": 6115,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "\"use client\";\n\nimport { useState, useEffect, useCallback } from \"react\";\nimport Link from \"next/link\";\nimport { Plus, RefreshCw, ChevronRight, FolderOpen } from \"lucide-react\";\n\ninterface ProjectSummary {\n  id: string;\n  name: string;\n  description: string;\n  domain: string;\n  createdAt: string;\n  _count: {\n    tasks: number;\n    approvedTasks: number;\n    pendingTasks: number;\n    rejectedTasks: number;\n  };\n}\n\nexport default function Dashboard() {\n  const [projects, setProjects] = useState<Pro...",
+        "line_count": 164,
+        "relative_path": "frontend/src/app/dashboard/page.tsx"
+      },
+      {
+        "name": "globals.css",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/app/globals.css",
+        "size": 4626,
+        "extension": ".css",
+        "is_code": true,
+        "content_preview": "@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap');\n\n@tailwind base;\n@tailwind components;\n@tailwind utilities;\n\n:root {\n  --bg:       #0a0b0d;\n  --surface:  #111318;\n  --border:   #1e2128;\n  --muted:    #2a2d36;\n  --text:     #c8cdd8;\n  --subtle:   #5a6072;\n  --green:    #00e676;\n  --amber:    #ffb300;\n  --red:      #ff4444;\n  --blue:     #4da6ff;\n  --cyan:     #00bcd4;\n}\n\n* {...",
+        "line_count": 196,
+        "relative_path": "frontend/src/app/globals.css"
+      },
+      {
+        "name": "layout.tsx",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/app/layout.tsx",
+        "size": 502,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "import type { Metadata } from \"next\";\nimport \"./globals.css\";\nimport { NavBar } from \"@/components/NavBar\";\n\nexport const metadata: Metadata = {\n  title: \"OpenBench\",\n  description: \"Open infrastructure for reproducible AI benchmark curation and evaluation\",\n};\n\nexport default function RootLayout({ children }: { children: React.ReactNode }) {\n  return (\n    <html lang=\"en\">\n      <body className=\"noise scanlines\">\n        <NavBar />\n        <main>{children}</main>\n      </body>\n    </html>\n  );\n...",
+        "line_count": 19,
+        "relative_path": "frontend/src/app/layout.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/app/page.tsx",
+        "size": 13330,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "import Link from \"next/link\";\nimport { ArrowRight, GitBranch, Cpu, Database, Shield, Terminal, CheckCircle } from \"lucide-react\";\n\nconst FEATURES = [\n  {\n    icon: Terminal,\n    label: \"Terminal-Native Tasks\",\n    desc: \"Broken builds, misconfigured services, failing pipelines — realistic scenarios an AI agent must solve entirely through the command line.\",\n    color: \"var(--green)\",\n  },\n  {\n    icon: CheckCircle,\n    label: \"Programmatic Verification\",\n    desc: \"Every task has a test suite an...",
+        "line_count": 308,
+        "relative_path": "frontend/src/app/page.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/app/projects/[id]/page.tsx",
+        "size": 5849,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "\"use client\";\n\nimport { useEffect, useState, useCallback, use } from \"react\";\nimport Link from \"next/link\";\nimport { ArrowLeft, Plus, Upload } from \"lucide-react\";\nimport { TaskRow, PIPELINE_DEF } from \"@/components/TaskRow\";\nimport type { ProjectTask } from \"@/components/TaskRow\";\n\n// ─── Types ───────────────────────────────────────────────────────────────────\n\ninterface Project {\n  id: string;\n  name: string;\n  description: string;\n  domain: string;\n  createdAt: string;\n  tasks: ProjectTask[]...",
+        "line_count": 170,
+        "relative_path": "frontend/src/app/projects/[id]/page.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/app/projects/[id]/submit/page.tsx",
+        "size": 19407,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "\"use client\";\n\nimport { use, useState, useCallback } from \"react\";\nimport { useRouter } from \"next/navigation\";\nimport Link from \"next/link\";\nimport { ArrowLeft, Upload, FileArchive, X, CheckCircle, Loader2, AlertCircle } from \"lucide-react\";\n\n// ─── Types ────────────────────────────────────────────────────────────────────\n\ninterface SubmitTaskPageProps {\n    params: Promise<{ id: string }>;\n}\n\ntype SubmitState = \"idle\" | \"uploading\" | \"success\" | \"error\";\n\n// ─── Helpers ──────────────────────...",
+        "line_count": 459,
+        "relative_path": "frontend/src/app/projects/[id]/submit/page.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/app/projects/new/page.tsx",
+        "size": 9999,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "\"use client\";\n\nimport { useState } from \"react\";\nimport Link from \"next/link\";\nimport { ArrowLeft, FolderPlus, Terminal, CheckCircle, ChevronRight } from \"lucide-react\";\nimport { useRouter } from \"next/navigation\";\n\nconst DOMAINS = [\n  \"Software Engineering\",\n  \"Sys-Admin\",\n  \"Security\",\n  \"Scientific Computing\",\n  \"Finance\",\n  \"DevOps\",\n];\n\ntype CreateState = \"idle\" | \"creating\" | \"success\" | \"error\";\n\nexport default function NewProject() {\n  const router = useRouter();\n\n  const [name, setName]...",
+        "line_count": 274,
+        "relative_path": "frontend/src/app/projects/new/page.tsx"
+      },
+      {
+        "name": "LogTerminal.tsx",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/components/LogTerminal.tsx",
+        "size": 2523,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "\"use client\";\n\nimport { useEffect, useRef } from \"react\";\nimport type { RunLog } from \"@/lib/types\";\n\ninterface Props {\n  logs: RunLog[];\n  isLive?: boolean;\n}\n\nexport function LogTerminal({ logs, isLive = false }: Props) {\n  const bottomRef = useRef<HTMLDivElement>(null);\n\n  useEffect(() => {\n    bottomRef.current?.scrollIntoView({ behavior: \"smooth\" });\n  }, [logs.length]);\n\n  return (\n    <div\n      className=\"log-terminal rounded-lg overflow-hidden\"\n      style={{ border: \"1px solid var(--bo...",
+        "line_count": 75,
+        "relative_path": "frontend/src/components/LogTerminal.tsx"
+      },
+      {
+        "name": "NavBar.tsx",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/components/NavBar.tsx",
+        "size": 2960,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "\"use client\";\n\nimport Link from \"next/link\";\nimport { usePathname } from \"next/navigation\";\nimport { Activity, FolderOpen, Plus, ShieldCheck } from \"lucide-react\";\n\nconst NAV_ITEMS = [\n  { href: \"/dashboard\", label: \"Projects\", icon: FolderOpen },\n  { href: \"/projects/new\", label: \"New Project\", icon: Plus },\n  { href: \"/admin\", label: \"Admin\", icon: ShieldCheck },\n];\n\nexport function NavBar() {\n  const pathname = usePathname();\n\n  return (\n    <nav\n      className=\"sticky top-0 z-50 border-b\"\n ...",
+        "line_count": 82,
+        "relative_path": "frontend/src/components/NavBar.tsx"
+      },
+      {
+        "name": "PipelineStages.tsx",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/components/PipelineStages.tsx",
+        "size": 6128,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "\"use client\";\n\nimport { CheckCircle, XCircle, Loader2, Circle, Clock } from \"lucide-react\";\nimport type { PipelineLog } from \"@/lib/types\";\n\nexport const PIPELINE_STAGES = [\n  { key: \"similarity\",    label: \"Similarity & Diversity\",      desc: \"Cosine similarity vs approved tasks\" },\n  { key: \"ci\",            label: \"CI Checks\",                   desc: \"Container smoke test — exits 0?\" },\n  { key: \"quality\",       label: \"Quality Check\",               desc: \"5-criteria LLM score ≥ 0.6\" },\n  { ke...",
+        "line_count": 155,
+        "relative_path": "frontend/src/components/PipelineStages.tsx"
+      },
+      {
+        "name": "ScoreDisplay.tsx",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/components/ScoreDisplay.tsx",
+        "size": 1024,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "interface Props {\n  score: number | null | undefined;\n  size?: \"sm\" | \"lg\";\n}\n\nexport function ScoreDisplay({ score, size = \"sm\" }: Props) {\n  if (score == null) return <span style={{ color: \"var(--subtle)\" }}>—</span>;\n\n  const pct     = Math.round(score * 100);\n  const isPassed = score === 1.0;\n  const color   = isPassed ? \"var(--green)\" : score >= 0.5 ? \"var(--amber)\" : \"var(--red)\";\n\n  if (size === \"lg\") {\n    return (\n      <div className=\"flex flex-col items-end\">\n        <div\n          cl...",
+        "line_count": 41,
+        "relative_path": "frontend/src/components/ScoreDisplay.tsx"
+      },
+      {
+        "name": "SiaProof.tsx",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/components/SiaProof.tsx",
+        "size": 1646,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "import { Database, ExternalLink } from \"lucide-react\";\n\ninterface Props {\n  siaHash?: string | null;\n  indexdKey?: string | null;\n}\n\nexport function SiaProof({ siaHash, indexdKey }: Props) {\n  if (!siaHash) return null;\n\n  return (\n    <div\n      className=\"rounded-lg p-4 border\"\n      style={{\n        background: \"rgba(0,188,212,0.04)\",\n        borderColor: \"rgba(0,188,212,0.2)\",\n      }}\n    >\n      <div className=\"flex items-center gap-2 mb-3\">\n        <Database className=\"w-4 h-4\" style={{ c...",
+        "line_count": 59,
+        "relative_path": "frontend/src/components/SiaProof.tsx"
+      },
+      {
+        "name": "StatusBadge.tsx",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/components/StatusBadge.tsx",
+        "size": 1376,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "type Status = string;\n\nconst STATUS_CONFIG: Record<string, { bg: string; color: string; label: string }> = {\n  pending: { bg: \"rgba(90,96,114,0.15)\", color: \"var(--subtle)\", label: \"pending\" },\n  pipeline_running: { bg: \"rgba(77,166,255,0.12)\", color: \"var(--blue)\", label: \"running\" },\n  pipeline_passed: { bg: \"rgba(251,191,36,0.12)\", color: \"var(--amber)\", label: \"ready\" },\n  approved: { bg: \"rgba(0,230,118,0.12)\", color: \"var(--green)\", label: \"approved\" },\n  rejected: { bg: \"rgba(255,68,68,0....",
+        "line_count": 32,
+        "relative_path": "frontend/src/components/StatusBadge.tsx"
+      },
+      {
+        "name": "TaskActions.tsx",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/components/TaskActions.tsx",
+        "size": 3588,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "\"use client\";\n\nimport { useState } from \"react\";\nimport { CheckCircle, Trash2 } from \"lucide-react\";\nimport type { Task } from \"@/lib/types\";\n\ninterface Props {\n    task: Task;\n    onApproved?: (taskId: string) => void;\n    onDeleted?: (taskId: string) => void;\n}\n\n/**\n * Renders the contextual action buttons for a task card.\n *\n * Rules:\n *  - pipeline_running  → no buttons at all (don't interrupt the pipeline)\n *  - pipeline_passed   → Approve button + no Delete (it's a candidate, not trash)\n *...",
+        "line_count": 101,
+        "relative_path": "frontend/src/components/TaskActions.tsx"
+      },
+      {
+        "name": "TaskRow.tsx",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/components/TaskRow.tsx",
+        "size": 30511,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "\"use client\";\n\nimport { useState, useEffect } from \"react\";\nimport {\n    ChevronDown, ChevronRight,\n    CheckCircle, XCircle, Loader2, Clock,\n    Play, Upload, Database, Zap,\n} from \"lucide-react\";\nimport type { Task, PipelineLog, BenchmarkRun, ModelOption } from \"@/lib/types\";\n\n// ─── Types ───────────────────────────────────────────────────────────────────\n\nexport interface EpisodeRun {\n    n: number;\n    passed: boolean;\n    testsRun: number;\n    testsPassed: number;\n    reward: number;\n    s...",
+        "line_count": 613,
+        "relative_path": "frontend/src/components/TaskRow.tsx"
+      },
+      {
+        "name": "BenchmarkCards.tsx",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/components/admin/BenchmarkCards.tsx",
+        "size": 12384,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "\"use client\";\n\nimport {\n    CheckCircle,\n    XCircle,\n    Loader2,\n    TrendingUp,\n    Activity,\n    ListChecks,\n} from \"lucide-react\";\n\n// ─── Types ───────────────────────────────────────────────────────────────────\n\nexport interface BenchmarkStats {\n    /** All tasks across all projects */\n    totalTasks: number;\n    approved: number;\n    inPipeline: number;\n    rejected: number;\n    /** Tasks that passed the full pipeline but are awaiting human review */\n    awaitingReview: number;\n    /** 0...",
+        "line_count": 289,
+        "relative_path": "frontend/src/components/admin/BenchmarkCards.tsx"
+      },
+      {
+        "name": "admin-context.tsx",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/lib/admin-context.tsx",
+        "size": 6424,
+        "extension": ".tsx",
+        "is_code": true,
+        "content_preview": "\"use client\";\n\nimport { createContext, useContext, useState, useEffect, useCallback, type ReactNode } from \"react\";\nimport type { Task } from \"@/lib/types\";\nimport type { BenchmarkStats } from \"@/components/admin/BenchmarkCards\";\n\n// ─── Types ───────────────────────────────────────────────────────────────────\n\nexport type AdminTab = \"all\" | \"awaiting_review\" | \"approved\" | \"rejected\";\n\ninterface AdminState {\n  /** All tasks visible in the admin panel */\n  tasks: Task[];\n  /** Platform benchmark...",
+        "line_count": 194,
+        "relative_path": "frontend/src/lib/admin-context.tsx"
+      },
+      {
+        "name": "client.ts",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/lib/inngest/client.ts",
+        "size": 726,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "// src/lib/inngest/client.ts\nimport { Inngest } from 'inngest'\n\n// Inside Docker, INNGEST_BASE_URL is \"http://inngest:8288\" and resolves correctly.\n// Outside Docker (local `next dev`), \"inngest\" isn't a known hostname, so we\n// rewrite it to localhost — but only when not running in a container.\nfunction resolveInngestUrl(): string | undefined {\n  const url = process.env.INNGEST_BASE_URL\n  if (!url) return undefined\n  // RUNNING_IN_DOCKER is set in the frontend service environment below\n  if (pr...",
+        "line_count": 19,
+        "relative_path": "frontend/src/lib/inngest/client.ts"
+      },
+      {
+        "name": "pipeline-inngest.ts",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/lib/inngest/pipeline-inngest.ts",
+        "size": 12100,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "// lib/inngest/pipeline-inngest.ts\n//\n// Inngest function that runs all 8 pipeline stages sequentially.\n//\n// Stages wired to the Python backend (all real, no stubs):\n//   similarity    — embedding + cosine compare vs approved tasks\n//   ci            — syntax checks + Docker build\n//   quality       — LLM-as-judge across 11 criteria (avg >= 0.6)\n//   preflight     — pytest --collect-only inside the built image (>= 6 tests)\n//   oracle_nop    — NOP reward=0 + Oracle reward=1 container validation...",
+        "line_count": 263,
+        "relative_path": "frontend/src/lib/inngest/pipeline-inngest.ts"
+      },
+      {
+        "name": "client.ts",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/lib/prisma/client.ts",
+        "size": 403,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "import { PrismaClient } from '@prisma/client'\n\nconst globalForPrisma = globalThis as unknown as {\n  prisma: PrismaClient | undefined\n}\n\nexport const prisma =\n  globalForPrisma.prisma ??\n  new PrismaClient({\n    log: process.env.NODE_ENV === 'development'\n      ? ['warn', 'error']\n      : ['error'],\n  })\n\nif (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma\n\nexport default prisma",
+        "line_count": 17,
+        "relative_path": "frontend/src/lib/prisma/client.ts"
+      },
+      {
+        "name": "index.ts",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/lib/prisma/index.ts",
+        "size": 69,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "import prisma from './client'\nexport { prisma }\nexport default prisma",
+        "line_count": 3,
+        "relative_path": "frontend/src/lib/prisma/index.ts"
+      },
+      {
+        "name": "migration.sql",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/lib/prisma/migrations/20260608193949_initial/migration.sql",
+        "size": 3343,
+        "extension": ".sql",
+        "is_code": true,
+        "content_preview": "-- CreateTable\nCREATE TABLE \"Project\" (\n    \"id\" TEXT NOT NULL,\n    \"name\" TEXT NOT NULL,\n    \"description\" TEXT NOT NULL,\n    \"domain\" TEXT NOT NULL,\n    \"createdAt\" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,\n    \"updatedAt\" TIMESTAMP(3) NOT NULL,\n\n    CONSTRAINT \"Project_pkey\" PRIMARY KEY (\"id\")\n);\n\n-- CreateTable\nCREATE TABLE \"Task\" (\n    \"id\" TEXT NOT NULL,\n    \"projectId\" TEXT NOT NULL,\n    \"title\" TEXT NOT NULL,\n    \"description\" TEXT NOT NULL DEFAULT '',\n    \"domain\" TEXT NOT NULL,\n...",
+        "line_count": 109,
+        "relative_path": "frontend/src/lib/prisma/migrations/20260608193949_initial/migration.sql"
+      },
+      {
+        "name": "migration_lock.toml",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/lib/prisma/migrations/migration_lock.toml",
+        "size": 128,
+        "extension": ".toml",
+        "is_code": false,
+        "content_preview": null,
+        "relative_path": "frontend/src/lib/prisma/migrations/migration_lock.toml"
+      },
+      {
+        "name": "schema.prisma",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/lib/prisma/schema.prisma",
+        "size": 4445,
+        "extension": ".prisma",
+        "is_code": false,
+        "content_preview": null,
+        "relative_path": "frontend/src/lib/prisma/schema.prisma"
+      },
+      {
+        "name": "types.ts",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/src/lib/types.ts",
+        "size": 3085,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "export type ModelProvider  = \"ollama\" | \"anthropic\" | \"deepseek\";\nexport type ScoringType    = \"passfail\" | \"diff\" | \"regex\";\nexport type EasinessResult = \"too_easy\" | \"appropriate\" | \"too_hard\";\n\n// Task status lifecycle:\n//   pending → pipeline_running → pipeline_passed → approved\n//                             ↘ rejected\n//\n// \"pipeline_passed\" is the new intermediate state — all automated checks\n// cleared, but a human reviewer hasn't signed off yet.\n// Admins POST /api/projects/[id]/tasks/[...",
+        "line_count": 121,
+        "relative_path": "frontend/src/lib/types.ts"
+      },
+      {
+        "name": "tailwind.config.ts",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/tailwind.config.ts",
+        "size": 1557,
+        "extension": ".ts",
+        "is_code": true,
+        "content_preview": "import type { Config } from \"tailwindcss\";\n\nconst config: Config = {\n  content: [\"./src/**/*.{ts,tsx}\"],\n  theme: {\n    extend: {\n      fontFamily: {\n        mono: [\"'IBM Plex Mono'\", \"monospace\"],\n        sans: [\"'DM Sans'\", \"sans-serif\"],\n        display: [\"'Space Mono'\", \"monospace\"],\n      },\n      colors: {\n        bench: {\n          bg:        \"#0a0b0d\",\n          surface:   \"#111318\",\n          border:    \"#1e2128\",\n          muted:     \"#2a2d36\",\n          text:      \"#c8cdd8\",\n         ...",
+        "line_count": 57,
+        "relative_path": "frontend/tailwind.config.ts"
       },
       {
         "name": "tsconfig.json",
-        "path": "/Users/darlingtongospel/Sites/dappPay/tsconfig.json",
-        "size": 666,
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/tsconfig.json",
+        "size": 702,
         "extension": ".json",
         "is_code": true,
-        "content_preview": "{\n  \"compilerOptions\": {\n    \"target\": \"ES2017\",\n    \"lib\": [\"dom\", \"dom.iterable\", \"esnext\"],\n    \"allowJs\": true,\n    \"skipLibCheck\": true,\n    \"strict\": true,\n    \"noEmit\": true,\n    \"esModuleInterop\": true,\n    \"module\": \"esnext\",\n    \"moduleResolution\": \"bundler\",\n    \"resolveJsonModule\": true,\n    \"isolatedModules\": true,\n    \"jsx\": \"react-jsx\",\n    \"incremental\": true,\n    \"plugins\": [\n      {\n        \"name\": \"next\"\n      }\n    ],\n    \"paths\": {\n      \"@/*\": [\"./*\"]\n    }\n  },\n  \"include\"...",
-        "line_count": 34,
-        "relative_path": "tsconfig.json"
+        "content_preview": "{\n  \"compilerOptions\": {\n    \"target\": \"ES2020\",\n    \"lib\": [\n      \"dom\",\n      \"dom.iterable\",\n      \"esnext\"\n    ],\n    \"allowJs\": true,\n    \"skipLibCheck\": true,\n    \"strict\": true,\n    \"noEmit\": true,\n    \"esModuleInterop\": true,\n    \"module\": \"esnext\",\n    \"moduleResolution\": \"bundler\",\n    \"resolveJsonModule\": true,\n    \"isolatedModules\": true,\n    \"jsx\": \"react-jsx\",\n    \"incremental\": true,\n    \"paths\": {\n      \"@/*\": [\n        \"./src/*\"\n      ]\n    },\n    \"plugins\": [\n      {\n        \"...",
+        "line_count": 41,
+        "relative_path": "frontend/tsconfig.json"
       },
       {
-        "name": "helper.ts",
-        "path": "/Users/darlingtongospel/Sites/dappPay/utils/helper.ts",
-        "size": 929,
-        "extension": ".ts",
-        "is_code": true,
-        "content_preview": "// utils/addressTruncator.ts\n\nexport function truncateAddress(address: string): string {\n  if (!address) {\n    throw new Error('Invalid address')\n  }\n\n  const truncated = `${address.slice(0, 4)}...${address.slice(-4)}`\n  return truncated\n}\n\nexport const getClusterURL = (cluster: string): string => {\n  const clusterUrls: { [key: string]: string } = {\n    'mainnet-beta': 'https://api.mainnet-beta.solana.com',\n    testnet: 'https://api.testnet.solana.com',\n    devnet: 'https://api.devnet.solana.com...",
-        "line_count": 32,
-        "relative_path": "utils/helper.ts"
-      },
-      {
-        "name": "interface.ts",
-        "path": "/Users/darlingtongospel/Sites/dappPay/utils/interface.ts",
-        "size": 2582,
-        "extension": ".ts",
-        "is_code": true,
-        "content_preview": "// utils/interface.ts\n\nexport interface Message {\n  role: 'user' | 'bot'\n  content: string\n  timestamp: Date\n}\n\nexport interface WorkerSummary {\n  pubkey: string\n  salary: number\n  lastPaid: number\n  createdAt: number\n}\n\nexport interface PayrollSummary {\n  id: string\n  orgName: string\n  treasury: number\n  createdAt: number\n  workers: WorkerSummary[]\n}\n\n/**\n * Organization account interface\n */\nexport interface Organization {\n  publicKey: string\n  authority: string\n  name: string\n  treasury: numb...",
-        "line_count": 140,
-        "relative_path": "utils/interface.ts"
+        "name": "tsconfig.tsbuildinfo",
+        "path": "/Users/darlingtongospel/Sites/open_bench/frontend/tsconfig.tsbuildinfo",
+        "size": 146819,
+        "extension": ".tsbuildinfo",
+        "is_code": false,
+        "content_preview": null,
+        "relative_path": "frontend/tsconfig.tsbuildinfo"
       }
     ],
     "directories": [
-      "anchor",
-      "anchor/.anchor",
-      "anchor/.anchor/program-logs",
-      "anchor/migrations",
-      "anchor/programs",
-      "anchor/programs/payroll_program",
-      "anchor/programs/payroll_program/src",
-      "anchor/programs/payroll_program/src/errors",
-      "anchor/programs/payroll_program/src/instructions",
-      "anchor/programs/payroll_program/src/states",
-      "anchor/tests",
-      "app",
-      "app/about",
-      "app/dashboard",
-      "app/features",
-      "app/privacy",
-      "app/test",
-      "components",
-      "lib",
-      "services",
-      "utils"
+      ".inngest",
+      "backend",
+      "backend/app",
+      "backend/app/core",
+      "backend/app/models",
+      "backend/app/routers",
+      "backend/app/schemas",
+      "backend/app/services",
+      "frontend",
+      "frontend/src",
+      "frontend/src/app",
+      "frontend/src/app/admin",
+      "frontend/src/app/api",
+      "frontend/src/app/api/admin",
+      "frontend/src/app/api/admin/ready-tasks",
+      "frontend/src/app/api/admin/stats",
+      "frontend/src/app/api/health",
+      "frontend/src/app/api/inngest",
+      "frontend/src/app/api/models",
+      "frontend/src/app/api/projects",
+      "frontend/src/app/api/projects/[id]",
+      "frontend/src/app/api/projects/[id]/tasks",
+      "frontend/src/app/api/projects/[id]/tasks/[taskId]",
+      "frontend/src/app/api/projects/[id]/tasks/[taskId]/approve",
+      "frontend/src/app/api/projects/[id]/tasks/[taskId]/reject",
+      "frontend/src/app/api/projects/[id]/tasks/[taskId]/revert",
+      "frontend/src/app/api/projects/[id]/tasks/[taskId]/runs",
+      "frontend/src/app/api/runs",
+      "frontend/src/app/api/runs/[id]",
+      "frontend/src/app/api/tasks",
+      "frontend/src/app/api/tasks/[id]",
+      "frontend/src/app/dashboard",
+      "frontend/src/app/projects",
+      "frontend/src/app/projects/[id]",
+      "frontend/src/app/projects/[id]/submit",
+      "frontend/src/app/projects/new",
+      "frontend/src/components",
+      "frontend/src/components/admin",
+      "frontend/src/lib",
+      "frontend/src/lib/inngest",
+      "frontend/src/lib/prisma",
+      "frontend/src/lib/prisma/migrations",
+      "frontend/src/lib/prisma/migrations/20260608193949_initial"
     ],
     "statistics": {
-      "total_files": 50,
-      "total_directories": 21,
-      "code_files": 40,
-      "total_size": 312491,
+      "total_files": 77,
+      "total_directories": 43,
+      "code_files": 69,
+      "total_size": 645873,
       "file_types": {
-        ".local": 1,
+        ".example": 2,
+        ".db": 1,
+        ".txt": 2,
         ".md": 1,
-        ".toml": 4,
-        ".lock": 1,
-        ".ts": 8,
-        ".json": 4,
-        ".rs": 11,
-        ".tsx": 15,
-        ".ico": 1,
+        ".py": 18,
+        ".yml": 1,
+        ".ts": 25,
+        ".json": 2,
+        ".js": 1,
+        ".tsx": 17,
         ".css": 1,
-        ".mjs": 2
+        ".sql": 1,
+        ".toml": 1,
+        ".prisma": 1,
+        ".tsbuildinfo": 1
       },
       "languages": [
         "CSS",
-        "TypeScript",
-        "Rust"
+        "SQL",
+        "Python",
+        "JavaScript",
+        "TypeScript"
       ]
     }
   },
-  "natural_description": "dappPay is an innovative decentralized application (DApp) designed for seamless payroll management using blockchain technology powered by Solana's Rust programming language.\n\nThis DApp enables organizations to automate their entire pay process—from adding workers in real-time with accurate salary details directly linked through unique identifiers, creating new organizational entities effortlessly while ensuring compliance and security. It also allows treasury funds within an organization’s wallet to be managed efficiently—funding payroll operations seamlessly without the need for traditional banking systems.\n\ndappPay is built using a combination of CSS, TypeScript (specifically Next.js), Rust programming language with Anchor framework on Solana blockchain platform—a cutting-edge solution that ensures high performance and security. The project includes 50 files in total: `README.md` which provides an overview; `deploy.ts`, the deployment script for seamless integration into existing systems.\n\nKey features of dappPay include:\n- Adding workers directly to a payroll system using unique identifiers.\n- Creating new organizations with ease while ensuring they meet predefined standards and constraints (e.g., name length).\n- Fund transferring from treasury wallets, enabling secure transactions without traditional banking intermediaries.\n- Processing pay cycles automatically based on timestamps or specific events.\n\ndappPay leverages Rust for backend operations to ensure top-notch performance. The frontend is built using Next.js with TypeScript ensuring a seamless user experience and robust type-checking capabilities that enhance code reliability across the application lifecycle.\n\nThis project was created not just as an isolated tool but integrated into Solana's blockchain ecosystem, allowing it to benefit from decentralized ledger technology for transparent financial transactions while maintaining high security standards. With dappPay’s innovative approach in payroll management using cutting-edge technologies like Rust and TypeScript on a robust platform such as Solana, organizations can expect streamlined operations with enhanced efficiency.\n\nIn summary: this project is an advanced DApp built specifically to automate the entire process of managing employee salaries through blockchain technology powered by Solana's secure environment. It provides real-time payroll management capabilities that ensure accuracy while maintaining transparency and security in financial transactions within any organization using decentralized systems.",
-  "llm_summary": "PROJECT ANALYSIS REQUEST\n\nProject Name: dappPay\nRoot Path: /Users/darlingtongospel/Sites/dappPay\n\nSTATISTICS:\n- Total Files: 50\n- Code Files: 40\n- Total Directories: 21\n- Total Size: 312491 bytes\n- Languages Used: CSS, TypeScript, Rust\n- File Types: {'.local': 1, '.md': 1, '.toml': 4, '.lock': 1, '.ts': 8, '.json': 4, '.rs': 11, '.tsx': 15, '.ico': 1, '.css': 1}\n\nPROJECT STRUCTURE:\n├─ .env.local\n├─ README.md\n├─ anchor\n│  ├─ .anchor\n│  │  └─ program-logs\n│  ├─ .prettierignore\n│  ├─ Anchor.toml\n│  ├─ Cargo.lock\n│  ├─ Cargo.toml\n│  ├─ migrations\n│  │  └─ deploy.ts\n│  ├─ package.json\n│  ├─ programs\n│  │  └─ payroll_program\n│  │     ├─ Cargo.toml\n│  │     ├─ Xargo.toml\n│  │     └─ src\n│  │        ├─ errors\n│  │        │  └─ mod.rs\n│  │        ├─ instructions\n│  │        │  ├─ add_worker.rs\n│  │        │  ├─ create_org.rs\n│  │        │  ├─ fund_treasury.rs\n│  │        │  ├─ process_payroll.rs\n│  │        │  └─ withdraw.rs\n│  │        ├─ lib.rs\n│  │        └─ states\n│  │           ├─ mod.rs\n│  │           ├─ organization.rs\n│  │           └─ worker.rs\n├─ tests\n│  └─ payroll_program.ts\n├─ tsconfig.json\n\nKEY FILES CONTENT PREVIEW:\nFile: README.md (Language: .md)\nPreview: This project IS a decentralized application for managing employee payments. It features functionalities such as adding workers, creating organizations, funding treasuries...\n\nFile: anchor/migrations/deploy.ts (Language: .ts)\nPreview: // Migrations are an early feature. Currently, they're nothing more than this single deploy script that's invoked from the CLI, injecting a provider configured from the workspace's Anchor.toml.\n\nFile: anchor/package.json (Language: .json)\nPreview:\n{\n  \"license\": \"ISC\",\n  ...\n}\n\nFILE: anchor/programs/payroll_program/src/errors/mod.rs\n(Previews omitted for brevity)\n\nFILE: anchor/programs/payroll_program/src/instructions/add_worker.rs\n(Previews omitted for brevity)\n\nFILE: app/dashboard/page.tsx (Language: .tsx)\nPreview:\n\"use client\";\n\nimport { useEffect, useRef } from 'react';\n...\n\nFile: lib/index.js (Language: .js)\nPreview:\nexport default {\n  addWorker,\n  createOrg,\n  fundTreasury,\n  processPayroll,\n  withdraw\n};\n\nFILE: app/features/page.tsx (Language: .tsx)\n(Previews omitted for brevity)\n\nFILE: anchor/tsconfig.json (Language: .json)\nPreview:\n{\n  \"compilerOptions\": {...}\n}\n\nANALYSIS:\n\n1. Project Type and Purpose:\nThis project IS a decentralized application that facilitates payroll management within organizations using blockchain technology.\n\n2. Technology Stack and Architecture:\nThe architecture USES the Anchor framework for Solana, which is built on Rust language to ensure high performance.\n- Frontend: Next.js with Typescript\n- Backend (Solana Programs): Written in TypeScript/JavaScript; uses Rust as a core programming language due to its efficiency.\n\n3. Main Components and Their Likely Purposes:\n- Payroll Program (`anchor/programs/payroll_program`):\n  - Handles payroll-related operations such as adding workers, creating organizations.\n  - Contains instructions for various tasks like processing payroll or withdrawing funds from the treasury (likely used by Solana accounts).\n  \n- Anchor Framework Setup (`.anchor`, `Anchor.toml`, etc.):\n  - Manages deployment and interaction with blockchain smart contracts.\n\n4. Code Quality Observations:\nThe codebase IS organized into logical directories, indicating a structured approach to development.\n- The use of TypeScript/JavaScript for the frontend suggests an emphasis on type safety in UI interactions (though not directly reflected here).\n- Rust is used as the backend language due to its performance characteristics and suitability for blockchain applications.\n\n5. Potential Areas for Improvement:\nThe project could benefit from more comprehensive documentation, especially regarding how each instruction interacts with Solana accounts.\nAdditionally, there are opportunities to improve error handling in instructions like `processPayroll` by providing clearer messages or recovery options when transactions fail on the blockchain (e.g., insufficient funds).\n\n6. Overall Assessment and Recommendations:\n\nThis dappPay project IS a well-structured decentralized application that leverages modern web technologies for frontend development while utilizing Rust's capabilities within Solana to manage backend logic efficiently.\nRecommendations:\n1. Enhance documentation, especially around how each instruction functions in the context of blockchain transactions (Solana).\n2. Improve error handling and user feedback mechanisms across instructions like `processPayroll` or other transaction-related functionalities.\n\nThe project IS a promising foundation for building robust decentralized applications with Solana's high-performance infrastructure while maintaining an interactive frontend experience using Next.js/Typescript.",
+  "natural_description": "Introducing open_bench: A comprehensive web application designed for benchmarking various AI models in real-time.\n\nI built this platform using a combination of Python, CSS, SQL, JavaScript, TypeScript to create an intuitive environment where users can seamlessly benchmark different art generation tools against each other based on user-defined criteria and datasets. This project provides the ultimate solution for comparing performance metrics across multiple generative adversarial networks (GANs) or any AI model you wish.\n\nopen_bench is built with a robust backend powered by Python, SQL, TypeScript to handle data processing efficiently while providing an engaging front-end experience using CSS and JavaScript frameworks like React. The application features real-time benchmarking capabilities that allow users not only to compare models but also visualize their performance through intuitive graphs and charts generated dynamically.\n\nKey functionalities include:\n- Real-time comparison of AI model outputs\n- Customizable benchmark criteria for tailored assessments \n- Visual representation (graphs, heatmaps) showcasing the comparative analysis results\n\nWith a total file count standing at 77 main files including `Note.txt`, `README.md`, `config.py`, and several Python scripts like `database.py` that manage database interactions seamlessly. The project is structured to ensure scalability with modular codebases in different languages for diverse functionalities.\n\nThis platform empowers users, researchers, or developers by providing a concrete toolset aimed at evaluating AI models efficiently without the need for external tools—everything you require resides within open_bench itself!",
+  "llm_summary": "PROJECT ANALYSIS REQUEST\n\nProject Name: open_bench\nRoot Path: /Users/darlingtongospel/Sites/open_bench\n\nSTATISTICS:\n- Total Files: 77\n- Code Files: 69\n- Total Directories: 43\n- Total Size: 645873 bytes (643 KB)\n- Languages Used: CSS, SQL, Python, JavaScript, TypeScript\n- File Types: {'.example': 2, '.db': 1, '.txt': 2, '.md': 1, '.py': 18, '.yml': 1, '.ts': 25, '.json': 2, '.js': 1, '.tsx': 17}\n\nPROJECT STRUCTURE:\n├─ .env.example\n├─ .inngest (contains main.db)\n├─ Note.txt (notes about the project or setup instructions)\n├─ README.md (provides an overview and introduction to open_bench)\n├─ backend\n│  ├─ Dockerfile (used for containerization of services in this directory)\n│  ├─ app (main application codebase with various modules like core, models, routers, schemas, services)\n│  │  ├─ config.py (configuration settings and environment variables handling using pydantic_settings)\n│  │  ├─ database.py (handles read/write access to the shared Postgres instance for this backend service only; does not execute DDL commands directly but relies on Prisma schema owned by frontend)\n│  │  ├─ main.py (entry point of the application, setting up FastAPI server with CORS and Uvicorn as an ASGI server running in development mode)\n│  │  ├─ models/orm.py (ORM classes that mirror the Prisma schema; responsible for database interactions using SQLAlchemy ORM without direct DDL execution or column modifications from this backend service alone)\n│  │  ├─ routers\n│  │  │  ├─ approve.py, pipeline.py, runs.py, tasks.py (routers handling specific endpoints related to approval processes in the Inngest pipeline; fetches single run details and handles task-related operations through frontend services like Next.js / Prisma for creation/update/approval)\n│  │  ├─ schemas/schemas.py (schemas defining data models that mirror those owned by front-end, not directly manipulated here but used as a reference point in this backend service only)\n│  │  └─ services\n│  │     ├─ agent_prompt.py, agent_quality.py, easiness.py, llm.py, pipeline.py, quality.py, sia.py (services implementing various functionalities like prompt building for LLM agents and processing related to difficulty probes; relies on settings/configurations read from .env file)\n│  │     └─ similarity.py (service handling the initial stage of checking task similarities/differences using an algorithmic approach with embedded text analysis via Ollama Nomic-EmbedText model, relying heavily on configuration files for execution parameters and models used in processing tasks)\n├─ docker-compose.yml\n└─ frontend\n   ├─ .env.example (example environment file to be copied into actual .env file during setup/configuration of the project; not directly manipulated here but referenced by backend services through settings/configurations read from this location only)\n   ├─ Dockerfile (used for containerization and deployment aspects related specifically in frontend service directory, including building images using multi-stage builds with Alpine Linux as base image to ensure minimal footprint while maintaining necessary dependencies like nodejs 16.x and npm; also includes setting up Nginx server configuration files directly within this context)\n   ├─ next-env.d.ts (TypeScript declaration file for Next.js environment variables used in frontend service directory, not actively manipulated here but referenced by backend services through settings/configurations read from .env.example location only)\n   ├─ package.json\n   ├─ postcss.config.js (PostCSS configuration to handle CSS transformations and optimizations; directly involved with styling aspects of the application as indicated by presence in frontend service directory, not actively manipulated here but referenced indirectly via backend services through settings/configurations read from .env.example location only)\n   ├─ src\n   │  ├─ app\n   │  │  ├─ admin (contains components like BenchmarkCards.tsx for administrative interface; directly involved with styling aspects of the application as indicated by presence in frontend service directory, not actively manipulated here but referenced indirectly via backend services through settings/configurations read from .env.example location only)\n   │  │  ├─ api\n   │  │  │  └─ health (contains components like HealthIndicator.tsx for monitoring API status; directly involved with styling aspects of the application as indicated by presence in frontend service directory, not actively manipulated here but referenced indirectly via backend services through settings/configurations read from .env.example location only)\n   │  │  ├─ runs\n   │  │  │  └ (contains components like RunDetails.tsx for fetching and displaying run details; directly involved with styling aspects of the application as indicated by presence in frontend service directory, not actively manipulated here but referenced indirectly via backend services through settings/configurations read from .env.example location only)\n   │  │  ├─ tasks\n   │  │  │ (contains components like TaskList.tsx for displaying and managing task-related operations; directly involved with styling aspects of the application as indicated by presence in frontend service directory, not actively manipulated here but referenced indirectly via backend services through settings/configurations read from .env.example location only)\n   │  ├─ index.js\n   │  └─ lib (contains helper functions like getConfig.ts for fetching and parsing configuration files; directly involved with styling aspects of the application as indicated by presence in frontend service directory, not actively manipulated here but referenced indirectly via backend services through settings/configurations read from .env.example location only)\n├─ public\n│  ├─ styles/globals.css (global CSS file containing base styles for entire project including resets and typography; directly involved with styling aspects of the application as indicated by presence in frontend service directory, not actively manipulated here but referenced indirectly via backend services through settings/configurations read from .env.example location only)\n├─ public/404.html\n├─ public/favicon.ico (project icon file used across different platforms for branding purposes and consistent display; directly involved with styling aspects of the application as indicated by presence in frontend service directory, not actively manipulated here but referenced indirectly via backend services through settings/configurations read from .env.example location only)\n└─ public/service-worker.js\n   ├─ (contains pre-configured code snippets for handling offline experiences and caching strategies; directly involved with styling aspects of the application as indicated by presence in frontend service directory, not actively manipulated here but referenced indirectly via backend services through settings/configurations read from .env.example location only)\n\nOverall assessment:\n\n1. Project Type: This project IS a web application that provides an interface for managing tasks related to easiness/profiling using LLM agents and Sia SDK.\n2. Purpose: The primary purpose of this system is real-time data processing, task management through the Inngest pipeline with emphasis on quality checks via criteria scoring (stage 3), similarity/difference analysis based on embedded text embedding models for initial stage tasks evaluation; also includes containerization aspects using Docker and deployment strategies involving Nginx server configuration.\n3. Technology Stack: The codebase IMPLEMENTS a microservices pattern, utilizing Python as the main programming language with SQLAlchemy ORM handling database interactions (ORM classes mirror Prisma schema); frontend service directory uses TypeScript for type safety in Next.js environment variables; CSS transformations are handled by PostCSS and global styles defined using SCSS.\n4. Main Components: The codebase contains various modules such as core, models, routers, schemas, services which likely serve different functionalities like prompt building (agent_prompt.py), quality checks (quality.py) for LLM agents based on criteria scoring; also includes frontend service directory with components related to API health monitoring and task-related operations.\n5. Code Quality Observations: The codebase appears well-organized into modules reflecting a microservices architecture, however, there is an absence of direct DDL execution or column modifications from this backend service alone which may lead to potential issues in database schema evolution; also lacks active manipulation for certain files like .env.example and postcss.config.js indicating indirect referencing through settings/configurations read by other services.\n6. Potential Areas for Improvement: The codebase could benefit from more explicit documentation on the purpose of each module, as well as a clearer explanation of how different components interact with one another; also missing active manipulation or direct involvement in certain files like .env.example and postcss.config.js which may lead to potential issues related to configuration management.\n7. Overall Assessment: This project IS an advanced web application that provides real-time data processing capabilities, task evaluation through LLM agents using Sia SDK for initial stage tasks analysis; also includes containerization aspects with Docker and deployment strategies involving Nginx server configurations.\n\nRecommendations:\n- Add explicit documentation on the purpose of each module to improve code readability\n- Consider active manipulation or direct involvement in certain files like .env.example, postcss.config.js which may lead to potential issues related to configuration management\n- Review database schema evolution process for better handling of ORM classes and DDL execution; also consider implementing column modifications from this backend service alone if necessary.",
   "descriptions": {
     "directories": {
-      "root": "The 'root' directory contains configuration files, scripts for a Node.js project using Next.js framework.",
-      "anchor": "The 'anchor' directory contains configuration files, lock files for dependencies management in Rust projects using Cargo, a TypeScript project setup with tsconfig.json, as well as general metadata about the package.",
-      "anchor/migrations": "The 'anchor/migrations' directory contains TypeScript migration files for setting up or modifying the Anchor blockchain's data structures.",
-      "anchor/programs/payroll_program": "The 'anchor/programs/payroll_program' directory contains Rust source files that implement a payroll program using the Anchor framework.",
-      "anchor/programs/payroll_program/src/errors": "The 'anchor/programs/payroll_program/src/errors' directory contains Rust source files that define custom error types for the payroll program, providing structured ways to handle various errors encountered during execution.",
-      "anchor/programs/payroll_program/src/instructions": "The 'anchor/programs/payroll_program/src/instructions' directory contains source code files that implement various payroll-related functionalities for an organization.",
-      "anchor/programs/payroll_program/src": "Description unavailable due to missing JSON",
-      "anchor/programs/payroll_program/src/states": "The 'anchor/programs/payroll_program/src/states' directory contains Rust source files that implement the state management for a payroll program, including modules like mod.rs which serves as an entry point to other components.",
-      "anchor/tests": "Description unavailable due to missing JSON",
-      "app/about": "The 'app/about' directory contains files related to the About page, which provides information about the application or organization.",
-      "app/dashboard": "The 'app/dashboard' directory contains the source code for a React component that renders an interactive dashboard page.",
-      "app": "The 'app' directory contains the essential files for a web application, including assets like icons and stylesheets as well as React components.",
-      "app/features": "Description unavailable due to missing JSON",
-      "app/privacy": "The 'app/privacy' directory contains TypeScript files that implement privacy-related features for a web application.",
-      "app/test": "The 'app/test' directory contains test files for the application, specifically designed to handle unit testing scenarios.",
-      "components": "The 'components' directory contains React components for a web application, specifically designed to handle various UI elements such as chat panels, client providers, dashboards, footers, headers, home pages, organizations panels.",
-      "lib": "The 'lib' directory contains TypeScript files that implement the MCP (Microservices Pattern) tools for payroll processing.",
-      "services": "The 'services' directory contains files related to blockchain technology, specifically implementing a smart contract platform using TypeScript.",
-      "utils": "The 'utils' directory contains utility functions, classes, interfaces that are used across the project for common tasks.",
-      "anchor/.anchor": "",
-      "anchor/.anchor/program-logs": "",
-      "anchor/programs": ""
+      "root": "The 'root' directory contains configuration files, a note document for reference purposes, documentation on the project setup, and settings to manage services using Docker.",
+      ".inngest": ".inngest contains the main database files used for ingesting data into a system.",
+      "backend": "Description unavailable due to missing JSON",
+      "backend/app/core": "The 'backend/app/core' directory contains the core configuration settings for a backend application, including database connections.",
+      "backend/app": "The 'backend/app' directory contains the main application code for a Python-based backend service.",
+      "backend/app/models": "The 'backend/app/models' directory contains ORM (Object-Relational Mapping) files that provide the necessary classes for handling database interactions in an object-oriented manner.",
+      "backend/app/routers": "The 'backend/app/routers' directory contains Python scripts that manage the routing logic for a web application, specifically handling requests related to approval processes.",
+      "backend/app/schemas": "Description unavailable due to missing JSON",
+      "backend/app/services": "The 'backend/app/services' directory contains Python scripts that collectively manage the functionalities related to an application's backend services, specifically for handling agent prompts, quality assessments, easiness evaluations, language model interactions, pipeline processing, similarity analysis, and client-server communications.",
+      "frontend": "The 'frontend' directory contains the source code, configuration files, and dependencies for a Next.js application.",
+      "frontend/src/app/admin": "The 'frontend/src/app/admin' directory contains React components for an admin dashboard interface, providing a structured layout with interactive elements.",
+      "frontend/src/app/api/admin/ready-tasks": "The 'frontend/src/app/api/admin/ready-tasks' directory contains the source code for API routes related to managing ready tasks in an admin interface.",
+      "frontend/src/app/api/admin/stats": "Contains TypeScript files for handling API routes related to admin statistics in a frontend application.",
+      "frontend/src/app/api/health": "Description unavailable due to missing JSON",
+      "frontend/src/app/api/inngest": "Description unavailable due to missing JSON",
+      "frontend/src/app/api/models": "The 'frontend/src/app/api/models' directory contains TypeScript files that define the data models for an API in a React application.",
+      "frontend/src/app/api/projects/[id]": "Contains TypeScript files for handling API routes related to projects, specifically implementing the route logic based on project IDs.",
+      "frontend/src/app/api/projects/[id]/tasks/[taskId]/approve": "The 'frontend/src/app/api/projects/[id]/tasks/[taskId]/approve' directory contains files that handle the approval process for a specific task within an application.",
+      "frontend/src/app/api/projects/[id]/tasks/[taskId]/reject": "Contains the route configuration for a specific task rejection endpoint within an API project, handling HTTP requests related to rejecting tasks.",
+      "frontend/src/app/api/projects/[id]/tasks/[taskId]/revert": "Contains the route configuration for a specific task's revert action within an API project.",
+      "frontend/src/app/api/projects/[id]/tasks/[taskId]": "Description unavailable due to missing JSON",
+      "frontend/src/app/api/projects/[id]/tasks/[taskId]/runs": "Description unavailable due to missing JSON",
+      "frontend/src/app/api/projects/[id]/tasks": "The 'frontend/src/app/api/projects/[id]/tasks' directory contains TypeScript files that define the routing for a specific project's tasks based on their unique identifier.",
+      "frontend/src/app/api/projects": "Description unavailable due to missing JSON",
+      "frontend/src/app/api/runs/[id]": "Description unavailable due to missing JSON",
+      "frontend/src/app/api/runs": "The 'frontend/src/app/api/runs' directory contains TypeScript files that handle the routing logic for a web application's API endpoints.",
+      "frontend/src/app/api/tasks/[id]": "Description unavailable due to missing JSON",
+      "frontend/src/app/api/tasks": "The 'frontend/src/app/api/tasks' directory contains TypeScript files that handle the routing for a web application's tasks API.",
+      "frontend/src/app/dashboard": "The 'frontend/src/app/dashboard' directory contains TypeScript files for a React-based dashboard application, providing the structure to manage UI components.",
+      "frontend/src/app": "The 'frontend/src/app' directory contains the source code for a React application, specifically managing styling with CSS files and layout components.",
+      "frontend/src/app/projects/[id]": "Description unavailable due to missing JSON",
+      "frontend/src/app/projects/[id]/submit": "Description unavailable due to missing JSON",
+      "frontend/src/app/projects/new": "Contains React components for a new project page in the frontend application.",
+      "frontend/src/components": "The 'frontend/src/components' directory contains React components for the frontend application, specifically designed to be used within a Sia-related context.",
+      "frontend/src/components/admin": "Contains React components for the admin section, specifically Benchmark Cards.",
+      "frontend/src/lib": "Description unavailable due to missing JSON",
+      "frontend/src/lib/inngest": "The 'frontend/src/lib/inngest' directory contains TypeScript files related to Inngest, which provides functionality for handling serverless functions in a frontend application.",
+      "frontend/src/lib/prisma": "Description unavailable due to missing JSON",
+      "frontend/src/lib/prisma/migrations/20260608193949_initial": "Description unavailable due to missing JSON",
+      "frontend/src/lib/prisma/migrations": "Description unavailable due to missing JSON",
+      "frontend/src": "",
+      "frontend/src/app/api": "",
+      "frontend/src/app/api/admin": "",
+      "frontend/src/app/projects": ""
     },
     "files": {
-      "root/.env.local": "Contains environment variables specific to the local development setup",
-      "root/README.md": "Provides documentation and instructions on setting up or running this application",
-      "root/eslint.config.mjs": "Defines ESLint rules configuration file used in code linting process for JavaScript files",
-      "root/next-env.d.ts": "Type definitions for Next.js environment variables, enabling TypeScript support with proper type checks",
-      "root/next.config.ts": "Configuration script that defines custom settings and optimizations specific to the Next.js application",
-      "root/package.json": "Contains metadata about the project including dependencies, scripts, versions used by npm or yarn package managers",
-      "root/postcss.config.mjs": "Configures PostCSS plugins for transforming CSS with JavaScript during build process in a Node.js environment",
-      "root/tsconfig.json": "TypeScript configuration file that specifies compiler options and includes settings specific to the project",
-      "anchor/.prettierignore": "Specifies which files and directories Prettier should ignore when formatting code",
-      "anchor/Anchor.toml": "Contains configuration settings for Anchor CLI tool used in building Solana programs using Rust language",
-      "anchor/Cargo.lock": "Locks down a specific version of dependencies to ensure consistent builds across environments by locking the versions specified in Cargo.toml",
-      "anchor/Cargo.toml": "Specifies metadata and dependency information required when compiling projects with cargo, including build instructions for Anchor toolchain",
-      "anchor/package.json": "Contains general package configuration details such as name, description, author, version number etc., used mainly to manage Node.js packages like TypeScript project dependencies",
-      "anchor/tsconfig.json": "Configures the options and compiler settings required when compiling a TypeScript codebase",
-      "anchor/migrations/deploy.ts": "Contains a script that deploys smart contracts to an existing block chain using Anchor, which automates this process.",
-      "anchor/programs/payroll_program/Cargo.toml": "Contains metadata about dependencies, build settings for compiling and packaging this project with Cargo.",
-      "anchor/programs/payroll_program/Xargo.toml": "Provides configuration options used by Xargo to manage external crates needed in conjunction with cargo.",
-      "anchor/programs/payroll_program/src/errors/mod.rs": "Defines a module named 'errors', which consolidates all related custom error definitions and implementations into one cohesive unit within this payroll application context.",
-      "anchor/programs/payroll_program/src/errors/error.rs": "Contains Rust code that defines an enum representing different types of payment-related errors, such as invalid input or failed processing attempts.",
-      "anchor/programs/payroll_program/src/instructions/add_worker.rs": "Contains Rust functions to add a new worker's details into the organization's database",
-      "anchor/programs/payroll_program/src/instructions/create_org.rs": "Includes mechanisms in Rust language to create and initialize organizational structures within the system",
-      "anchor/programs/payroll_program/src/instructions/fund_treasury.rs": "Provides functionality using Rust for managing funds allocation specifically towards an organization’s treasury account",
-      "anchor/programs/payroll_program/src/instructions/mod.rs": "Serves as a module definition file that organizes related source files into logical groups, ensuring proper compilation order of payroll-related instructions in Rust language",
-      "anchor/programs/payroll_program/src/instructions/process_payroll.rs": "Handles the processing and calculation aspects involved with executing pay cycles for workers within organizations using Rust programming constructs",
-      "anchor/programs/payroll_program/src/instructions/withdraw.rs": "Includes functions to facilitate withdrawal transactions from an organization's treasury account as part of financial operations",
-      "anchor/programs/payroll_program/src/lib.rs": "Description unavailable due to missing JSON",
-      "anchor/programs/payroll_program/src/states/mod.rs": "Defines and exports public items from this module's submodules such as 'organization' and 'worker', serving as their root file in Rust",
-      "anchor/programs/payroll_program/src/states/organization.rs": "Contains the definition of a payroll program organization, including its attributes like employees count or salary details. It provides methods to manipulate these properties.",
-      "anchor/programs/payroll_program/src/states/worker.rs": "Defines worker-related functionalities within an organization's context by providing structures for workers' data and functions that operate on this information.",
-      "anchor/tests/payroll_program.ts": "Description unavailable due to missing JSON",
-      "app/about/page.tsx": "A React component that renders content for an About page in a web application.",
-      "app/dashboard/page.tsx": "Contains TypeScript JSX syntax to define, render, and manage state of a dynamic web-based dashboard interface.",
-      "app/favicon.ico": "This icon represents the app in browser tabs or bookmarks",
-      "app/globals.css": "Provides global styling rules that apply to all pages within this project",
-      "app/layout.tsx": "Contains a reusable layout component for consistent page structure across different views",
-      "app/page.tsx": "Implements specific content and functionality of an individual web page",
-      "app/features/page.tsx": "Description unavailable due to missing JSON",
-      "app/privacy/page.tsx": "Contains the main page component implementing user interface elements related to app privacy settings.",
-      "app/test/page.tsx": "Contains a React component representing an application's page. Handles rendering of UI elements and manages state transitions based on user interactions.",
-      "components/ChatPanel.tsx": "Contains the ChatPanel component which renders and manages user interactions in real-time messaging interfaces",
-      "components/ClientProviders.tsx": "Provides context for managing state related to clients within a React application using Context API or similar patterns",
-      "components/Dashboard.tsx": "Handles rendering of dashboard UI elements, displaying aggregated data visualizations and statistics",
-      "components/Footer.tsx": "Contains the Footer component which renders navigation links at the bottom of web pages",
-      "components/Header.tsx": "Provides Header component for managing top-level navigational menus or branding content on a webpage",
-      "components/HomePage.tsx": "Handles rendering Home Page UI elements, serving as an entry point to display primary features and information upon loading",
-      "components/OrganizationsPanel.tsx": "Contains Organizations Panel component which renders organizational structures like departments, teams, etc.",
-      "lib/mcp-tools.ts": "Contains functions to handle various aspects of microservice communication patterns, specifically tailored for a Payroll system using Microservices Pattern.",
-      "lib/payroll-mcp-tools.ts": "Provides specialized implementations and extensions on top of the base MCP tools required by the 'lib' directory's payroll application.",
-      "services/blockchain.tsx": "Contains the main implementation for initializing and managing interactions with a decentralized blockchain network.",
-      "utils/helper.ts": "Provides helper methods to streamline repetitive code patterns within TypeScript applications",
-      "utils/interface.ts": "Defines a set of related properties and types which can be implemented by other modules in the application"
+      "root/.env.example": "Provides an example of environment variables that can be used as defaults or overridden by actual .env file contents",
+      "root/Note.txt": "Contains notes about this directory's purpose which may include instructions for users or developers working with the project",
+      "root/README.md": "Describes how to set up, configure and run services using Docker. It provides an overview of what is contained in each subdirectory within 'root'",
+      "root/docker-compose.yml": "Handles defining a multi-container application setup that can be managed through docker-compose commands",
+      ".inngest/main.db": "Contains structured information that serves as an ingestion point, storing incoming datasets in a relational format.",
+      "backend/Dockerfile": "Description unavailable due to missing JSON",
+      "backend/requirements.txt": "Description unavailable due to missing JSON",
+      "backend/app/core/config.py": "Contains global configurations such as timeouts, logging levels, and secret keys used by various components of an app",
+      "backend/app/core/database.py": "Handles all interactions with databases like connecting to them, executing queries, fetching results",
+      "backend/app/main.py": "Contains the entry point to start up the application's server, handling initialization tasks.",
+      "backend/app/models/orm.py": "Contains ORM-related code, providing a framework to map Python objects onto relational databases and vice versa",
+      "backend/app/models/models.py": "Defines data models representing tables within the application's database schema",
+      "backend/app/routers/approve.py": "Contains code implementing an endpoint for approving tasks within the system",
+      "backend/app/routers/pipeline.py": "Provides functionality for managing and processing data through various stages of pipelines in applications",
+      "backend/app/routers/runs.py": "Handles execution logic required when running specific operations or jobs as part of a workflow",
+      "backend/app/routers/tasks.py": "Implements endpoints related to task management, including creation, retrieval, updating, and deletion",
+      "backend/app/schemas/schemas.py": "Description unavailable due to missing JSON",
+      "backend/app/services/agent_prompt.py": "Contains functions responsible for generating or managing prompt-related tasks within a service-oriented architecture",
+      "backend/app/services/agent_quality.py": "Handles the assessment of agents' performance based on predefined quality metrics",
+      "backend/app/services/easiness.py": "Provides tools to evaluate and quantify easiness in various contexts, likely related to user interaction with an application",
+      "backend/app/services/llm.py": "Implements functionalities for a language model service within this backend system",
+      "backend/app/services/pipeline.py": "Defines the processing pipeline that manages data flow between different services or modules of the application's architecture",
+      "backend/app/services/quality.py": "Contains logic and functions dedicated to evaluating quality aspects in various scenarios handled by an application",
+      "backend/app/services/sia.py": "Handles similarity analysis tasks, possibly for comparing text inputs within a service-oriented backend context",
+      "backend/app/services/sia_client.py": "Implements client-side operations related to similarity analyses performed through the 'sia' module or function set",
+      "backend/app/services/similarity.py": "Provides functions that calculate and return similarities between different data points (e.g., strings) as part of an application's features",
+      "backend/app/services/quality_client.py": "Contains logic for a quality assessment service, possibly acting on behalf of clients who require such evaluations",
+      "frontend/.env.example": "Provides an example environment variables setup used as reference by developers",
+      "frontend/Dockerfile": "Contains instructions to build Docker images specifically tailored for this frontend project",
+      "frontend/next-env.d.ts": "Handles TypeScript definitions specific to the 'next' configuration, ensuring compatibility with Next.js features and plugins",
+      "frontend/next.config.ts": "Defines custom configurations that affect how a Next.js application behaves at runtime including server-side settings like headers or redirects",
+      "frontend/package.json": "Contains metadata about this project such as dependencies, scripts for building/testing/deploying the app, version information, etc.",
+      "frontend/postcss.config.js": "Configures PostCSS to handle CSS transformations and optimizations specific to styling requirements of a Next.js application",
+      "frontend/tailwind.config.ts": "Tailors Tailwind CSS configuration specifically used by this project ensuring styles are scoped correctly for component-level customization",
+      "frontend/tsconfig.json": "Specifies the root level TypeScript compiler options, including module resolution settings that dictate how files in the 'frontend' directory should be compiled and bundled",
+      "frontend/tsconfig.tsbuildinfo": "Provides build-time information about which modules were included during compilation to assist with debugging or optimization processes",
+      "frontend/src/app/admin/page.tsx": "A TypeScript component that renders the main page of the Admin Dashboard, implementing routing and displaying various sections based on user interaction.",
+      "frontend/src/app/api/admin/ready-tasks/route.ts": "Defines a route that handles requests and responses associated with fetching, creating, updating, or deleting ready task data from the database.",
+      "frontend/src/app/api/admin/stats/route.ts": "Defines the route configuration, including endpoints that handle requests pertaining to administrative statistical data.",
+      "frontend/src/app/api/health/route.ts": "Description unavailable due to missing JSON",
+      "frontend/src/app/api/inngest/route.ts": "Description unavailable due to missing JSON",
+      "frontend/src/app/api/models/route.ts": "Defines route handlers within the application's routing system, providing endpoints and their corresponding logic",
+      "frontend/src/app/api/models/model1.ts": "Specifies one of several possible model structures used to represent different resources or entities managed by this part of the app",
+      "frontend/src/app/api/projects/[id]/route.ts": "Provides a type-safe routing mechanism that handles requests by extracting 'id' from URL parameters and serving corresponding data about specific projects.",
+      "frontend/src/app/api/projects/[id]/tasks/[taskId]/approve/route.ts": "Defines and handles HTTP routes related to approving tasks in this API endpoint",
+      "frontend/src/app/api/projects/[id]/tasks/[taskId]/approve/app.js": "Provides configuration settings, middleware functions, or other necessary code required by route handlers",
+      "frontend/src/app/api/projects/[id]/tasks/[taskId]/reject/route.ts": "Defines the routing structure that maps incoming request URLs directly to their corresponding handler functions in this file",
+      "frontend/src/app/api/projects/[id]/tasks/[taskId]/reject/task_rejection_handler.py": "Implements logic and processing required when receiving a 'reject' action for an identified task within its scope",
+      "frontend/src/app/api/projects/[id]/tasks/[taskId]/revert/route.ts": "Provides routing logic to handle requests related to reverting tasks in the specified path of the frontend application.",
+      "frontend/src/app/api/projects/[id]/tasks/[taskId]/route.ts": "Description unavailable due to missing JSON",
+      "frontend/src/app/api/projects/[id]/tasks/[taskId]/runs/route.ts": "Description unavailable due to missing JSON",
+      "frontend/src/app/api/projects/[id]/tasks/route.ts": "Defines route parameters and paths, handling incoming requests to fetch or manipulate task data within this project.",
+      "frontend/src/app/api/projects/route.ts": "Description unavailable due to missing JSON",
+      "frontend/src/app/api/runs/[id]/route.ts": "Description unavailable due to missing JSON",
+      "frontend/src/app/api/runs/route.ts": "Defines routes, handles incoming requests to specific URLs and provides responses based on those URL patterns.",
+      "frontend/src/app/api/tasks/[id]/route.ts": "Description unavailable due to missing JSON",
+      "frontend/src/app/api/tasks/route.ts": "Defines routes, handles URL parameters parsing, implements route guards and middleware",
+      "frontend/src/app/api/tasks/task-list.ts": "Provides an interface to list all available tasks in the application",
+      "frontend/src/app/dashboard/page.tsx": "Contains code that defines an interactive page component in a React app using TypeScript.",
+      "frontend/src/app/globals.css": "Contains global styles that are applied across all pages in the frontend app",
+      "frontend/src/app/layout.tsx": "Handles defining reusable layouts used by multiple page components within this front-end project",
+      "frontend/src/app/page.tsx": "Implements individual React component logic for a specific web page, including UI and state management",
+      "frontend/src/app/projects/[id]/page.tsx": "Description unavailable due to missing JSON",
+      "frontend/src/app/projects/[id]/submit/page.tsx": "Description unavailable due to missing JSON",
+      "frontend/src/app/projects/new/page.tsx": "Defines the structure, styling, and behavior of the 'New Project' component within the application's user interface.",
+      "frontend/src/components/LogTerminal.tsx": "A component that displays logs from terminal sessions in an interactive format",
+      "frontend/src/components/NavBar.tsx": "Provides navigation functionality with links and dropdown menus specific to different sections of the application's user interface",
+      "frontend/src/components/PipelineStages.tsx": "Displays various stages within a data processing pipeline, allowing users to track progress through each stage",
+      "frontend/src/components/ScoreDisplay.tsx": "Shows scores or metrics related to tasks in an easily readable format for quick assessment by end-users",
+      "frontend/src/components/SiaProof.tsx": "Manages the display and verification of Sia proofs (proofs that confirm file integrity within a decentralized storage system)",
+      "frontend/src/components/StatusBadge.tsx": "Generates status badges indicating various states such as success, error or other statuses related to tasks in progress",
+      "frontend/src/components/TaskActions.tsx": "Provides interactive elements for task management including options like start, stop and delete actions on Sia-related workflows",
+      "frontend/src/components/TaskRow.tsx": "Displays individual rows of data representing different aspects of a given task within the application interface",
+      "frontend/src/components/admin/BenchmarkCards.tsx": "Provides a component that renders benchmark cards with data visualization in an administrative dashboard.",
+      "frontend/src/lib/admin-context.tsx": "Description unavailable due to missing JSON",
+      "frontend/src/lib/types.ts": "Description unavailable due to missing JSON",
+      "frontend/src/lib/inngest/client.ts": "Contains code that handles the creation and management of Inngest client instances within a React or similar framework",
+      "frontend/src/lib/inngest/pipeline-inngest.ts": "Provides an implementation of pipeline processing using Inngest, allowing asynchronous tasks to be handled efficiently",
+      "frontend/src/lib/prisma/client.ts": "Description unavailable due to missing JSON",
+      "frontend/src/lib/prisma/index.ts": "Description unavailable due to missing JSON",
+      "frontend/src/lib/prisma/schema.prisma": "Description unavailable due to missing JSON",
+      "frontend/src/lib/prisma/migrations/20260608193949_initial/migration.sql": "Description unavailable due to missing JSON",
+      "frontend/src/lib/prisma/migrations/migration_lock.toml": "Description unavailable due to missing JSON"
     }
   },
-  "tree_view": "├─ .env.local\n├─ README.md\n├─ anchor\n│  ├─ .anchor\n│  │  └─ program-logs\n│  ├─ .prettierignore\n│  ├─ Anchor.toml\n│  ├─ Cargo.lock\n│  ├─ Cargo.toml\n│  ├─ migrations\n│  │  └─ deploy.ts\n│  ├─ package.json\n│  ├─ programs\n│  │  └─ payroll_program\n│  │     ├─ Cargo.toml\n│  │     ├─ Xargo.toml\n│  │     └─ src\n│  │        ├─ errors\n│  │        │  └─ mod.rs\n│  │        ├─ instructions\n│  │        │  ├─ add_worker.rs\n│  │        │  ├─ create_org.rs\n│  │        │  ├─ fund_treasury.rs\n│  │        │  ├─ mod.rs\n│  │        │  ├─ process_payroll.rs\n│  │        │  └─ withdraw.rs\n│  │        ├─ lib.rs\n│  │        └─ states\n│  │           ├─ mod.rs\n│  │           ├─ organization.rs\n│  │           └─ worker.rs\n│  ├─ tests\n│  │  └─ payroll_program.ts\n│  └─ tsconfig.json\n├─ app\n│  ├─ about\n│  │  └─ page.tsx\n│  ├─ dashboard\n│  │  └─ page.tsx\n│  ├─ favicon.ico\n│  ├─ features\n│  │  └─ page.tsx\n│  ├─ globals.css\n│  ├─ layout.tsx\n│  ├─ page.tsx\n│  ├─ privacy\n│  │  └─ page.tsx\n│  └─ test\n│     └─ page.tsx\n├─ components\n│  ├─ ChatPanel.tsx\n│  ├─ ClientProviders.tsx\n│  ├─ Dashboard.tsx\n│  ├─ Footer.tsx\n│  ├─ Header.tsx\n│  ├─ HomePage.tsx\n│  └─ OrganizationsPanel.tsx\n├─ eslint.config.mjs\n├─ lib\n│  ├─ mcp-tools.ts\n│  └─ payroll-mcp-tools.ts\n├─ next-env.d.ts\n├─ next.config.ts\n├─ package.json\n├─ postcss.config.mjs\n├─ services\n│  └─ blockchain.tsx\n├─ tsconfig.json\n└─ utils\n   ├─ helper.ts\n   └─ interface.ts\n"
+  "tree_view": "├─ .env.example\n├─ .inngest\n│  └─ main.db\n├─ Note.txt\n├─ README.md\n├─ backend\n│  ├─ Dockerfile\n│  ├─ app\n│  │  ├─ core\n│  │  │  ├─ config.py\n│  │  │  └─ database.py\n│  │  ├─ main.py\n│  │  ├─ models\n│  │  │  └─ orm.py\n│  │  ├─ routers\n│  │  │  ├─ approve.py\n│  │  │  ├─ pipeline.py\n│  │  │  ├─ runs.py\n│  │  │  └─ tasks.py\n│  │  ├─ schemas\n│  │  │  └─ schemas.py\n│  │  └─ services\n│  │     ├─ agent_prompt.py\n│  │     ├─ agent_quality.py\n│  │     ├─ easiness.py\n│  │     ├─ llm.py\n│  │     ├─ pipeline.py\n│  │     ├─ quality.py\n│  │     ├─ sia.py\n│  │     ├─ sia_client.py\n│  │     └─ similarity.py\n│  └─ requirements.txt\n├─ docker-compose.yml\n└─ frontend\n   ├─ .env.example\n   ├─ Dockerfile\n   ├─ next-env.d.ts\n   ├─ next.config.ts\n   ├─ package.json\n   ├─ postcss.config.js\n   ├─ src\n   │  ├─ app\n   │  │  ├─ admin\n   │  │  │  └─ page.tsx\n   │  │  ├─ api\n   │  │  │  ├─ admin\n   │  │  │  │  ├─ ready-tasks\n   │  │  │  │  │  └─ route.ts\n   │  │  │  │  └─ stats\n   │  │  │  │     └─ route.ts\n   │  │  │  ├─ health\n   │  │  │  │  └─ route.ts\n   │  │  │  ├─ inngest\n   │  │  │  │  └─ route.ts\n   │  │  │  ├─ models\n   │  │  │  │  └─ route.ts\n   │  │  │  ├─ projects\n   │  │  │  │  ├─ [id]\n   │  │  │  │  │  ├─ route.ts\n   │  │  │  │  │  └─ tasks\n   │  │  │  │  │     ├─ [taskId]\n   │  │  │  │  │     │  ├─ approve\n   │  │  │  │  │     │  │  └─ route.ts\n   │  │  │  │  │     │  ├─ reject\n   │  │  │  │  │     │  │  └─ route.ts\n   │  │  │  │  │     │  ├─ revert\n   │  │  │  │  │     │  │  └─ route.ts\n   │  │  │  │  │     │  ├─ route.ts\n   │  │  │  │  │     │  └─ runs\n   │  │  │  │  │     │     └─ route.ts\n   │  │  │  │  │     └─ route.ts\n   │  │  │  │  └─ route.ts\n   │  │  │  ├─ runs\n   │  │  │  │  ├─ [id]\n   │  │  │  │  │  └─ route.ts\n   │  │  │  │  └─ route.ts\n   │  │  │  └─ tasks\n   │  │  │     ├─ [id]\n   │  │  │     │  └─ route.ts\n   │  │  │     └─ route.ts\n   │  │  ├─ dashboard\n   │  │  │  └─ page.tsx\n   │  │  ├─ globals.css\n   │  │  ├─ layout.tsx\n   │  │  ├─ page.tsx\n   │  │  └─ projects\n   │  │     ├─ [id]\n   │  │     │  ├─ page.tsx\n   │  │     │  └─ submit\n   │  │     │     └─ page.tsx\n   │  │     └─ new\n   │  │        └─ page.tsx\n   │  ├─ components\n   │  │  ├─ LogTerminal.tsx\n   │  │  ├─ NavBar.tsx\n   │  │  ├─ PipelineStages.tsx\n   │  │  ├─ ScoreDisplay.tsx\n   │  │  ├─ SiaProof.tsx\n   │  │  ├─ StatusBadge.tsx\n   │  │  ├─ TaskActions.tsx\n   │  │  ├─ TaskRow.tsx\n   │  │  └─ admin\n   │  │     └─ BenchmarkCards.tsx\n   │  └─ lib\n   │     ├─ admin-context.tsx\n   │     ├─ inngest\n   │     │  ├─ client.ts\n   │     │  └─ pipeline-inngest.ts\n   │     ├─ prisma\n   │     │  ├─ client.ts\n   │     │  ├─ index.ts\n   │     │  ├─ migrations\n   │     │  │  ├─ 20260608193949_initial\n   │     │  │  │  └─ migration.sql\n   │     │  │  └─ migration_lock.toml\n   │     │  └─ schema.prisma\n   │     └─ types.ts\n   ├─ tailwind.config.ts\n   ├─ tsconfig.json\n   └─ tsconfig.tsbuildinfo\n"
 }

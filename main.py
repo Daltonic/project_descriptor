@@ -27,6 +27,7 @@ class ProjectAnalyzer:
             ".gitignore",
             ".DS_Store",
             "node_modules",
+            "uploads",
             "test-ledger",
             "target",
             ".env",
